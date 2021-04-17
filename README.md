@@ -1,2 +1,2 @@
 # mepc
-"Codo a Codo" course project
+🛠️ "Codo a Codo" course project
