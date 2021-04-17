@@ -179,3 +179,13 @@ footer .powered-by {
 footer a.back-to-top i {
     color: rgba(0, 0, 0, 0.54);
 }
+
+
+/* navar */
+
+.logo {
+    max-height: 100%;
+    width: auto;
+    margin-right: 3.5rem;
+    box-sizing: inherit;
+}
