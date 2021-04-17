@@ -106,7 +106,8 @@ h3 {
     position: relative;
     height: 100vh;
     padding-left: 5vw;
-    background: url('/img/mepc.png') center center/cover no-repeat;
+    background: #004aad;
+    /*    background: url('/img/mepc.png') center center/cover no-repeat; */
 }
 
 .container-inicio .title h1 {
