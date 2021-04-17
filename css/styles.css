@@ -155,3 +155,27 @@ h3 {
 .container-sobre .text-wrapper p {
     font-size: 22px;
 }
+
+
+/* Footer */
+
+footer {
+    background-color: white;
+    margin: 4rem 0 0;
+    padding: 2rem 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 0.75rem;
+    text-align: center;
+}
+
+footer .powered-by {
+    font-size: 0.67rem;
+}
+
+.site-footer,
+footer a.back-to-top i {
+    color: rgba(0, 0, 0, 0.54);
+}
