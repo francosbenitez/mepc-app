@@ -90,6 +90,11 @@ header {
     transition: 0.3s linear;
 }
 
+.navbar-toggler {
+    margin-right: 50px;
+    margin-right: 0px;
+}
+
 
 /*---------------- Inicio ----------------*/
 
