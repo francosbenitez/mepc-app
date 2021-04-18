@@ -1,3 +1,20 @@
+/*---------- Sections ----------*/
+
+#main-doc .main-section .properties {
+    margin: 1rem 0 1rem 0;
+}
+
+#main-doc .main-section .properties li {
+    margin: 0 0 0 3rem;
+    font-size: 1.1rem;
+}
+
+
+
+
+
+/* */
+
 * {
     margin: 0;
     padding: 0;
@@ -5,8 +22,10 @@
 }
 
 :root {
+    --color-white: #FFFFFF;
+
     --background-border-color: #495F73;
-    --navbar-color: #0D1A26;
+    --navbar-color: #FFFFFF;
     --links-color: #495F7398;
     --pre-code-color: #A4B0BB;
     --h1-p-color-code: #BF0413;
@@ -15,9 +34,8 @@
 }
 
 body {
-    font-family: 'Quicksand', sans-serif;
-    background-color: var(--background-border-color);
-    color: #FFF;
+    font-family: 'Montserrat';
+    background-color: var(--color-white);
 }
 
 
@@ -55,13 +73,13 @@ body {
     margin: 0.2rem 0 0.2rem 0;
     padding: 0.5rem;
     text-decoration: none;
-    color: #FFF;
+    color: #004aad;
 }
 
 #navbar .ul-container li a:link,
 a:visited,
 a:active {
-    color: #FFF;
+    color: #004aad;
 }
 
 #navbar .ul-container li a:hover {
@@ -122,14 +140,7 @@ a:active {
     margin: 1rem 0 1rem 0;
 }
 
-#main-doc .main-section .properties {
-    margin: 1rem 0 1rem 0;
-}
 
-#main-doc .main-section .properties li {
-    margin: 0 0 0 3rem;
-    font-size: 1.1rem;
-}
 
 @media (min-width: 850px) {
     #navbar {

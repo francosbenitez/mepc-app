@@ -1,247 +1,119 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Technical Documentation Page</title>
-    <!--Fonts-->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet" />
-    <!--Icons-->
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Movimiento Estudiantil por la Psicología Científica">
+    <meta name="author" content="MEPC">
+    <meta name="keywords" content="mepc psicologia cientifica">
+    <meta name="twitter:image:src" content="https://francosbenitez.github.io/mepc/img/social.png">
+    <meta property="og:image" content="https://francosbenitez.github.io/mepc/img/social.png">
+
+    <!-- Title -->
+    <title>Documentos | Movimiento Estudiantil por la Psicología Científica - MEPC</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/documentos.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/355497287f.js" crossorigin="anonymous"></script>
-    <!--Styles-->
-    <link rel="stylesheet" href="css/documentos.css" />
 </head>
 
+
+
 <body>
-    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+
+    <!-- Navbar -->
     <nav id="navbar">
         <div class="logo">
-            <i class="fab fa-css3-alt fa-3x"></i>
-            <header>CSS Documentation</header>
+            <i class="fab fa-css3-alt fa-3x"><a href="/"><img src="./img/logo.svg" alt="logo de MEPC"></a></i>
+            <header>Documentos</header>
         </div>
         <div class="ul-container">
             <ul>
                 <li class="hvr-sweep-to-top">
-                    <a class="nav-link" href="#Introduction">Introduction</a>
+                    <a class="nav-link" href="#Introduction">Departamentos</a>
                 </li>
                 <li class="hvr-sweep-to-top">
-                    <a class="nav-link" href="#CSS_syntax">CSS Syntax</a>
+                    <a class="nav-link" href="#CSS_syntax">Delegados</a>
                 </li>
                 <li class="hvr-sweep-to-top">
-                    <a class="nav-link" href="#Applying_CSS_to_HTML">Applying CSS to HTML</a
+                    <a class="nav-link" href="#Applying_CSS_to_HTML">Diseño</a
             >
           </li>
           <li class="hvr-sweep-to-top">
-            <a class="nav-link" href="#Selectors">Selectors</a>
+            <a class="nav-link" href="#Selectors">Divulgación</a>
                 </li>
                 <li class="hvr-sweep-to-top">
-                    <a class="nav-link" href="#Specificity">Specificity</a>
+                    <a class="nav-link" href="#Specificity">Recursos Humanos</a>
                 </li>
                 <li class="hvr-sweep-to-top">
-                    <a class="nav-link" href="#Properties_and_values">Properties and values</a
+                    <a class="nav-link" href="#Properties_and_values">Relaciones Públicas</a
             >
           </li>
           <li class="hvr-sweep-to-top">
-            <a class="nav-link" href="#Reference">Reference</a>
+            <a class="nav-link" href="#Reference">Revisión</a>
                 </li>
             </ul>
         </div>
     </nav>
     <main id="main-doc">
         <section class="main-section" id="Introduction">
-            <header>Introduction</header>
+            <header>Departamentos</header>
+            </br>
+            <hr>
+            </br>
+            </hr>
             <p>
-                CSS (Cascading Style Sheets) is used to style and lay out web pages — for example, to alter the font, color, size, and spacing of your content, split it into multiple columns, or add animations and other decorative features.
+                Los Departamentos son los ejes centrales de la organización de MEPC.
             </p>
+            </br>
         </section>
 
         <section class="main-section" id="CSS_syntax">
-            <header>CSS Syntax</header>
-            <p>
-                CSS is a rule-based language — you define rules specifying groups of styles that should be applied to particular elements or groups of elements on your web page. For example "I want the main heading on my page to be shown as large red text."
-            </p>
-            <p>
-                The following code shows a very simple CSS rule that would achieve the styling described above:
-            </p>
-            <pre>
-          <code><span class="h1">h1</span> {
-            <span class="color">color:</span> red;
-            <span class="font">font-size:</span> 5em;
-          }</code></pre>
-            <p>
-                The rule opens with a selector . This selects the HTML element that we are going to style. In this case we are styling level one headings (&#60;h1&#62;).
-            </p>
-            <p>
-                We then have a set of curly braces { }. Inside those will be one or more declarations, which take the form of property and value pairs. Each pair specifies a property of the element(s) we are selecting, then a value that we'd like to give the property.
-            </p>
-            <p>
-                Before the colon, we have the property, and after the colon, the value. CSS properties have different allowable values, depending on which property is being specified. In our example, we have the color property, which can take various color values. We
-                also have the font-size property. This property can take various size units as a value.
-            </p>
-            <p>
-                A CSS stylesheet will contain many such rules, written one after the other.
-            </p>
-            <pre>
-          <code><span class="h1">h1</span> {
-            <span class="color">color:</span> red;
-            <span class="font">font-size:</span> 5em;
-          }
-            
-          <span class="p">p</span> {
-            <span class="color">color:</span> black;
-          }</code></pre>
-        </section>
-
-        <section class="main-section" id="Applying_CSS_to_HTML">
-            <header>Applying CSS to HTML</header>
-            <h2>External stylesheet</h2>
-            <p>
-                An external stylesheet contains CSS in a separate file with a .css extension. This is the most common and useful method of bringing CSS to a document. You can link a single CSS file to multiple web pages, styling all of them with the same CSS stylesheet.
-            </p>
-            <p>
-                You reference an external CSS stylesheet from an HTML &#60;link&#62; element:
-            </p>
+            <header>Departamento de Delegados</header>
             <div class="img-container">
-                <img src="images/code.png" alt="" />
+                <img src="img/9.png" alt="logo delegados" />
             </div>
+            </br>
+            <hr>
+            </br>
+            </hr>
+            <h3>¿Qué es?</h3>
+            <br>
             <p>
-                The href attribute of the &#60;link&#62; element needs to reference a file on your file system. In the example above, the CSS file is in the same folder as the HTML document, but you could place it somewhere else and adjust the path.
+                El grupo de Delegades reúne a quienes cumplen dicho rol en cada uno de los grupos de estudio. Estará EXCLUSIVAMENTE compuesto por quienes sean los voceros de cada grupo, siendo éste un criterio excluyente. El grupo va a tener una composición variable, debido a que el puesto será rotativo.
             </p>
-
-            <h2>Internal stylesheet</h2>
-            <p>
-                An internal stylesheet resides within an HTML document. To create an internal stylesheet, you place CSS inside a &#60;style&#62; element contained inside the HTML &#60;head.&#62;
-            </p>
-            <p>The HTML for an internal stylesheet might look like this:</p>
-            <div class="img-container">
-                <img src="images/code2.png" alt="" />
-            </div>
-            <p>
-                In some circumstances, internal stylesheets can be useful. For example, perhaps you're working with a content management system where you are blocked from modifying external CSS files.
-            </p>
-            <p>
-                But for sites with more than one page, an internal stylesheet becomes a less efficient way of working. To apply uniform CSS styling to multiple pages using internal stylesheets, you must have an internal stylesheet in every web page that will use the
-                styling. The efficiency penalty carries over to site maintenance too. With CSS in internal stylesheets, there is the risk that even one simple styling change may require edits to multiple web pages.
-            </p>
-
-            <h2>Inline styles</h2>
-            <p>
-                Inline styles are CSS declarations that affect a single HTML element, contained within a style attribute. The implementation of an inline style in an HTML document might look like this:
-            </p>
-            <div class="img-container">
-                <img src="images/code3.png" alt="" />
-            </div>
-            <p>
-                Avoid using CSS in this way, when possible. It is the opposite of a best practice. First, it is the least efficient implementation of CSS for maintenance. One styling change might require multiple edits within a single web page. Second, inline CSS also
-                mixes (CSS) presentational code with HTML and content, making everything more difficult to read and understand. Separating code and content makes maintenance easier for all who work on the website.
-            </p>
-            <p>
-                There are a few circumstances where inline styles are more common. You might have to resort to using inline styles if your working environment is very restrictive. For example, perhaps your CMS only allows you to edit the HTML body. You may also see a
-                lot of inline styles in HTML email to achieve compatibility with as many email clients as possible.
-            </p>
-        </section>
-
-        <section class="main-section" id="Selectors">
-            <header>Selectors</header>
-            <p>
-                A selector targets HTML to apply styles to content. Each CSS rule starts with a selector — or a list of selectors — in order to tell the browser which element or elements the rules should apply to. All the examples below are valid selectors or lists of
-                selectors.
-            </p>
-            <pre>
-          <code><span class="h1">h1</span>
-          <span class="h1">a</span>:link
-          .manythings
-          #onething
-          *
-          .box <span class="h1">p</span>
-          .box <span class="h1">p</span>:first-child
-          <span class="h1">h1</span>, <span class="h1">h2</span>, .intro</code></pre>
-        </section>
-
-        <section class="main-section" id="Specificity">
-            <header>Specificity</header>
-            <p>
-                You may encounter scenarios where two selectors select the same HTML element. Consider the stylesheet below, with a <code>p</code> selector that sets paragraph text to blue. However, there is also a class that sets the text of selected
-                elements to red.
-            </p>
-            <pre>
-          <code><span class="c">.special</span> {
-              <span class="color">color:</span> red;
-          }
-            
-          <span class="h1">p</span> {
-            <span class="color">color:</span> blue;
-          }</code></pre>
-            <p>
-                Suppose that in our HTML document, we have a paragraph with a class of special. Both rules apply. Which selector prevails? Do you expect to see blue or red paragraph text?
-            </p>
-            <p>
-                The CSS language has rules to control which selector is stronger in the event of a conflict. These rules are called cascade and specificity. In the code block below, we define two rules for the "p" selector, but the paragraph text will be blue. This is
-                because the declaration that sets the paragraph text to blue appears later in the stylesheet. Later styles replace conflicting styles that appear earlier in the stylesheet. This is the cascade rule.
-            </p>
-            <pre>
-          <code><span class="p">p</span> {
-            <span class="color">color:</span> red;
-          }
-            
-          <span class="p">p</span> {
-            <span class="color">color:</span> blue;
-          }</code></pre>
-        </section>
-
-        <section class="main-section" id="Properties_and_values">
-            <header>Properties and values</header>
-            <p>At its most basic level, CSS consists of two components:</p>
-            <ul class="p-v">
-                <li>
-                    <strong>Properties:</strong> These are human-readable identifiers that indicate which stylistic features you want to modify. For example, <code>font-size, width, background-color.</code>
-                </li>
-                <li>
-                    <strong>Values:</strong> Each property is assigned a value. This value indicates how to style the property.
-                </li>
-            </ul>
-            <p>
-                The example below highlights a single property and value. The property name is <code>color</code> and the value is <code>blue</code>.
-            </p>
-            <div class="img-container">
-                <img src="images/declaration.png" alt="" />
-            </div>
-            <p>
-                When a property is paired with a value, this pairing is called a CSS declaration. CSS declarations are found within CSS Declaration Blocks. In the example below, highlighting identifies the CSS declaration block.
-            </p>
-            <div class="img-container">
-                <img src="images/declaration-block.png" alt="" />
-            </div>
-            <p>
-                Finally, CSS declaration blocks are paired with selectors to produce CSS rulesets (or CSS rules). The example below contains two rules: one for the <code>h1</code> selector and one for the
-                <code>p</code> selector. The colored highlighting identifies the
-                <code>h1</code> rule.
-            </p>
-            <div class="img-container">
-                <img src="images/rules.png" alt="" />
-            </div>
-            <p>
-                Setting CSS properties to specific values is the primary way of defining layout and styling for a document. The CSS engine calculates which declarations apply to every single element of a page.
-            </p>
-            <p>
-                Look up different values of properties listed below. Write CSS rules that apply styling to different HTML elements:
-            </p>
+            <br>
+            <h3>¿Cuáles son sus funciones?</h3>
+            <ul class="properties"><li>Función general: ser un espacio para hablar, debatir y organizar cuestiones exclusivamente ligadas al funcionamiento de los grupos de estudio.</li></ul>
             <ul class="properties">
-                <li><code>font-size</code></li>
-                <li><code>width</code></li>
-                <li><code>background-color</code></li>
-                <li><code>color</code></li>
-                <li><code>border</code></li>
+                <li>Funciones específicas:
+                    <ul>
+                        <li>Resolver cuestiones administrativas de cada grupo.</li>
+                        <li>Compartir información relevante sobre cada grupo.</li>
+                        <li>Organizar la generación de contenido en cada grupo (se realiza en conjunto con todos los miembros activos pero las delegadas serían las que le den el toque final para organizar toda esa información de manejar formal).</li>
+                        <li>Delegar las reuniones quincenales a los miembros activos* para poder hacerse cargo de los links de acceso a las reuniones.</li>
+                        <li>Estipular pautas de funcionamiento común para todos los grupos sobre: cantidad de delegades, difusión de links de WhatsApp, grabación de reuniones, moderación de mensajes offtopic, procedimientos para elección de nuevos delegades y tiempo en ejercicio de funciones, etc</li>
+                        <li>Programar actividades en conjunto con otros grupos (de estudio u otros departamentos) -para eso habrá delegado de cada departamento-.</li>
+                    </ul>
+                </li>
             </ul>
         </section>
 
-        <section class="main-section" id="Reference">
-            <header>Reference</header>
-            <p>All the documentation in this page is taken from <a href="https://developer.mozilla.org/es/docs/Web/CSS">MDN</a></p>
-        </section>
+
+        
     </main>
 </body>
 
