@@ -87,7 +87,7 @@ header {
     width: 25px;
     height: 3px;
     margin: 5px;
-    background-color: black;
+    background-color: var(--color-base);
     transition: all 0.3s ease;
 }
 
