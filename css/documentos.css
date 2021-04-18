@@ -1,5 +1,6 @@
 /*---------- General styling ----------*/
 
+
 * {
     margin: 0;
     padding: 0;
@@ -17,6 +18,18 @@
 #main-doc .main-section .properties li {
     margin: 0 0 0 3rem;
     font-size: 1.1rem;
+}
+
+#main-doc .main-section h3 {
+    margin: 1rem 0 1rem 0;
+}
+
+#main-doc .main-section header {
+    margin: 1rem 0 1rem 0;
+}
+
+#main-doc .main-section hr {
+    margin: 1rem 0 1rem 0;
 }
 
 
