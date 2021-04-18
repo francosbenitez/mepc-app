@@ -170,6 +170,16 @@ header {
 
 .container-about .network-icon {
     list-style: none;
+    display: inline-block;
+    text-rendering: auto;
+    line-height: 1;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .container-about .network-icon i {
