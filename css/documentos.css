@@ -8,6 +8,7 @@
     font-family: 'Montserrat';
     --color-base: #004aad;
     --color-white: #FFFFFF;
+    --background-border-color: #000000;
 }
 
 body {
@@ -39,29 +40,42 @@ body {
     margin: 1rem 0 1rem 0;
 }
 
+#main-doc {
+    padding: 0.5rem;
+}
 
+#main-doc header {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0.5rem 0 0.5rem 0;
+}
 
+#main-doc h2 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 0.5rem 0 0.5rem 0;
+}
 
+#main-doc .img-container {
+    width: 100%;
+    max-width: 35rem;
+    margin: 0 auto;
+}
 
-/* */
-
-:root {
-
-    --background-border-color: #495F73;
-    --navbar-color: #FFFFFF;
-    --links-color: #495F7398;
-    --pre-code-color: #A4B0BB;
-    --h1-p-color-code: #BF0413;
-    --color-font-code: #42590F;
-    --c-color-code: #F24405;
+#main-doc .img-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 1rem 0 1rem 0;
 }
 
 
-/* navbar */
+/*---------- Navbar ----------*/
+
 
 #navbar {
     width: 100%;
-    background-color: var(--navbar-color);
+    background-color: var(--color-white);
     padding: 1rem;
     margin: 0 0 1rem 0;
     text-align: center;
@@ -107,58 +121,7 @@ a:active {
 }
 
 
-/* sections*/
-
-#main-doc {
-    padding: 0.5rem;
-}
-
-#main-doc header {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin: 0.5rem 0 0.5rem 0;
-}
-
-#main-doc h2 {
-    font-size: 1.3rem;
-    font-weight: 500;
-    margin: 0.5rem 0 0.5rem 0;
-}
-
-#main-doc pre {
-    background-color: var(--pre-code-color);
-    white-space: pre;
-    word-wrap: break-word;
-    margin: 1rem 0 1rem 0;
-    padding: 0.5rem 0;
-    color: #000;
-    font-size: 1.1rem;
-    font-weight: 500;
-}
-
-#main-doc pre code .h1,
-.p {
-    color: var(--h1-p-color-code);
-}
-
-#main-doc pre code .color,
-.font {
-    color: var(--color-font-code);
-}
-
-#main-doc .img-container {
-    width: 100%;
-    max-width: 35rem;
-    margin: 0 auto;
-}
-
-#main-doc .img-container img {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin: 1rem 0 1rem 0;
-}
-
+/*---------- Media queries ----------*/
 
 
 @media (min-width: 850px) {
