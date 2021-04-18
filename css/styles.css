@@ -183,8 +183,8 @@ header {
 }
 
 .container-about .network-icon i {
-    margin-right: 10px;
-    padding: 6px;
+    margin-right: 5px;
+    padding: 3px;
 }
 
 .container-about .text-wrapper {
@@ -201,6 +201,11 @@ header {
 
 .site-footer {
     text-align: center;
+}
+
+.site-footer .float-right {
+    position: absolute; 
+    right: 0;
 }
     
 
