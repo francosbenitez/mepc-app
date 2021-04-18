@@ -73,6 +73,10 @@ body {
 /*---------- Navbar ----------*/
 
 
+.logo img {
+    height: 50px;
+}
+
 #navbar {
     width: 100%;
     background-color: var(--color-white);
