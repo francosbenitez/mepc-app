@@ -1,5 +1,6 @@
 /*---------- General styling ----------*/
 
+
 * {
     margin: 0;
     padding: 0;
@@ -21,7 +22,9 @@ a {
     background-color: var(--color-base)
 }
 
+
 /*---------- Navbar ----------*/
+
 
 header {
     position: fixed;
@@ -43,7 +46,9 @@ header {
 }
 
 .navbar ul li {
-    display: inline-block;
+    display: inline;
+    position: relative;
+    overflow: hidden;
     font-size: 18px;
     margin: 0 5px;
     padding: 15px 20px;
@@ -51,19 +56,36 @@ header {
     line-height: 55px;
 }
 
-.navbar ul li a:hover {
-    color: white;
-    background-color: #004aad;
-    transition: 0.3s linear;
+.navbar .nav-ul a:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    width: 0;
+    bottom: 0px;
+    background: #004aad;
+    height: 4px;
+    transition-property: width;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+.navbar .nav-ul a:hover:after,
+.navbar .nav-ul a:focus:after,
+.navbar .nav-ul a:active:after {
+    left: 0;
+    right: auto;
+    width: 100%;
 }
 
-/*---------- Home ----------*/
+
+/*---------- Hero ----------*/
+
 
 .container {
     width: 100%;
 }
 
-.container-home {
+.container-hero {
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
@@ -73,16 +95,20 @@ header {
     /* background: url('/img/mepc.png') center center/cover no-repeat; */ 
 }
 
-.container-home .title h1 {
+.container-hero .title h1 {
     font-size: 60px;
     color: var(--color-white);
 }
 
-.container-home .subtitle h2 {
+.container-hero .subtitle h2 {
     color: var(--color-white);
     font-family: 'Montserrat';
     font-weight: 400;
 }
+
+
+/*---------- About ----------*/
+
 
 .container-video {
     padding: 60px 20px;
@@ -115,6 +141,11 @@ header {
     list-style: none;
 }
 
+.container-about .network-icon i {
+    margin-right: 10px;
+    padding: 6px;
+}
+
 .container-about .text-wrapper {
     flex-direction: column;
     justify-content: space-around;
@@ -126,14 +157,16 @@ header {
 
 /*---------- Footer ----------*/
     
+
 .site-footer {
     text-align: center;
 }
-
     
+
 /*---------- Media queries ----------*/
 
 /*---------- Navbar ----------*/
+
 
 @media (max-width: 820px) {
     .logo img {
