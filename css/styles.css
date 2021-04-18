@@ -241,6 +241,8 @@ header {
     .button {
         display: block;
         cursor: pointer;
+        position: absolute; 
+        right: 0;
     }
 
     .nav-active {
