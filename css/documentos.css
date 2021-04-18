@@ -24,7 +24,7 @@ body {
 /*---------- Navbars ----------*/
 
 
-/*---------- Main navbar ----------*/
+/* Main navbar */
 
 
 header .main-header {
@@ -72,6 +72,7 @@ header .main-header {
     transition-duration: 0.3s;
     transition-timing-function: ease-out;
 }
+
 .navbar .nav-ul a:hover:after,
 .navbar .nav-ul a:focus:after,
 .navbar .nav-ul a:active:after {
@@ -197,33 +198,6 @@ a:active {
 }
 
 
-/*---------- Media queries ----------*/
-
-
-@media (min-width: 850px) {
-    #navbar {
-        width: 20rem;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        display: flex;
-        flex-flow: column nowrap;
-        align-items: center;
-        justify-content: center;
-    }
-    #navbar .ul-container {
-        width: 100%;
-        height: auto;
-        overflow: auto;
-        border: none;
-    }
-    #main-doc {
-        margin: 0 0 0 21rem;
-    }
-}
-
-
 /*---------- Footer ----------*/
     
 
@@ -296,3 +270,44 @@ a:active {
     }
 
 }
+
+
+/*---------- Media queries 850 ----------*/
+
+
+@media (min-width: 850px) {
+
+
+/* Secondary navbar */
+
+
+    #navbar {
+        width: 20rem;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #navbar .ul-container {
+        width: 100%;
+        height: auto;
+        overflow: auto;
+        border: none;
+    }
+
+
+/* Sections */
+
+
+    #main-doc {
+        margin: 0 0 0 21rem;
+    }
+
+}
+
+
