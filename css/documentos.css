@@ -5,11 +5,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat';
+    --color-base: #004aad;
+    --color-white: #FFFFFF;
+}
+
+body {
+    background-color: var(--color-white);
 }
 
 
-
 /*---------- Sections ----------*/
+
 
 #main-doc .main-section .properties {
     margin: 1rem 0 1rem 0;
@@ -38,14 +45,7 @@
 
 /* */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 :root {
-    --color-white: #FFFFFF;
 
     --background-border-color: #495F73;
     --navbar-color: #FFFFFF;
@@ -54,11 +54,6 @@
     --h1-p-color-code: #BF0413;
     --color-font-code: #42590F;
     --c-color-code: #F24405;
-}
-
-body {
-    font-family: 'Montserrat';
-    background-color: var(--color-white);
 }
 
 
@@ -106,7 +101,8 @@ a:active {
 }
 
 #navbar .ul-container li a:hover {
-    background-color: var(--links-color);
+    color: var(--color-white);
+    background-color: var(--color-base);
     transition: background-color 1s ease;
 }
 
