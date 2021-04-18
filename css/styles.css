@@ -79,11 +79,11 @@ header {
     width: 100%;
 }
 
-.burger {
+.button {
     display: none;
 }
 
-.burger div {
+.button div {
     width: 25px;
     height: 3px;
     margin: 5px;
@@ -91,7 +91,7 @@ header {
     transition: all 0.3s ease;
 }
 
-.burger .line2 {
+.button .line-2 {
     width: 16px !important;
     margin-left: auto;
 }
@@ -220,7 +220,7 @@ header {
         margin: 0 16px;
     }
 
-    .burger {
+    .button {
         display: block;
         cursor: pointer;
     }
@@ -233,15 +233,15 @@ header {
         transform: translateX(100%);
     }
 
-    .toggle .line1 {
+    .toggle .line-1 {
         transform: rotate(-45deg) translate(-5px, 6px);
     }
 
-    .toggle .line2 {
+    .toggle .line-2 {
         opacity: 0;
     }
 
-    .toggle .line3 {
+    .toggle .line-3 {
         transform: rotate(45deg) translate(-5px, -6px);
     }
 
