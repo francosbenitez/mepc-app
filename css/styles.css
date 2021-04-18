@@ -79,6 +79,23 @@ header {
     width: 100%;
 }
 
+.burger {
+    display: none;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: black;
+    transition: all 0.3s ease;
+}
+
+.burger .line2 {
+    width: 16px !important;
+    margin-left: auto;
+}
+
 
 /*---------- Hero ----------*/
 
@@ -172,29 +189,60 @@ header {
 
 
 @media (max-width: 820px) {
+
+    .navbar {
+        padding: 16px 24px;
+    }
+    
     .logo img {
-     height: 36px;
+        height: 36px;
     }
-   
-    nav ul {
-     position: absolute;
-     right: 0;
-     top: 0;
-     height: 100vh;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: space-around;
-     width: 70%;
-     padding: 100px 16px;
-     transform: translateX(105%);
-     transition: transform 0.5s ease-in;
-     overflow-x: hidden;
+
+    .nav-ul {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 80vh;
+        background-color: var(--color-white);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 70%;
+        padding: 50px 16px;
+        transform: translateX(105%);
+        transition: transform 0.5s ease-in;
+        overflow-x: hidden;
     }
-   
-    nav ul li a {
-     padding: 12px 0;
-     margin: 0 16px;
+
+    .nav-ul li a {
+        padding: 12px 0;
+        margin: 0 16px;
+    }
+
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-active {
+        transform: translateX(0%);
+    }
+
+    .nav-close {
+        transform: translateX(100%);
+    }
+
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .toggle .line2 {
+        opacity: 0;
+    }
+
+    .toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
     }
 
 
@@ -218,6 +266,7 @@ header {
 /* Hero */
 
 @media (max-width: 480px) {
+    
     .container-hero .title h1 {
         font-size: 30px;
     }
