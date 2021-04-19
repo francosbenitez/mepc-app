@@ -113,12 +113,14 @@ header {
 .container-hero .title h1 {
     font-size: 60px;
     color: var(--color-white);
+    margin: 10px 0 10px 0;
 }
 
 .container-hero .subtitle h2 {
     color: var(--color-white);
     font-family: 'Montserrat';
     font-weight: 400;
+    line-height: 1.7;
 }
 
 
@@ -160,6 +162,7 @@ header {
 .container-about h3 {
     font-family: 'Montserrat';
     font-weight: 400;
+    margin: 10px 0 10px 0;
 }
 
 .container-about .avatar img {
@@ -179,7 +182,6 @@ header {
     justify-content: center;
     list-style: none;
     padding: 0;
-    margin: 0;
 }
 
 .container-about .network-icon i {
@@ -207,6 +209,7 @@ header {
 .site-footer .float-right {
     position: absolute; 
     right: 0;
+    margin: 0px 0 10px 5px;
 }
 
 .site-footer p {
