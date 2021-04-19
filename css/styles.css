@@ -72,6 +72,7 @@ header {
     transition-duration: 0.3s;
     transition-timing-function: ease-out;
 }
+
 .navbar .nav-ul a:hover:after,
 .navbar .nav-ul a:focus:after,
 .navbar .nav-ul a:active:after {
@@ -111,16 +112,17 @@ header {
 }
 
 .container-hero .title h1 {
-    font-size: 60px;
+    font-size: 40px;
     color: var(--color-white);
     margin: 10px 0 10px 0;
 }
 
 .container-hero .subtitle h2 {
+    font-size: 20px;
     color: var(--color-white);
     font-family: 'Montserrat';
     font-weight: 400;
-    line-height: 1.7;
+    line-height: 2;
 }
 
 
@@ -130,6 +132,7 @@ header {
 .container-video {
     padding: 60px 20px;
     text-align: center;
+    line-height: 2;
 }
 
 .video {
@@ -207,9 +210,7 @@ header {
 }
 
 .site-footer .float-right {
-    position: absolute; 
-    right: 0;
-    margin: 0px 0 10px 5px;
+    float: right;
 }
 
 .site-footer p {
