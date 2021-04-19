@@ -201,11 +201,16 @@ header {
 
 .site-footer {
     text-align: center;
+    font-size: 13px;
 }
 
 .site-footer .float-right {
     position: absolute; 
     right: 0;
+}
+
+.site-footer p {
+    margin: 10px 0 10px 0;
 }
     
 
@@ -317,6 +322,12 @@ header {
         width: 100%;
     }
 
+    
+/* Footer */
+
+
+    .site-footer {
+        font-size: 10px;
+    }
+
 }
-
-
