@@ -167,8 +167,9 @@ header {
 }
 
 .container-about .avatar img {
-    width: 344.5px;
-    height: 344.5px;
+    width: 80%;
+    max-width: 344px;
+    height: auto;
     border-radius: 50%;
 }
 
