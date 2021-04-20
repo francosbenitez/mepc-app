@@ -168,6 +168,11 @@ header {
     margin: 10px 0 10px 0;
 }
 
+.container-about h2 {
+    font-family: 'Montserrat';
+    margin: 10px 0 10px 0;
+}
+
 .container-about .avatar img {
     width: 344.5px;
     height: 344.5px;
