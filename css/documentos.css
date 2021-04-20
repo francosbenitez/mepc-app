@@ -46,17 +46,21 @@ body {
     height: 55px;
 }
 
+.navbar ul a {
+    color: #313131;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
 .navbar ul li {
     display: inline;
     position: relative;
     overflow: hidden;
-    font-size: 18px;
-    margin: 0 5px;
+    font-size: 14px;
     padding: 15px 20px;
     height: 55px;
     line-height: 55px;
-    font-family: 'Montserrat';
-    font-weight: 500;
 }
 
 .navbar .nav-ul a:after {
@@ -66,7 +70,7 @@ body {
     right: 0;
     width: 0;
     bottom: 0px;
-    background: #004aad;
+    background: var(--color-base);
     height: 4px;
     transition-property: width;
     transition-duration: 0.3s;
@@ -204,6 +208,18 @@ a:active {
 
 .site-footer {
     text-align: center;
+    font-size: 13px;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+.site-footer .float-right {
+    float: right;
+}
+
+.site-footer p {
+    margin: 10px 0 10px 0;
 }
 
 
