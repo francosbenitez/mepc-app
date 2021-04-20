@@ -42,16 +42,21 @@ header {
     height: 55px;
 }
 
+.navbar ul a {
+    color: #313131;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
 .navbar ul li {
     display: inline;
     position: relative;
     overflow: hidden;
-    font-size: 18px;
+    font-size: 14px;
     padding: 15px 20px;
     height: 55px;
     line-height: 55px;
-    font-family: 'Montserrat';
-    font-weight: 800;
 }
 
 .navbar .nav-ul a:after {
