@@ -101,7 +101,7 @@ header {
     width: 100%;
     display: flex;
     background-color: var(--color-base);
-    padding: 2rem 0 2rem 0;
+    padding: 1rem 0 1rem 0;
 }
 
 .container body {
@@ -128,7 +128,7 @@ header {
 }
 
 .column-2 img {
-    width: 100%;
+    width: 90%;
     margin: 5rem 0 10px 0;
 }
 
