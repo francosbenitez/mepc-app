@@ -131,6 +131,7 @@ header {
 
 .column-2 img {
     width: 100%;
+    margin: 5rem 0 10px 0;
 }
 
 /*---------- About ----------*/
@@ -307,6 +308,7 @@ header {
 
     .column-2 img {
         width: 100%;
+        margin: 0 0 0 0;
     }
 
  /* About */
