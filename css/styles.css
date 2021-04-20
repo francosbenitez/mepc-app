@@ -95,6 +95,7 @@ header {
 .container {
     width: 100%;
     display: flex;
+    background-color: var(--color-base);
 }
 
 .container-hero {
@@ -138,10 +139,6 @@ header {
     margin: 5vw 10vw 5vw 0;
     width: 100%;
     padding-right: 5vw;
-}
-
-.box {
-    background-color: var(--color-base);
 }
 
 /*---------- About ----------*/
