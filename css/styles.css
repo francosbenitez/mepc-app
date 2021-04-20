@@ -103,17 +103,6 @@ header {
     background-color: var(--color-base);
 }
 
-.container-hero {
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    position: relative;
-    height: 80vh;
-    padding-left: 5vw;
-    background-color: var(--color-base);
-    /* background: url('/img/mepc.png') center center/cover no-repeat; */ 
-}
-
 .container body {
     padding: 1rem;
     max-width: 1200px;
@@ -141,9 +130,7 @@ header {
 }
 
 .column-2 img {
-    margin: 5vw 10vw 5vw 0;
     width: 100%;
-    padding-right: 5vw;
 }
 
 /*---------- About ----------*/
@@ -367,6 +354,7 @@ header {
 }
 
 @media only screen and (max-width: 900px) {
+    
     .container {
         /* it place the items in vertical direction */
       flex-direction: column;
@@ -375,4 +363,5 @@ header {
     .box {
       margin: 0 0 1rem;
     }
-  }
+
+}
