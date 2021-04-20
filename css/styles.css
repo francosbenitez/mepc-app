@@ -110,7 +110,7 @@ header {
 }
 
 .column-1 {
-    flex-basis: 70%; /* sets initial width to 70% */
+    flex-basis: 70%; 
     padding: 1rem;
     padding-left: 5vw;
 }
