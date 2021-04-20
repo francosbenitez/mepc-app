@@ -127,7 +127,6 @@ body {
 
 #navbar .ul-container li a {
     display: block;
-    border-bottom: 1px solid var(--background-border-color);
     text-align: left;
     font-size: 1rem;
     margin: 0.2rem 0 0.2rem 0;
