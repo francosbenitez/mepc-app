@@ -296,11 +296,11 @@ header {
 /* Hero */
 
 
-    .container-hero .title h1 {
+    .column-1 h1 {
         font-size: 30px;
     }
 
-    .container-hero .subtitle h2 {
+    .column-1 h2 {
         font-size: 18px;
     }
 
