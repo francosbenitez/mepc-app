@@ -226,6 +226,9 @@ header {
 .site-footer {
     text-align: center;
     font-size: 13px;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 30px auto;
 }
 
 .site-footer .float-right {
