@@ -9,7 +9,7 @@
     font-family: 'Montserrat';
     --color-base: #004aad;
     --color-white: #FFFFFF;
-    --background-border-color: #313131;
+    --background-border-color: #34495e;
 }
 
 .flex {
@@ -100,6 +100,13 @@ body {
 
 /* Secondary navbar */
 
+#search {
+    width: 100%; 
+    font-size: 16px; 
+    padding: 12px 20px 12px 40px; 
+    border: 1px solid var(--background-border-color);
+    margin-bottom: 12px; 
+}
 
 #navbar {
     width: 100%;
