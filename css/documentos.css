@@ -106,6 +106,7 @@ body {
     padding: 12px 20px 12px 40px; 
     border: 1px solid var(--background-border-color);
     margin-bottom: 12px; 
+    background:#fff url(/docs/latest/assets/img/search.77214953.svg) .6rem .5rem no-repeat;
 }
 
 #navbar {
