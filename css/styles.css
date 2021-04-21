@@ -267,7 +267,7 @@ header {
     .nav-ul {
         position: absolute;
         right: 0;
-        top: 0;
+        top: 55px;
         height: 80vh;
         background-color: var(--color-white);
         display: flex;
