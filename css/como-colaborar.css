@@ -95,6 +95,26 @@ header {
 
 /*---------- Features ----------*/
 
+.titles {
+    padding: 5rem 0 0 0;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat";
+    font-weight: 400;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    line-height: 1.25;
+    color: #313131;
+    text-rendering: optimizeLegibility;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    -webkit-hyphens: manual;
+    -ms-hyphens: manual;
+    hyphens: manual;
+} 
 
 .feature-description {
     margin: 1rem 0 1rem 0;
@@ -102,7 +122,6 @@ header {
 
 .features-section {
     width: 100%;
-    padding: 10rem 0 0 0;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
