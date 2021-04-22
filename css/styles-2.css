@@ -14,11 +14,6 @@ a {
     color: #004aad;
 }
 
-.flex {
-    display: flex;
-    
-}
-
 
 /*---------- Navbar ----------*/
 
@@ -32,25 +27,29 @@ a {
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
 
+.navbar {
+    display: flex;
+}
+
 .nav-logo img {
     height: 50px;
     position: absolute;
     padding-left: 5rem;
 }
 
-.navbar ul {
+.nav-ul {
     width: 100%;
     text-align: center;
 }
 
-.navbar ul a {
+.nav-ul a {
     color: #313131;
     font-family: 'Montserrat';
     font-weight: 700;
     text-transform: uppercase;
 }
 
-.navbar ul li {
+.nav-ul li {
     display: inline;
     position: relative;
     overflow: hidden;
@@ -60,7 +59,7 @@ a {
     line-height: 55px;
 }
 
-.navbar .nav-ul a:after {
+.nav-ul a:after {
     content: "";
     position: absolute;
     z-index: -1;
@@ -74,9 +73,9 @@ a {
     transition-timing-function: ease-out;
 }
 
-.navbar .nav-ul a:hover:after,
-.navbar .nav-ul a:focus:after,
-.navbar .nav-ul a:active:after {
+.nav-ul a:hover:after,
+.nav-ul a:focus:after,
+.nav-ul a:active:after {
     left: 0;
     right: auto;
     width: 100%;
