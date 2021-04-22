@@ -52,14 +52,14 @@ a {
     line-height: 55px;
 }
 
-.nav-ul a {
+.nav-ul li a {
     color: #313131;
     font-family: 'Montserrat';
     font-weight: 700;
     text-transform: uppercase;
 }
 
-.nav-ul a:after {
+.nav-ul li a:after {
     content: "";
     position: absolute;
     z-index: -1;
@@ -73,9 +73,9 @@ a {
     transition-timing-function: ease-out;
 }
 
-.nav-ul a:hover:after,
-.nav-ul a:focus:after,
-.nav-ul a:active:after {
+.nav-ul li a:hover:after,
+.nav-ul li a:focus:after,
+.nav-ul li a:active:after {
     left: 0;
     right: auto;
     width: 100%;
