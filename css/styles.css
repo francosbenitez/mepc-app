@@ -36,10 +36,9 @@ header {
     height: 50px;
 }
 
-.navbar {
-    justify-content: center;
-    align-items: center;
-    height: 55px;
+.navbar ul {
+    width: 100%;
+    text-align: center;
 }
 
 .navbar ul a {
@@ -262,6 +261,16 @@ header {
     
     .logo img {
         height: 36px;
+    }
+
+    .navbar {
+        justify-content: center;
+        align-items: center;
+        height: 55px;
+    }
+
+    .navbar ul {
+        width: 50%;
     }
 
     .nav-ul {
