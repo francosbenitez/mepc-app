@@ -110,11 +110,31 @@ form {
     margin: 0 auto;
 }
 
+button {
+    
+    width: 100px;
+    padding: 5px .5rem 5px .5rem;
+    line-height: 1;
+    box-shadow: 3px 3px 0 0 #0072B2;
+    color: #0072B2;
+    border-color: #0072B2;
+    background-color: #fff !important;
+}
+
+button:hover {
+    padding: 5px .5rem 5px .5rem;
+    line-height: 1;
+    box-shadow: 3px 3px 0 0 #0072B2;
+    color: #fff;
+    border-color: #0072B2;
+    background-color: #0072B2 !important;
+}
+
 .form-group {
     display: flex;
     flex-direction: column;
     width: 500px;
-    margin: 0 auto;
+    margin: 0.5rem auto;
 }
 
 
