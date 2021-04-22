@@ -82,11 +82,11 @@ a {
     width: 100%;
 }
 
-.button {
+.nav-btn {
     display: none;
 }
 
-.button div {
+.nav-btn div {
     width: 25px;
     height: 3px;
     margin: 5px;
@@ -141,7 +141,7 @@ a {
         margin: 0 16px;
     }
 
-    .button {
+    .nav-btn {
         display: block;
         cursor: pointer;
         position: absolute; 
