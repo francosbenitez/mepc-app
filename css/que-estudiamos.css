@@ -105,6 +105,10 @@ header {
     align-items: center;
 }
 
+.column {
+    width: 100%;
+}
+
 .titles {
     padding: 5rem 0 0 0;
 }
