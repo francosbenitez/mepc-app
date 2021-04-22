@@ -34,6 +34,8 @@ header {
 
 .logo img {
     height: 50px;
+    position: absolute;
+    padding-left: 5rem;
 }
 
 .navbar ul {
@@ -261,6 +263,8 @@ header {
     
     .logo img {
         height: 36px;
+        position: relative;
+        padding-left: 0;
     }
 
     .navbar {
