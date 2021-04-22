@@ -23,7 +23,7 @@ a {
 /*---------- Navbar ----------*/
 
 
-header {
+.main-header {
     position: fixed;
     z-index: 10;
     width: 100%;
@@ -32,7 +32,7 @@ header {
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
 
-.logo img {
+.nav-logo img {
     height: 50px;
     position: absolute;
     padding-left: 5rem;
@@ -103,7 +103,7 @@ header {
 
 @media (max-width: 1050px) {
     
-    .logo img {
+    .nav-logo img {
         height: 36px;
         position: relative;
         padding-left: 0;
