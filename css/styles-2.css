@@ -42,13 +42,6 @@ a {
     text-align: center;
 }
 
-.nav-ul a {
-    color: #313131;
-    font-family: 'Montserrat';
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
 .nav-ul li {
     display: inline;
     position: relative;
@@ -57,6 +50,13 @@ a {
     padding: 15px 20px;
     height: 55px;
     line-height: 55px;
+}
+
+.nav-ul a {
+    color: #313131;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 .nav-ul a:after {
