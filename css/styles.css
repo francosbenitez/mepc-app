@@ -642,6 +642,8 @@ a:active {
 /* ------- */
 
 
+/*---------- Form ----------*/
+
 .section-form {
     color: var(--color-text);
     width: 100%;
@@ -652,7 +654,6 @@ a:active {
 }
 
 .section-form form {
-    width: 250px;
     text-align: center;
 }
 
@@ -665,7 +666,58 @@ a:active {
     margin: 1rem 0 1rem 0;
 }
 
+.titles {
+    padding: 5rem 0 0 0;
+    text-align: center;
+}
 
+form {
+    padding: 5rem 0 0 0;
+    text-align: center;
+    width: 100%;
+}
 
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    /* width: 500px;
+    margin: 0 auto; */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    margin: 0.5rem auto;
+}
+
+button {   
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    line-height: 1.5;
+    transition: color 0.15s;
+    width: 100px;
+    padding: .5rem .5rem .5rem .5rem;
+    line-height: 1;
+    box-shadow: 3px 3px 0 0 var(--color-base);
+    color: var(--color-base);
+    border-color: var(--color-base);
+    background-color: var(--color-white);
+}
+
+button:hover {
+    padding: .5rem .5rem .5rem .5rem;
+    line-height: 1;
+    box-shadow: 3px 3px 0 0 var(--color-base);
+    color: var(--color-white);
+    border-color: var(--color-white);
+    background-color: var(--color-base);
+}
 
 
