@@ -195,7 +195,7 @@ a {
     line-height: 2;
 }
 
-.hero-img img {
+.hero-image img {
     width: 90%;
     margin: 5rem 0 10px 0;
 }
@@ -204,7 +204,7 @@ a {
 /* Animation */
 
 
-.container-hero .hero-description h1, .hero-description h2, .hero-img img {
+.container-hero .hero-description h1, .hero-description h2, .hero-image img {
     opacity: 0;
     position: relative;
     bottom: 1000px;
@@ -311,7 +311,7 @@ a {
         font-size: 18px;
     }
 
-    .hero-img img {
+    .hero-image img {
         width: 100%;
         margin: 0 0 0 0;
     }
