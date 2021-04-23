@@ -300,7 +300,6 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
 }
 
 .features-section .feature {
@@ -337,7 +336,6 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
 }
 
 .row .groups-section .column {
