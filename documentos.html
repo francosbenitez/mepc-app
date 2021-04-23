@@ -21,7 +21,7 @@
     <link rel="manifest" href="/site.webmanifest">
 
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="css/documentos.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -33,18 +33,18 @@
 <body>
     <!-- Main navbar -->
     <header class="main-header">
-        <nav class="navbar flex">
-            <div class="logo">
-                <a href="./"><img src="./img/logo.svg" alt="logo de MEPC"></a>
+        <nav class="navbar">
+            <div class="nav-logo">
+                <a href="./"><img src="./img/logo.svg" alt="Logo de MEPC"></a>
             </div>
             <ul class="nav-ul">
-                <li><a href="./">¿Quiénes somos?</a></li>
-                <li><a href="./como-colaborar.html">¿Cómo colaborar?</a></li>
-                <li><a href="./que-estudiamos.html">¿Qué estudiamos?</a></li>
-                <li><a href="./documentos.html">Documentos</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
+                <li class="main-navbar link active"><a href="./">¿Quiénes somos?</a></li>
+                <li class="link"><a href="./como-colaborar.html">¿Cómo colaborar?</a></li>
+                <li class="link"><a href="./que-estudiamos.html">¿Qué estudiamos?</a></li>
+                <li class="link"><a href="./documentos.html">Documentos</a></li>
+                <li class="link"><a href="./contacto.html">Contacto</a></li>
             </ul>
-            <div class="button">
+            <div class="nav-btn">
                 <div class="line-1"></div>
                 <div class="line-2"></div>
                 <div class="line-3"></div>
@@ -54,7 +54,7 @@
 
     <!-- Secondary navbar -->
     <nav id="navbar">
-        <div class="logo">
+        <div class="secondary-nav-logo">
             <a href="./"><img src="./img/logo.svg" alt="logo de MEPC"></a>
             <header><input type="text" id="search" onkeyup="myFunction()" placeholder="Buscar..."></header>
         </div>
@@ -112,7 +112,7 @@
         <section class="main-section" id="delegados">
             <header>Departamento de Delegados</header>
             <div class="img-container">
-                <img src="img/9.png" alt="logo delegados" />
+                <img src="img/delegados.png" alt="Logo de Delegados MEPC" />
             </div>
             <hr></hr>
             <h3>¿Qué es?</h3>
@@ -120,7 +120,12 @@
                 El grupo de Delegades reúne a quienes cumplen dicho rol en cada uno de los grupos de estudio. Estará EXCLUSIVAMENTE compuesto por quienes sean los voceros de cada grupo, siendo éste un criterio excluyente. El grupo va a tener una composición variable, debido a que el puesto será rotativo.
             </p>
             <h3>¿Cuáles son sus funciones?</h3>
-            <ul class="properties"><li>Función general: ser un espacio para hablar, debatir y organizar cuestiones exclusivamente ligadas al funcionamiento de los grupos de estudio.</li></ul>
+            <ul class="properties">
+                <li>
+                    Función general: ser un espacio para hablar, debatir y organizar cuestiones exclusivamente 
+                    ligadas al funcionamiento de los grupos de estudio.
+                </li>
+            </ul>
             <ul class="properties">
                 <li>Funciones específicas:
                     <ul>
@@ -142,17 +147,16 @@
 
     <!-- Footer -->
     <footer class="site-footer">
-        <div class="copyright">
-            <p>MEPC © 2021</p>
-            <p class="developed-by">Desarrollado con 💚 y <a href="https://github.com/francosbenitez/mepc" target="_blank" rel="noopener"><i class="fas fa-code-branch"></i></a> por <a href="https://francosbenitez.github.io" target="_blank" rel="noopener">Franco Sebastián Benítez</a></p>
+        <p>MEPC © 2021</p>
+        <p>Desarrollado con ☕️ y <a href="https://github.com/francosbenitez/mepc" target="_blank" rel="noopener">
+            <i class="fas fa-code-branch"></i></a> por <a href="https://francosbenitez.github.io" target="_blank" rel="noopener">
+                Franco Sebastián Benítez</a>
             <span class="float-right" aria-hidden="true">
-            <a href="#" class="back-to-top">
-                <span class="button-icon">
+                <a href="#" class="back-to-top">
                     <i class="fas fa-chevron-up fa-2x"></i>
-                </span>
-            </a>
+                </a>
             </span>
-        </div>
+        </p>
     </footer>
     
     <!-- JavaScript -->
