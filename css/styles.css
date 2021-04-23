@@ -419,7 +419,7 @@ body {
     padding: 12px 20px 12px 40px; 
     border: 1px solid var(--background-border-color);
     margin-bottom: 12px; 
-    background:#fff url("https://francosbenitez.github.io/mepc/img/search.svg") .6rem .9rem no-repeat;
+    background: #fff url("https://francosbenitez.github.io/mepc/img/search.svg") 1rem no-repeat;
 }
 
 #navbar .ul-container {
