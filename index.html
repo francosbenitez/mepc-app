@@ -8,8 +8,8 @@
     <meta name="description" content="Movimiento Estudiantil por la Psicología Científica">
     <meta name="author" content="MEPC">
     <meta name="keywords" content="mepc psicologia cientifica">
-    <meta name="twitter:image:src" content="https://francosbenitez.github.io/mepc/img/mepc.png">
-    <meta property="og:image" content="https://francosbenitez.github.io/mepc/img/mepc.png">
+    <meta name="twitter:image:src" content="https://francosbenitez.github.io/mepc/img/social.png">
+    <meta property="og:image" content="https://francosbenitez.github.io/mepc/img/social.png">
 
     <!-- Title -->
     <title>Movimiento Estudiantil por la Psicología Científica - MEPC</title>
@@ -31,21 +31,21 @@
 </head>
 
 <body>
-
+    
     <!-- Navbar -->
     <header class="main-header">
-        <nav class="navbar flex">
-            <div class="logo">
-                <a href="./"><img src="./img/logo.svg" alt="logo de MEPC"></a>
+        <nav class="navbar">
+            <div class="nav-logo">
+                <a href="./"><img src="./img/logo.svg" alt="Logo de MEPC"></a>
             </div>
             <ul class="nav-ul">
-                <li><a href="./">Inicio</a></li>
-                <li><a href="./como-colaborar.html">¿Cómo colaborar?</a></li>
-                <li><a href="./que-estudiamos.html">¿Qué estudiamos?</a></li>
-                <li><a href="./documentos.html">Documentos</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
+                <li class="main-navbar link active"><a href="./">Inicio</a></li>
+                <li class="link"><a href="./como-colaborar.html">¿Cómo colaborar?</a></li>
+                <li class="link"><a href="./que-estudiamos.html">¿Qué estudiamos?</a></li>
+                <li class="link"><a href="./documentos.html">Documentos</a></li>
+                <li class="link"><a href="./contacto.html">Contacto</a></li>
             </ul>
-            <div class="button">
+            <div class="nav-btn">
                 <div class="line-1"></div>
                 <div class="line-2"></div>
                 <div class="line-3"></div>
@@ -53,27 +53,33 @@
         </nav>
     </header>
 
-    <section id="quienes-somos">
-
-        <!-- Hero -->
-        <div class="container">
-            <div class="column-1 box">
+    <!-- Hero -->
+    <section id="hero">
+        <div class="container-hero">
+            <div class="hero-description">
                 <h1>¿Quiénes somos?</h1>
-                <h2>Somos una organización independiente de <br>estudiantes y graduados, que tenemos como<br> fin promover el pensamiento crítico y la<br> psicología científica, formarnos entre los<br> integrantes en temas afines y reclamar por<br> una formación
+                <h2>Somos una organización independiente de <br>estudiantes y graduades, que tenemos como<br> 
+                    fin promover el pensamiento crítico y la<br> psicología científica, formarnos entre los<br> 
+                    integrantes en temas afines y reclamar por<br> una formación
                     actualizada, plural y científica.</h2>
             </div>
-            <div class="column-2 box">
-                <img src="./img/hero.png" alt="logo de portada MEPC">
+            <div class="hero-image">
+                <img src="./img/hero.png" alt="Logo de portada MEPC">
             </div>
         </div>
+    </section>
 
-        <!-- About -->
-        <div class="container-about flex">
-            <div class="avatar"><img src="./img/avatar.jpg" alt="avatar de MEPC">
+    <!-- About -->
+    <section id="about">
+        <div class="container-avatar">
+            <div class="avatar">
+                <div class="avatar-image">
+                    <img src="./img/avatar.jpg" alt="Avatar de MEPC">
+                </div>
                 <div class="avatar-description">
                     <h2>MEPC</h2>
                     <h3>Movimiento Estudiantil por la Psicología Científica</h3>
-                    <ul class="network-icon flex" aria-hidden="true">
+                    <ul class="network-icon" aria-hidden="true">
                         <li><a href="mailto:mepc.org@gmail.com" target="_blank"><i class="fas fa-envelope fa-2x"></i></a></li>
                         <li><a href="https://www.facebook.com/mepc.oficial/" target="_blank"><i class="fab fa-facebook fa-2x"></i></a></li>
                         <li><a href="https://www.facebook.com/groups/2641583789449049" target="_blank"><i class="fab fa-facebook fa-2x"></i></a></li>
@@ -86,20 +92,23 @@
                 </div>
             </div>
         </div>
-        <div class="container-video flex">
-            <div class="text-wrapper">
-                <div class="video">
+        <div class="container-video">
+            <div class="video">
+                <div class="video-link">
                     <iframe width="800" height="500" src="https://www.youtube.com/embed/ieSG5JVLOow"></iframe>
                 </div>
-                <div class="description">
+                <div class="video-description">
                     </br>
                     <hr>
                     </br>
                     </hr>
                     <p>
-                        Somos el Movimiento Estudiantil por la Psicología Científica (MEPC), un grupo de estudiantes y graduades autoconvocades de diferentes puntos del país que compartimos un mismo ideal: el desarrollo de una formación y una práctica profesional basadas en
-                        fundamentos científicos. Nacimos en la Facultad de Psicología de la Universidad de Buenos Aires (UBA), y ya sumamos casi 3000 personas de diferentes casas de estudio que creemos que la ciencia es el camino que debemos seguir en
-                        psicología para mejorar nuestra formación.
+                        Somos el Movimiento Estudiantil por la Psicología Científica (MEPC), un grupo de estudiantes y 
+                        graduades autoconvocades de diferentes puntos del país que compartimos un mismo ideal: 
+                        el desarrollo de una formación y una práctica profesional basadas en
+                        fundamentos científicos. Nacimos en la Facultad de Psicología de la Universidad de Buenos Aires (UBA), 
+                        y ya sumamos casi 3000 personas de diferentes casas de estudio que creemos que la ciencia es el camino que 
+                        debemos seguir en psicología para mejorar nuestra formación.
                     </p>
                 </div>
             </div>
@@ -108,20 +117,18 @@
 
     <!-- Footer -->
     <footer class="site-footer">
-        <div class="copyright">
-            <p>MEPC © 2021</p>
-            <p class="developed-by">Desarrollado con 💚 y <a href="https://github.com/francosbenitez/mepc" target="_blank" rel="noopener"><i class="fas fa-code-branch"></i></a> por <a href="https://francosbenitez.github.io" target="_blank" rel="noopener">Franco Sebastián Benítez</a>
+        <p>MEPC © 2021</p>
+        <p>Desarrollado con ☕️ y <a href="https://github.com/francosbenitez/mepc" target="_blank" rel="noopener">
+            <i class="fas fa-code-branch"></i></a> por <a href="https://francosbenitez.github.io" target="_blank" rel="noopener">
+                Franco Sebastián Benítez</a>
             <span class="float-right" aria-hidden="true">
-            <a href="#" class="back-to-top">
-                <span class="button-icon">
+                <a href="#" class="back-to-top">
                     <i class="fas fa-chevron-up fa-2x"></i>
-                </span>
-            </a>
-            </p>
+                </a>
             </span>
-        </div>
+        </p>
     </footer>
-    
+
     <!-- JavaScript -->
     <script src="js/navbar.js"></script>
 </body>
