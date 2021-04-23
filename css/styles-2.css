@@ -245,7 +245,7 @@ a {
     margin: 10px 0 10px 0;
 }
 
-.container-about .avatar img {
+.container-about .avatar-img img {
     width: 80%;
     max-width: 344px;
     height: auto;
@@ -267,14 +267,6 @@ a {
 .container-about .network-icon i {
     margin-right: 5px;
     padding: 3px;
-}
-
-.container-about .text-wrapper {
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    width: 50%;
 }
 
 .container-video {
