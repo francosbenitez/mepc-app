@@ -678,18 +678,7 @@ a:active {
     margin: 0.5rem auto;
 }
 
-
-
-
-.form-wrapper {
-    
-    /* width: 500px;
-    margin: 0 auto; */
-}
-
-
-
-button {   
+.submit-btn {   
     display: inline-block;
     text-align: center;
     vertical-align: middle;
@@ -709,7 +698,7 @@ button {
     background-color: var(--color-white);
 }
 
-button:hover {
+.submit-btn:hover {
     padding: .5rem .5rem .5rem .5rem;
     line-height: 1;
     box-shadow: 3px 3px 0 0 var(--color-base);
