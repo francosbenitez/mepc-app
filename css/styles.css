@@ -662,7 +662,7 @@ a:active {
     color: var(--color-base);
     text-align: center;
     margin: 0 auto;
-    width: 100px;
+    width: 100%;
     margin: 1rem 0 1rem 0;
 }
 
@@ -687,7 +687,7 @@ form {
 .form-group {
     display: flex;
     flex-direction: column;
-    width: 100px;
+    width: 100%;
     margin: 0.5rem auto;
 }
 
