@@ -119,71 +119,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/*---------- Media query 1050px ----------*/
-
-
-/* Navbar */
-
-
-@media (max-width: 1050px) {
-    
-    .navbar {
-        justify-content: center;
-        align-items: center;
-        height: 55px;
-    }
-
-    .nav-logo img {
-        height: 36px;
-        z-index: 10;
-        position: relative;
-        padding-left: 0;
-    }
-
-    .nav-ul {
-        position: absolute;
-        right: 0;
-        top: 55px;
-        background-color: var(--color-white);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        transform: translateX(105%);
-        transition: transform 0.5s ease-in;
-        overflow-x: hidden;
-    }
-
-    .nav-btn {
-        display: block;
-        cursor: pointer;
-        position: absolute; 
-        right: 0;
-    }
-
-    .nav-active {
-        transform: translateX(0%);
-    }
-
-    .nav-close {
-        transform: translateX(100%);
-    }
-
-    .toggle .line-1 {
-        transform: rotate(-45deg) translate(-5px, 6px);
-    }
-
-    .toggle .line-2 {
-        opacity: 0;
-    }
-
-    .toggle .line-3 {
-        transform: rotate(45deg) translate(-5px, -6px);
-    }
-
-}
-
-
 /*---------- Hero ----------*/
 
 
@@ -347,6 +282,10 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
+.title hr {
+    margin: 1rem 0 1rem 0;
+}
+
 .features-section {
     width: 100%;
     display: flex;
@@ -361,17 +300,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .features-section .feature .feature-icon {
-    height: 100px;
     font-size: 5rem;
+    color: var(--color-base);
     text-align: center;
     margin: 0 auto;
 }
 
 .features-section .feature .feature-icon img {
-    height: 100px;
-    font-size: 5rem;
-    text-align: center;
-    margin: 0 auto;
+    width: 100px;
 }
 
 .features-section .feature .feature-description {
@@ -383,6 +319,64 @@ h1, h2, h3, h4, h5, h6 {
 
 
 @media (max-width: 1050px) {
+
+
+/* Navbar */
+
+
+    .navbar {
+        justify-content: center;
+        align-items: center;
+        height: 55px;
+    }
+
+    .nav-logo img {
+        height: 36px;
+        z-index: 10;
+        position: relative;
+        padding-left: 0;
+    }
+
+    .nav-ul {
+        position: absolute;
+        right: 0;
+        top: 55px;
+        background-color: var(--color-white);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transform: translateX(105%);
+        transition: transform 0.5s ease-in;
+        overflow-x: hidden;
+    }
+
+    .nav-btn {
+        display: block;
+        cursor: pointer;
+        position: absolute; 
+        right: 0;
+    }
+
+    .nav-active {
+        transform: translateX(0%);
+    }
+
+    .nav-close {
+        transform: translateX(100%);
+    }
+
+    .toggle .line-1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .toggle .line-2 {
+        opacity: 0;
+    }
+
+    .toggle .line-3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
 
 
 /* Hero */
@@ -414,6 +408,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
 }
+
 
 
 
