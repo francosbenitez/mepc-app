@@ -8,28 +8,12 @@
     font-family: 'Montserrat';
     --color-base: #004aad;
     --color-white: #FFFFFF;
+    --color-text: #313131;
 }
 
 a {
     color: #004aad;
 }
-
-/* ------------- */
-h1, h2, h3, h4, h5, h6 {
-    font-family: "Montserrat";
-    font-weight: 400;
-    margin-top: 1rem;
-    margin-bottom: .5rem;
-    line-height: 1.25;
-    color: #313131;
-    text-rendering: optimizeLegibility;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    word-break: break-word;
-    -webkit-hyphens: manual;
-    -ms-hyphens: manual;
-    hyphens: manual;
-} 
 
 
 /*---------- Navbar ----------*/
@@ -78,7 +62,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-ul li a {
-    color: #313131;
+    color: var(--color-text);
     font-family: 'Montserrat';
     font-weight: 700;
     text-transform: uppercase;
@@ -200,11 +184,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container-avatar .avatar-description h2 {
+    color: var(--color-text);
     font-family: 'Montserrat';
     margin: 10px 0 10px 0;
 }
 
 .container-avatar .avatar-description h3 {
+    color: var(--color-text);
     font-family: 'Montserrat';
     font-weight: 400;
     margin: 10px 0 10px 0;
@@ -232,6 +218,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container-video {
+    color: var(--color-text);
     display: flex;
     padding: 60px 20px;
     text-align: center;
@@ -258,6 +245,7 @@ h1, h2, h3, h4, h5, h6 {
     
 
 .site-footer {
+    color: var(--color-text);
     text-align: center;
     font-size: 13px;
     padding: 1rem;
