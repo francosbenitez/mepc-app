@@ -177,13 +177,13 @@ a {
     padding-left: 5vw;
 }
 
-.hero-description h1 {
+.container-hero .hero-description h1 {
     font-size: 55px;
     color: var(--color-white);
     margin: 5rem 0 10px 0;
 }
 
-.hero-description h2 {
+.container-hero .hero-description h2 {
     font-size: 23px;
     color: var(--color-white);
     font-family: 'Montserrat';
@@ -191,7 +191,7 @@ a {
     line-height: 2;
 }
 
-.hero-image img {
+.container-hero .hero-image img {
     width: 90%;
     margin: 5rem 0 10px 0;
 }
@@ -200,7 +200,10 @@ a {
 /* Animation */
 
 
-.container-hero .hero-description h1, .hero-description h2, .hero-image img {
+.container-hero 
+.hero-description h1, 
+.hero-description h2, 
+.hero-image img {
     opacity: 0;
     position: relative;
     bottom: 1000px;
@@ -299,15 +302,15 @@ a {
 /* Hero */
 
 
-    .hero-description h1 {
+    .container-hero .hero-description h1 {
         font-size: 30px;
     }
 
-    .hero-description h2 {
+    .container-hero .hero-description h2 {
         font-size: 18px;
     }
 
-    .hero-image img {
+    .container-hero .hero-image img {
         width: 100%;
         margin: 0 0 0 0;
     }
