@@ -388,6 +388,10 @@ body {
     text-shadow: 0px -1px 1px #bdb5b4, 0px 1px 1px white;
 }
 
+.row .groups-section .column .avatar-title h3 {
+    margin-top: 1rem;
+}
+
 .row .groups-section .column .avatar-title .network-icon {
     list-style: none;
 }
@@ -674,6 +678,10 @@ a:active {
 
     .row .groups-section {
     flex-direction: column;
+    }
+
+    .row .groups-section .column .avatar-title .network-icon {
+        margin-bottom: 2rem;
     }
 
 }
