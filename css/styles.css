@@ -643,6 +643,10 @@ a:active {
         text-align: center;
     }
 
+    .container-hero .hero-description {
+        padding: 0 0 0 0;
+    }
+
     .container-hero .hero-image img {
         margin: 0 0 0 0;
     }
