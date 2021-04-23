@@ -21,7 +21,7 @@
     <link rel="manifest" href="/site.webmanifest">
 
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="css/que-estudiamos.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -34,112 +34,98 @@
 
     <!-- Navbar -->
     <header class="main-header">
-        <nav class="navbar flex">
-            <div class="logo">
-                <a href="./"><img src="./img/logo.svg" alt="logo de MEPC"></a>
+        <nav class="navbar">
+            <div class="nav-logo">
+                <a href="./"><img src="./img/logo.svg" alt="Logo de MEPC"></a>
             </div>
             <ul class="nav-ul">
-                <li><a href="./">¿Quiénes somos?</a></li>
-                <li><a href="./como-colaborar.html">¿Cómo colaborar?</a></li>
-                <li><a href="./que-estudiamos.html">¿Qué estudiamos?</a></li>
-                <li><a href="./documentos.html">Documentos</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
+                <li class="main-navbar link active"><a href="./">¿Quiénes somos?</a></li>
+                <li class="link"><a href="./como-colaborar.html">¿Cómo colaborar?</a></li>
+                <li class="link"><a href="./que-estudiamos.html">¿Qué estudiamos?</a></li>
+                <li class="link"><a href="./documentos.html">Documentos</a></li>
+                <li class="link"><a href="./contacto.html">Contacto</a></li>
             </ul>
-            <div class="button">
+            <div class="nav-btn">
                 <div class="line-1"></div>
                 <div class="line-2"></div>
                 <div class="line-3"></div>
             </div>
         </nav>
     </header>
-    <div class="container">
-        <div class="row">  
 
-            <section class="titles">
-                <!-- Title -->
-                <div class="title">
-                    <h1>¿Qué estudiamos?</h1> 
+    <!-- Groups -->
+    <div class="row">  
+        <section class="titles">
+            <h1>¿Qué estudiamos?</h1> 
+            <hr>
+            <div class="alert-note">
+                <div>
+                    Para saber más acerca de los grupos de estudio, pulsá encima de ellos. <br>
+                    Si querés participar, sólo tenés que enviar un mail al grupo deseado. En breve te vamos a estar contactando.
                 </div>
-                <hr>
-
-                <!-- Note -->
-                <div class="alert-note">
-                    <div>
-                        Para saber más acerca de los grupos de estudio, pulsá encima de ellos. <br>
-                        Si querés participar, sólo tenés que enviar un mail al grupo deseado. En breve te vamos a estar contactando.
-                    </div>
+            </div>
+            <h2>Grupos de estudio</h2>
+        </section>
+        <section class="groups-section">
+            <div class="column">
+                <a href="#"><img class="group-avatar" src="./img/aba.png" alt="Avatar Análisis Conductual Aplicado"></a>
+                <div class="avatar-title">
+                <h2><a href="#">Análisis Conductual Aplicado</a></h2> 
+                    <ul class="network-icon" aria-hidden="true">
+                        <li>
+                            <a href="mailto:abaenpsicouba.mepc@gmail.com"><i class="fas fa-envelope"></i></a>
+                        </li>
+                    </ul> 
                 </div>
-
-                <!-- Subtitle -->
-                <div class="subtitle">
-                    <h2>Grupos de estudio</h2>
+            </div>
+            <div class="column">
+                <a href="#"><img class="group-avatar" src="./img/ciencias-cognitivas.png" alt="Avatar Ciencias Cognitivas"></a>
+                <div class="avatar-title">
+                <h2><a href="#">Ciencias Cognitivas</a></h2> 
+                    <ul class="network-icon" aria-hidden="true">
+                        <li>
+                            <a href="mailto:cs.cognitivas.mepc@gmail.com"><i class="fas fa-envelope"></i></a>
+                        </li>
+                    </ul>
                 </div>
-            </section>
-
-            <!-- Groups -->
-            <section class="groups-section">
-                <div class="column">
-                    <a href="#"><img class="avatar" src="./img/avatar.jpg" alt="Avatar Análisis Conductual Aplicado"></a>
-                    <div class="avatar-title">
-                    <h2><a href="#">Análisis Conductual Aplicado</a></h2> 
-                        <ul class="network-icon" aria-hidden="true">
-                            <li>
-                                <a href="mailto:abaenpsicouba.mepc@gmail.com"><i class="fas fa-envelope"></i></a>
-                            </li>
-                        </ul> 
-                    </div>
+            </div>
+            <div class="column">
+                <a href="#"><img class="group-avatar" src="./img/avatar.jpg" alt="Avatar Ciencias Cognitivas"></a>
+                <div class="avatar-title">
+                <h2><a href="#">Ciencias Cognitivas</a></h2> 
+                    <ul class="network-icon" aria-hidden="true">
+                        <li>
+                            <a href="mailto:cs.cognitivas.mepc@gmail.com"><i class="fas fa-envelope"></i></a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="column">
-                    <a href="#"><img class="avatar" src="./img/avatar.jpg" alt="Avatar Ciencias Cognitivas"></a>
-                    <div class="avatar-title">
-                    <h2><a href="#">Ciencias Cognitivas</a></h2> 
-                        <ul class="network-icon" aria-hidden="true">
-                            <li>
-                                <a href="mailto:cs.cognitivas.mepc@gmail.com"><i class="fas fa-envelope"></i></a>
-                            </li>
-                        </ul>
-                    </div>
+            </div>
+            <div class="column">
+                <a href="#"><img class="group-avatar" src="./img/avatar.jpg" alt="Avatar Ciencias Cognitivas"></a>
+                <div class="avatar-title">
+                <h2><a href="#">Ciencias Cognitivas</a></h2> 
+                    <ul class="network-icon" aria-hidden="true">
+                        <li>
+                            <a href="mailto:cs.cognitivas.mepc@gmail.com"><i class="fas fa-envelope"></i></a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="column">
-                    <a href="#"><img class="avatar" src="./img/avatar.jpg" alt="Avatar Ciencias Cognitivas"></a>
-                    <div class="avatar-title">
-                    <h2><a href="#">Ciencias Cognitivas</a></h2> 
-                        <ul class="network-icon" aria-hidden="true">
-                            <li>
-                                <a href="mailto:cs.cognitivas.mepc@gmail.com"><i class="fas fa-envelope"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="column">
-                    <a href="#"><img class="avatar" src="./img/avatar.jpg" alt="Avatar Ciencias Cognitivas"></a>
-                    <div class="avatar-title">
-                    <h2><a href="#">Ciencias Cognitivas</a></h2> 
-                        <ul class="network-icon" aria-hidden="true">
-                            <li>
-                                <a href="mailto:cs.cognitivas.mepc@gmail.com"><i class="fas fa-envelope"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section> 
-        </div>
+            </div>
+        </section> 
     </div>
 
     <!-- Footer -->
     <footer class="site-footer">
-        <div class="copyright">
-            <p>MEPC © 2021</p>
-            <p class="developed-by">Desarrollado con 💚 y <a href="https://github.com/francosbenitez/mepc" target="_blank" rel="noopener"><i class="fas fa-code-branch"></i></a> por <a href="https://francosbenitez.github.io" target="_blank" rel="noopener">Franco Sebastián Benítez</a>
+        <p>MEPC © 2021</p>
+        <p>Desarrollado con ☕️ y <a href="https://github.com/francosbenitez/mepc" target="_blank" rel="noopener">
+            <i class="fas fa-code-branch"></i></a> por <a href="https://francosbenitez.github.io" target="_blank" rel="noopener">
+                Franco Sebastián Benítez</a>
             <span class="float-right" aria-hidden="true">
-            <a href="#" class="back-to-top">
-                <span class="button-icon">
+                <a href="#" class="back-to-top">
                     <i class="fas fa-chevron-up fa-2x"></i>
-                </span>
-            </a>
-            </p>
+                </a>
             </span>
-        </div>
+        </p>
     </footer>
     
     <!-- JavaScript -->
