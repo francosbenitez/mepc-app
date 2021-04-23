@@ -37,10 +37,9 @@ body {
     padding-top: 0;
     counter-reset: captions;
     margin: 0;
-    font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #212529;
+    color: var(--color-text);
     text-align: left;
 } 
 
@@ -515,6 +514,7 @@ a:active {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    background: url("/img/contacto.png") no-repeat;
 }
 
 .section-form .form {
