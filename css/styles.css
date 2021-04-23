@@ -497,6 +497,76 @@ a:active {
 }
 
 
+/*---------- Form ----------*/
+
+
+.section-form {
+    color: var(--color-text);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.section-form .form {
+    text-align: center;
+    padding: 5rem 0 10rem 0;
+    text-align: center;
+    width: 50%;
+}
+
+.section-form .form .form-wrapper {
+    font-size: 5rem;
+    color: var(--color-base);
+    text-align: center;
+    width: 100%;
+    margin: 1rem 0 1rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-form .form .form-wrapper .form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0.5rem auto;
+}
+
+.section-form .form .form-wrapper .form-group .form-control {
+    padding: .5rem .5rem .5rem .5rem;
+}
+
+.section-form .form .form-wrapper .submit-btn {   
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    line-height: 1.5;
+    transition: color 0.15s;
+    width: 100px;
+    padding: .5rem .5rem .5rem .5rem;
+    line-height: 1;
+    box-shadow: 3px 3px 0 0 var(--color-base);
+    color: var(--color-base);
+    border-color: var(--color-base);
+    background-color: var(--color-white);
+}
+
+.section-form .form .form-wrapper .submit-btn:hover {
+    padding: .5rem .5rem .5rem .5rem;
+    line-height: 1;
+    box-shadow: 3px 3px 0 0 var(--color-base);
+    color: var(--color-white);
+    border-color: var(--color-white);
+    background-color: var(--color-base);
+}
+
+
 /*---------- Media query max. 1050px ----------*/
 
 
@@ -638,77 +708,5 @@ a:active {
 
 }
 
-
-/* ------- */
-
-
-/*---------- Form ----------*/
-
-
-.section-form {
-    color: var(--color-text);
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.section-form .form {
-    text-align: center;
-    padding: 5rem 0 10rem 0;
-    text-align: center;
-    width: 50%;
-}
-
-.section-form .form .form-wrapper {
-    font-size: 5rem;
-    color: var(--color-base);
-    text-align: center;
-    width: 100%;
-    margin: 1rem 0 1rem 0;
-    display: flex;
-    flex-direction: column;
-}
-
-.section-form .form .form-wrapper .form-group {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 0.5rem auto;
-}
-
-.form-control {
-    padding: .5rem .5rem .5rem .5rem;
-}
-
-.submit-btn {   
-    display: inline-block;
-    text-align: center;
-    vertical-align: middle;
-    cursor: pointer;
-    user-select: none;
-    background-color: transparent;
-    border: 1px solid transparent;
-    font-size: 1rem;
-    line-height: 1.5;
-    transition: color 0.15s;
-    width: 100px;
-    padding: .5rem .5rem .5rem .5rem;
-    line-height: 1;
-    box-shadow: 3px 3px 0 0 var(--color-base);
-    color: var(--color-base);
-    border-color: var(--color-base);
-    background-color: var(--color-white);
-}
-
-.submit-btn:hover {
-    padding: .5rem .5rem .5rem .5rem;
-    line-height: 1;
-    box-shadow: 3px 3px 0 0 var(--color-base);
-    color: var(--color-white);
-    border-color: var(--color-white);
-    background-color: var(--color-base);
-}
 
 
