@@ -644,6 +644,7 @@ a:active {
 
 /*---------- Form ----------*/
 
+
 .section-form {
     color: var(--color-text);
     width: 100%;
@@ -653,11 +654,11 @@ a:active {
     align-items: center;
 }
 
-.section-form form {
+.section-form .form {
     text-align: center;
 }
 
-.form-wrapper {
+.section-form .form .form-wrapper {
     font-size: 5rem;
     color: var(--color-base);
     text-align: center;
@@ -666,10 +667,14 @@ a:active {
     margin: 1rem 0 1rem 0;
 }
 
-.titles {
-    padding: 5rem 0 0 0;
-    text-align: center;
+.section-form .form .form-wrapper .form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0.5rem auto;
 }
+
+
 
 form {
     padding: 5rem 0 0 0;
@@ -684,12 +689,7 @@ form {
     margin: 0 auto; */
 }
 
-.form-group {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 0.5rem auto;
-}
+
 
 button {   
     display: inline-block;
