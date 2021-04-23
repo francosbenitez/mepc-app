@@ -290,6 +290,26 @@ a {
 }
 
 
+/*---------- Footer ----------*/
+    
+
+.site-footer {
+    text-align: center;
+    font-size: 13px;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+.site-footer p {
+    margin: 10px 0 10px 0;
+}
+
+.site-footer .float-right {
+    float: right;
+}
+
+
 /*---------- Media queries 1050px ----------*/
 
 
@@ -317,5 +337,3 @@ a {
     }
 
 }
-
-
