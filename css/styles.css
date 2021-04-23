@@ -406,7 +406,21 @@ a {
 /*---------- Study groups ----------*/
 
 
-
+body {
+    font-family: inherit;
+    font-size: 1rem;
+    line-height: inherit;
+    color: inherit;
+    margin-top: 70px;
+    padding-top: 0;
+    counter-reset: captions;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+} 
 
 .row {
     text-align: center;
