@@ -172,11 +172,7 @@ a {
     padding: 1rem 0 1rem 0;
 }
 
-.container-hero body {
-    max-width: 1200px;
-}
-
-.hero-description {
+.container-hero .hero-description {
     flex-basis: 50%; 
     padding-left: 5vw;
 }
