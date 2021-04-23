@@ -159,9 +159,6 @@ a {
 }
 
 
-/* ------------------ */
-
-
 /*---------- Hero ----------*/
 
 
@@ -235,22 +232,22 @@ a {
     float: left;
 }
 
-.container-avatar h3 {
-    font-family: 'Montserrat';
-    font-weight: 400;
-    margin: 10px 0 10px 0;
-}
-
-.container-avatar h2 {
-    font-family: 'Montserrat';
-    margin: 10px 0 10px 0;
-}
-
-.container-avatar .avatar img {
+.container-avatar .avatar-image img {
     width: 80%;
     max-width: 344px;
     height: auto;
     border-radius: 50%;
+}
+
+.container-avatar .avatar-description h2 {
+    font-family: 'Montserrat';
+    margin: 10px 0 10px 0;
+}
+
+.container-avatar .avatar-description h3 {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    margin: 10px 0 10px 0;
 }
 
 .container-avatar .network-icon {
@@ -277,20 +274,20 @@ a {
     line-height: 2;
 }
 
-.video-link {
+.container-video .video-link {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
+    padding-bottom: 56.25%; 
     padding-top: 25px;
     height: 0;
  }
 
- .video-link iframe {
+ .container-video .video-link iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
- }
+}
 
 
 /*---------- Media queries 1050px ----------*/
@@ -302,18 +299,15 @@ a {
 /* Hero */
 
 
-    .container-hero .hero-description h1 {
-        font-size: 30px;
-    }
-
-    .container-hero .hero-description h2 {
-        font-size: 18px;
+    .container-hero {
+        flex-direction: column;
+        text-align: center;
     }
 
     .container-hero .hero-image img {
-        width: 100%;
         margin: 0 0 0 0;
     }
+
 
  /* About */
  
@@ -325,38 +319,3 @@ a {
 }
 
 
-/*---------- Media queries 480 ----------*/
-
-
-/* Hero */
-
-
-@media (max-width: 480px) {
-    
-    .container-hero .title h1 {
-        font-size: 16px;
-    }
-
-    .container-hero .subtitle h2 {
-        font-size: 13px;
-    }
-
-
-/* About */
-
-
-    .container-avatar {
-        width: 100%;
-    }
-
-}
-
-
-@media only screen and (max-width: 900px) {
-    
-    .container-hero {
-        /* it place the items in vertical direction */
-      flex-direction: column;
-    }
-
-}
