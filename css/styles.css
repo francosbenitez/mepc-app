@@ -504,7 +504,7 @@ a:active {
 }
 
 
-/*---------- Form ----------*/
+/*---------- Contact ----------*/
 
 
 .section-form {
@@ -514,13 +514,11 @@ a:active {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background: url("/img/contacto.png") no-repeat;
 }
 
 .section-form .form {
     text-align: center;
     padding: 1rem 0 1rem 0;
-    text-align: center;
     width: 50%;
 }
 
@@ -682,6 +680,14 @@ a:active {
 
     .row .groups-section .column .avatar-title .network-icon {
         margin-bottom: 2rem;
+    }
+
+
+/* Contact */
+
+
+    .section-form .form .form-wrapper .form-image img {
+        width: 100%;
     }
 
 }
