@@ -28,6 +28,7 @@ a {
 }
 
 .titles hr {
+    border-color: var(--background-border-color) 1px solid;
     margin: 1rem 0 1rem 0;
 }
 
