@@ -32,14 +32,6 @@ a {
     margin: 1rem 0 1rem 0;
 }
 
-.alert-note {
-    background-color: #f0f7fb;
-    border-left: solid 4px #3498db;
-    padding: 12px;
-    width: 50%;
-    margin: auto;
-}
-
 /* ------- */
 body {
     font-family: inherit;
@@ -325,7 +317,8 @@ body {
     margin: 0 auto;
 }
 
-.features-section .feature .fab {
+.features-section .feature .fab, 
+.features-section .feature .fas {
     font-size: 5rem;
     color: var(--color-base);
     text-align: center;
@@ -347,6 +340,14 @@ body {
 .row {
     text-align: center;
 } 
+
+.row .titles .alert-note-left {
+    background-color: #f0f7fb;
+    border-left: solid 4px #3498db;
+    padding: 12px;
+    width: 50%;
+    margin: auto;
+}
 
 .row .groups-section {
     color: var(--color-text);
@@ -521,6 +522,14 @@ a:active {
 
 /*---------- Contact ----------*/
 
+
+.titles .alert-note-right {
+    background-color: #f0f7fb;
+    border-right: solid 4px #3498db;
+    padding: 12px;
+    width: 50%;
+    margin: auto;
+}
 
 .section-form {
     color: var(--color-text);
