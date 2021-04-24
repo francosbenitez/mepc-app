@@ -422,16 +422,16 @@ body {
     border: 1px solid var(--background-border-color);
 }
 
-
+/*
 #navbar .secondary-nav-logo {
     font-size: 1.2rem;
 }
 
 #navbar .secondary-nav-logo img {
     height: 50px;
-}
+}*/
 
-#navbar .secondary-nav-logo #search {
+#navbar .secondary-nav #search {
     width: 100%; 
     font-size: 16px; 
     padding: 12px 20px 12px 40px; 
