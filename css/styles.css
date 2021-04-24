@@ -23,6 +23,10 @@ a {
     color: var(--color-text);
 }
 
+.titles h1 {
+    font-size: 2rem;
+}
+
 .titles hr {
     margin: 1rem 0 1rem 0;
 }
