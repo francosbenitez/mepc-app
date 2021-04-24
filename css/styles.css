@@ -86,13 +86,13 @@ body {
     line-height: 55px;
 }
 
-/* ----------- */
+/* ----------- 
 .nav-ul .active a {
     color: var(--color-base);
     font-family: 'Montserrat';
     font-weight: 700;
     text-transform: uppercase;
-}
+}*/
 
 .nav-ul li a {
     color: var(--color-text);
