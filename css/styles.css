@@ -335,6 +335,14 @@ body {
     text-align: center;
 } 
 
+.row .titles .alert-note {
+    background-color: #f0f7fb;
+    border-left: solid 4px #3498db;
+    padding: 12px;
+    width: 50%;
+    margin: auto;
+}
+
 .row .groups-section {
     color: var(--color-text);
     width: 100%;
