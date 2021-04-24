@@ -381,7 +381,9 @@ body {
 }
 
 .row .groups-section .column .group-avatar:hover {
-    opacity: 0.7;
+    background-image: -webkit-linear-gradient(top, #efedec, #f7f4f4);
+    background-image: linear-gradient(top, #efedec, #f7f4f4);
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,.1), inset 0px -3px 1px 1px rgba(204,198,197,.5);
 }
 
 .row .groups-section .column .group-avatar:active{
