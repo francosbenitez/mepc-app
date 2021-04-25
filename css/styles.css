@@ -205,7 +205,11 @@ body {
 
 
 /*---------- About ----------*/
- 
+
+
+#about {
+    background: -webkit-linear-gradient(top, var(--color-base), var(--color-white));
+}
 
 .container-avatar {
     display: flex;
@@ -419,6 +423,18 @@ body {
 
 .row .groups-section .column .avatar-title .network-icon {
     list-style: none;
+}
+
+.row .groups-section .column .avatar-title .network-icon {
+    list-style: none;
+}
+
+.row .groups-section .column .avatar-title .network-icon i {
+    transition: all 0.7s ease-in-out;
+}
+
+.row .groups-section .column .avatar-title .network-icon i:hover{
+    transform: rotateY(360deg);
 }
 
 
