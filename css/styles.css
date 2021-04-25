@@ -20,7 +20,8 @@ a {
 /* ----- */
 .feature-description a:hover,
 .site-footer p a:hover,
-.avatar-title h3 a:hover {
+.avatar-title h3 a:hover,
+.alert-note-right a:hover {
     border-bottom: 1.5px #004aad dotted;
     cursor: pointer;
 }
@@ -598,6 +599,7 @@ a:active {
 }
 /*------------ */
 
+/*------------ */
 .titles .alert-note-right {
     background-color: #f0f7fb;
     border-right: solid 4px #3498db;
@@ -605,6 +607,7 @@ a:active {
     width: 50%;
     margin: auto;
 }
+/*------------ */
 
 .section-form {
     color: var(--color-text);
@@ -676,6 +679,58 @@ textarea[name=message]:focus{
     color: var(--color-white);
     border-color: var(--color-white);
     background-color: var(--color-base);
+}
+
+
+/* ----------- Resources ---------- */
+
+
+.resources-section {  
+    color: var(--color-text);
+    width: 100%;
+    align-items: center;
+}
+
+.resources-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 75vw;
+}
+
+.resource-card {
+    width: 250px;
+    height: auto;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
+    border: 1px solid rgba(0,0,0,0.125);
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 20px 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.resource-card:hover {
+    transform: scale(1.20);
+}
+
+.resource-card-texts{
+    color: var(--color-text);
+    padding: 3rem 2rem;
+}
+
+.resource-card-name{
+    font-size: 1rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+.resource-card-description {
+    font-size: .8rem;
+    margin-top: 2rem;
+    text-align: center;
 }
 
 
@@ -841,6 +896,5 @@ textarea[name=message]:focus{
     }
 
 }
-
 
 
