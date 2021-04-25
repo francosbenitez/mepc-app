@@ -296,10 +296,11 @@ body {
 .container-avatar .network-icon i {
     margin-right: 5px;
     padding: 3px;
+    transition: all 0.7s ease-in-out;
 }
 
 .container-avatar .network-icon i:hover {
-    transform: scale(1.20);
+    transform: rotateY(360deg);
 }
 
 .container-video {
