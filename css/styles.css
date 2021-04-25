@@ -244,10 +244,10 @@ body {
 
 /*---------- About ----------*/
 
-
+/*
 #about {
-    background: -webkit-linear-gradient(top, var(--color-base), var(--color-white));
-}
+    background: linear-gradient(180deg, var(--color-base), var(--color-white));
+}*/
 
 .container-avatar {
     display: flex;
