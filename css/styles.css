@@ -17,6 +17,15 @@ a {
     color: #004aad;
 }
 
+/* ----- */
+.feature-description a:hover,
+.site-footer p a:hover,
+.avatar-title h3 a:hover {
+    border-bottom: 1.5px #004aad dotted;
+    cursor: pointer;
+}
+/* ----- */
+
 .titles {
     padding: 5rem 0 0 0;
     text-align: center;
@@ -549,7 +558,7 @@ a:active {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background: linear-gradient(180deg, var(--color-base), var(--color-white))
+    background: -webkit-linear-gradient(right, var(--color-base), var(--color-white))
 }
 
 .section-form .form {
