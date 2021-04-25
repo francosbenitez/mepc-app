@@ -734,10 +734,10 @@ textarea[name=message]:focus{
 }
 
 
-/*---------- Media query max. 1050px ----------*/
+/*---------- Media query max. 1300px ----------*/
 
 
-@media (max-width: 1050px) {
+@media (max-width: 1300px) {
 
 
 /* Navbar */
