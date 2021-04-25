@@ -74,7 +74,6 @@ body {
 .nav-ul {
     width: 100%;
     text-align: center;
-    height: 18rem;
 }
 
 .nav-ul li {
@@ -638,6 +637,7 @@ textarea[name=message]:focus{
         transform: translateX(105%);
         transition: transform 0.5s ease-in;
         overflow-x: hidden;
+        height: 18rem;
     }
 
     .nav-ul li {
