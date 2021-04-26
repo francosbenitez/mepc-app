@@ -11,7 +11,7 @@ const navSlide = () => {
 navSlide();
 
 (function () {
-  var current = location.pathname.split('/')[1];
+  var current = location.pathname.split('/mepc/')[1];
   if (current === "") return;
   var menuItems = document.querySelectorAll('.nav-ul a');
   for (var i = 0, len = menuItems.length; i < len; i++) {
