@@ -76,10 +76,21 @@ body {
     display: flex;
 }
 
-.nav-logo img {
+.nav-logo svg {
     height: 50px;
     position: absolute;
     padding-left: 5rem;
+    fill: var(--color-base);
+    stroke: var(--color-base);
+}
+
+.nav-logo svg:hover {
+    height: 50px;
+    position: absolute;
+    padding-left: 5rem;
+    stroke: var(--color-base);
+    fill: var(--color-base);
+    stroke-width: 20px;
 }
 
 .nav-ul {
@@ -749,7 +760,7 @@ textarea[name=message]:focus{
         height: 55px;
     }
 
-    .nav-logo img {
+    .nav-logo svg, .nav-logo svg:hover  {
         height: 36px;
         z-index: 10;
         position: relative;
