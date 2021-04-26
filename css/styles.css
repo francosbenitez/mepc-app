@@ -361,11 +361,20 @@ body {
     float: left;
 }
 
-.container-avatar .avatar-image img {
+.container-avatar .avatar-image svg {
     width: 80%;
     max-width: 344px;
     height: auto;
     border-radius: 50%;
+}
+
+.container-avatar .avatar-image svg:hover {
+    width: 80%;
+    max-width: 344px;
+    height: auto;
+    border-radius: 50%;
+    -webkit-animation: shake-bottom 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+    animation: shake-bottom 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 }
 
 .container-avatar .avatar-description h2 {
