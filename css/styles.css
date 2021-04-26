@@ -738,9 +738,13 @@ textarea[name=message]:focus{
     text-align: center;
 }
 
+.resource-card hr {
+    margin-top: 1rem;
+}
+
 .resource-card-description {
     font-size: .8rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
     text-align: center;
 }
 
