@@ -126,6 +126,10 @@ body {
     transition: all 2s;
 }
 
+.nav-ul li a.is-active {
+    color: var(--color-base);
+}
+
 .nav-ul li a:hover {
     color: var(--color-white);
     z-index: 1;
@@ -932,6 +936,10 @@ textarea[name=message]:focus{
         padding: 0 0 0 0;
     }
 
+    .nav-ul li a.is-active {
+        color: var(--color-base);
+    }
+
     .nav-btn {
         display: block;
         cursor: pointer;
@@ -1053,5 +1061,7 @@ textarea[name=message]:focus{
     }
 
 }
+
+
 
 
