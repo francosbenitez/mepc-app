@@ -287,7 +287,7 @@ body {
     width: 100%;
     display: flex;
     background-color: var(--color-base);
-    padding: 1rem 0 1rem 0;
+    padding: 4rem 0 4rem 0;
 }
 
 .container-hero .hero-description {
@@ -298,7 +298,7 @@ body {
 .container-hero .hero-description h1 {
     font-size: 55px;
     color: var(--color-white);
-    margin: 5rem 0 10px 0;
+    margin: 2rem 0 1rem 0;
 }
 
 .container-hero .hero-description h2 {
@@ -306,7 +306,6 @@ body {
     color: var(--color-white);
     font-family: 'Montserrat';
     font-weight: 400;
-    line-height: 2;
 }
 
 .container-hero .hero-image img {
@@ -413,7 +412,6 @@ body {
     display: flex;
     padding: 60px 20px;
     text-align: center;
-    line-height: 2;
 }
 
 .container-video .video-link {
@@ -768,11 +766,9 @@ textarea[name=message]:focus{
     background-color: transparent;
     border: 1px solid transparent;
     font-size: 1rem;
-    line-height: 1.5;
     transition: color 0.15s;
     width: 100px;
     padding: .5rem .5rem .5rem .5rem;
-    line-height: 1;
     box-shadow: 3px 3px 0 0 var(--color-base);
     color: var(--color-base);
     border-color: var(--color-base);
@@ -781,7 +777,6 @@ textarea[name=message]:focus{
 
 .section-form .form .form-wrapper .submit-btn:hover {
     padding: .5rem .5rem .5rem .5rem;
-    line-height: 1;
     box-shadow: 3px 3px 0 0 var(--color-base);
     color: var(--color-white);
     border-color: var(--color-white);
