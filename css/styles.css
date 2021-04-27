@@ -670,7 +670,7 @@ body {
     display: block;
     text-align: left;
     font-size: 1rem;
-    margin-bottom: 1px;
+    margin-bottom: 3px;
     padding: 0.5rem;
     text-decoration: none;
     color: var(--color-base);
