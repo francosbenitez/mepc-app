@@ -107,14 +107,6 @@ body {
     line-height: 55px;
 }
 
-/* ----------- 
-.nav-ul .active a {
-    color: var(--color-base);
-    font-family: 'Montserrat';
-    font-weight: 700;
-    text-transform: uppercase;
-}*/
-
 .nav-ul li a {
     color: var(--color-text);
     font-family: 'Montserrat';
@@ -696,6 +688,11 @@ a:active {
     transition: background-color 1s ease;
 }
 
+#navbar .ul-container .active a {
+    color: var(--color-white);
+    background-color: var(--color-base);
+}
+
 
 /*---------- Sections ----------*/
 
@@ -1060,7 +1057,6 @@ textarea[name=message]:focus{
         border: none;
         margin: 0 0 0 0;
     }
-
     
 /* Sections */
 
