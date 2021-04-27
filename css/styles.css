@@ -637,11 +637,11 @@ a:active {
     color: var(--color-base);
 }
 
-#navbar .ul-container li a:hover {
+/*#navbar .ul-container li a:hover {
     color: var(--color-white);
     background-color: var(--color-base);
     transition: background-color 1s ease;
-}
+}*/
 
 #navbar .ul-container .active a {
     color: var(--color-white);
