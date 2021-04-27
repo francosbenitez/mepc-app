@@ -1,6 +1,5 @@
 // Navbar button
 
-
 const navSlide = () => {
     const btn = document.querySelector('.nav-btn');
     const ul = document.querySelector('.nav-ul');
@@ -13,9 +12,7 @@ const navSlide = () => {
 
 navSlide();
 
-
 // Navbar is-active
-
 
 (function () {
   var current = location.pathname.split('/mepc/')[1];
@@ -28,9 +25,7 @@ navSlide();
   }
 })();
 
-
 // Documentos active
-
 
 let header = document.getElementById("nav");
 let links = header.getElementsByClassName("link");
