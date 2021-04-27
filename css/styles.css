@@ -886,7 +886,7 @@ textarea[name=message]:focus{
 
 .resource-card hr {
     margin-top: 1rem;
-    color: var(--color-base);    
+    color: var(--color-text);    
 }
 
 .resource-card-description {
