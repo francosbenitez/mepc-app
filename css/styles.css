@@ -10,6 +10,7 @@
     --color-base: #004aad;
     --color-white: #FFFFFF;
     --color-text: #313131;
+    --border-color: #C1C1C1;
 }
 
 a {
@@ -36,8 +37,8 @@ a {
     font-size: 3rem;
 }
 
-.titles hr {
-    border-color: var(--color-text) 1px solid;
+hr {
+    border: var(--border-color) 1px solid;
     margin: 1rem 0 1rem 0;
 }
 
@@ -603,7 +604,7 @@ body {
     width: 100%; 
     font-size: 16px; 
     padding: 12px 20px 12px 40px; 
-    border: 1px solid var(--color-text);
+    border: 1px solid var(--border-color);
     margin-bottom: 12px; 
     background: #fff url("https://francosbenitez.github.io/mepc/img/search.svg") 1rem no-repeat;
 }
@@ -613,7 +614,7 @@ body {
     width: 100%;
     height: 10rem;
     overflow-y: scroll;
-    border: 1px solid var(--color-text);
+    border: 1px solid var(--border-color);
 }
 
 #navbar .ul-container li {
@@ -990,14 +991,14 @@ textarea[name=message]:focus{
         align-items: center;
         justify-content: center;
         padding: 5rem 0 0 0;
-        border-right: 1px solid var(--color-text);
+        border-right: 1px solid var(--border-color);
     }
 
     #navbar .secondary-nav {
         width: 100%; 
         font-size: 16px; 
         padding: 12px 20px 12px; 
-        border-bottom: 1px solid var(--color-text);
+        border-bottom: 1px solid var(--border-color);
     }
 
     #navbar .ul-container {
