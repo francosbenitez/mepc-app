@@ -80,15 +80,16 @@ body {
     height: 50px;
     position: absolute;
     margin-left: 5rem;
-    fill: var(--color-base);
-       
+    stroke: var(--color-text);
+    stroke-width: 5px;
 }
 
 .nav-logo svg:hover {
     height: 50px;
     position: absolute;
     margin-left: 5rem;
-    fill: var(--color-base);
+    stroke: var(--color-text);
+    stroke-width: 10px;
     -webkit-animation: shake-bottom 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
     animation: shake-bottom 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 }
