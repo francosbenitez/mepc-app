@@ -80,7 +80,6 @@ body {
     height: 50px;
     position: absolute;
     margin-left: 5rem;
-    fill: var(--color-text);
     stroke: var(--color-text);
 }
 
