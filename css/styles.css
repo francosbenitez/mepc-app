@@ -859,7 +859,7 @@ textarea[name=message]:focus{
     }
 
     .nav-logo svg, .nav-logo svg:hover  {
-        height: 36px;
+        height: 45px;
         z-index: 10;
         position: relative;
         margin-left: 0;
