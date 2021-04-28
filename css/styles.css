@@ -80,6 +80,7 @@ body {
     height: 50px;
     position: absolute;
     margin-left: 5rem;
+    fill: var(--color-text);
     stroke: var(--color-text);
 }
 
@@ -87,6 +88,7 @@ body {
     height: 50px;
     position: absolute;
     margin-left: 5rem;
+    fill: var(--color-base);
     stroke: var(--color-base);
     stroke-width: 5px;
     -webkit-animation: shake-bottom 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
