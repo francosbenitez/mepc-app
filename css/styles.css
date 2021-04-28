@@ -905,6 +905,7 @@ textarea[name=message]:focus{
 
     .toggle .line-1 {
         transform: rotate(-45deg) translate(-5px, 6px);
+        background-color: var(--color-base);
     }
 
     .toggle .line-2 {
@@ -913,6 +914,7 @@ textarea[name=message]:focus{
 
     .toggle .line-3 {
         transform: rotate(45deg) translate(-5px, -6px);
+        background-color: var(--color-base);
     }
 
 
