@@ -81,7 +81,6 @@ body {
     position: absolute;
     margin-left: 5rem;
     stroke: var(--color-text);
-    stroke-width: 5px;
 }
 
 .nav-logo svg:hover {
@@ -89,7 +88,7 @@ body {
     position: absolute;
     margin-left: 5rem;
     stroke: var(--color-text);
-    stroke-width: 10px;
+    stroke-width: 5px;
     -webkit-animation: shake-bottom 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
     animation: shake-bottom 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 }
@@ -167,7 +166,7 @@ body {
     width: 25px;
     height: 3px;
     margin: 5px;
-    background-color: var(--color-base);
+    background-color: var(--color-text);
     transition: all 0.3s ease;
 }
 
