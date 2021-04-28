@@ -89,11 +89,11 @@ body {
     margin-left: 5rem;
     fill: var(--color-base);
     stroke: var(--color-base);
-    stroke-width: 5px;
-    -webkit-animation: shake-bottom 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-    animation: shake-bottom 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-}
-  
+    stroke-width: 5px;   
+    -webkit-animation: shake-vertical 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	animation: shake-vertical 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+} 
+
 .nav-ul {
     width: 100%;
     text-align: center;
@@ -199,86 +199,74 @@ body {
 /* Nav-logo animation */
 
 
-@-webkit-keyframes shake-bottom {
-    
+@-webkit-keyframes shake-vertical {
+
     0%,
     100% {
-      -webkit-transform: rotate(0deg);
-              transform: rotate(0deg);
-      -webkit-transform-origin: 50% 100%;
-              transform-origin: 50% 100%;
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
     }
 
-    10% {
-      -webkit-transform: rotate(2deg);
-              transform: rotate(2deg);
+    10%,
+    30%,
+    50%,
+    70% {
+      -webkit-transform: translateY(-4px);
+              transform: translateY(-4px);
     }
 
     20%,
     40%,
     60% {
-      -webkit-transform: rotate(-4deg);
-              transform: rotate(-4deg);
-    }
-
-    30%,
-    50%,
-    70% {
-      -webkit-transform: rotate(4deg);
-              transform: rotate(4deg);
+      -webkit-transform: translateY(4px);
+              transform: translateY(4px);
     }
 
     80% {
-      -webkit-transform: rotate(-2deg);
-              transform: rotate(-2deg);
+      -webkit-transform: translateY(3.4px);
+              transform: translateY(6.4px);
     }
 
     90% {
-      -webkit-transform: rotate(2deg);
-              transform: rotate(2deg);
+      -webkit-transform: translateY(-3.4px);
+              transform: translateY(-3.4px);
     }
 
 }
 
-@keyframes shake-bottom {
+  @keyframes shake-vertical {
 
     0%,
     100% {
-      -webkit-transform: rotate(0deg);
-              transform: rotate(0deg);
-      -webkit-transform-origin: 50% 100%;
-              transform-origin: 50% 100%;
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
     }
 
-    10% {
-      -webkit-transform: rotate(2deg);
-              transform: rotate(2deg);
+    10%,
+    30%,
+    50%,
+    70% {
+      -webkit-transform: translateY(-4px);
+              transform: translateY(-4px);
     }
 
     20%,
     40%,
     60% {
-      -webkit-transform: rotate(-4deg);
-              transform: rotate(-4deg);
-    }
-
-    30%,
-    50%,
-    70% {
-      -webkit-transform: rotate(4deg);
-              transform: rotate(4deg);
+      -webkit-transform: translateY(4px);
+              transform: translateY(4px);
     }
 
     80% {
-      -webkit-transform: rotate(-2deg);
-              transform: rotate(-2deg);
+      -webkit-transform: translateY(3.4px);
+              transform: translateY(3.4px);
     }
 
     90% {
-      -webkit-transform: rotate(2deg);
-              transform: rotate(2deg);
+      -webkit-transform: translateY(-3.4px);
+              transform: translateY(-3.4px);
     }
-
+  
 }
 
 
@@ -370,8 +358,8 @@ body {
     max-width: 344px;
     height: auto;
     border-radius: 50%;
-    -webkit-animation: shake-bottom 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-    animation: shake-bottom 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+    -webkit-animation: shake-vertical 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	animation: shake-vertical 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 }
 
 .container-avatar .avatar-description h2 {
