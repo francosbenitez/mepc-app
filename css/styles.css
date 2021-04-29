@@ -483,13 +483,23 @@ body {
     text-align: center;
 } 
 
-.row .titles .alert-note-left {
+/* ------ */
+.alert-note-left {
     background-color: #f0f7fb;
     border-left: solid 4px #3498db;
     padding: 12px;
     width: 50%;
     margin: auto;
 }
+
+.alert-note {
+    background-color: #f0f7fb;
+    border-bottom: solid 4px #3498db;
+    padding: 12px;
+    width: 50%;
+    margin: auto;
+}
+/* -------- */
 
 .row .groups-section {
     color: var(--color-text);
@@ -1022,6 +1032,32 @@ textarea[name=message]:focus{
 
 }
 
+/* -------- */
 
 
+.faq {
+    background: var(--color-base);
+    padding: 1rem 0 2rem 0;
+    margin: 2rem 0 1rem 0;
+}
+
+.faq .faq-titles h1 {
+    color: var(--color-white);
+    font-size: 3rem;
+    margin: 0 0 1rem 5rem;
+}
+
+.faq-questions {
+    
+    color: var(--color-white);
+    font-size: 16px; 
+    margin-top: 1rem;
+    padding: 0 .2rem 0 .2rem;
+    margin: 0 0 1rem 5rem;
+    text-align: left;
+}
+
+.faq-questions p {
+    margin: 1rem 0 1rem 0;
+}
 
