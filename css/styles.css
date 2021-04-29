@@ -628,6 +628,8 @@ a:active {
 #navbar .ul-container .active a {
     color: var(--color-base);
     font-weight: 800;
+    border-left: solid 4px var(--color-base);
+    margin-left: 0.2rem;
 }
 
 #navbar .ul-container .active a, 
@@ -829,6 +831,16 @@ textarea[name=message]:focus{
     margin-top: 1rem;
     text-align: center;
 }
+
+/* ----------- */
+.titles .search-input {
+    font-size: 16px; 
+    padding: 1rem 2rem 1rem 2rem; 
+    margin-top: 1rem;
+    border: 1px solid var(--border-color);
+    background: #fff url("https://francosbenitez.github.io/mepc/img/search.svg") 1rem no-repeat;
+}
+/* ----------- */
 
 
 /*---------- Media query max. 1300px ----------*/
