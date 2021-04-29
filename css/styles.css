@@ -492,7 +492,7 @@ body {
     margin: auto;
 }
 
-.alert-note {
+.alert-note-top {
     background-color: #f0f7fb;
     border-top: solid 4px #3498db;
     padding: 12px;
