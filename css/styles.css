@@ -557,6 +557,7 @@ body {
 
 .row .groups-section .column .avatar-title p {
     margin-top: 1rem;
+    font-weight: 800;
 }
 
 .row .groups-section .column .avatar-title .network-icon {
