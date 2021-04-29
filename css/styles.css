@@ -1078,4 +1078,5 @@ textarea[name=message]:focus{
     background: var(--color-base);
     color: var(--color-white);
     border: none;
+    cursor: pointer;
 }
