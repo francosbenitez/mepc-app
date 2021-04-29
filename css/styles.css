@@ -28,7 +28,7 @@ a {
 /* ----- */
 
 .titles {
-    padding: 5rem 0 0 0;
+    padding: 2.5rem 0 0 0;
     text-align: center;
     color: var(--color-text);
 }
@@ -718,6 +718,7 @@ a:active {
 /*------------ */
 
 .section-form {
+    margin: 2.5rem 0 0 0;
     color: var(--color-text);
     width: 100%;
     display: flex;
