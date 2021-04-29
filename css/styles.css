@@ -494,7 +494,7 @@ body {
 
 .alert-note {
     background-color: #f0f7fb;
-    border-bottom: solid 4px #3498db;
+    border-top: solid 4px #3498db;
     padding: 12px;
     width: 50%;
     margin: auto;
