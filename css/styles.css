@@ -356,8 +356,6 @@ body {
     max-width: 344px;
     height: auto;
     border-radius: 50%;
-    -webkit-animation: shake-vertical 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-	animation: shake-vertical 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 }
 
 .container-avatar .avatar-description h2 {
