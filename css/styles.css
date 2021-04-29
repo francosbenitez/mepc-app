@@ -1063,3 +1063,19 @@ textarea[name=message]:focus{
     margin: 1rem 0 1rem 0;
 }
 
+/* This class will simply be added or removed to show/hide elements */
+/* All answers have this applied by default*/
+.hidden {
+    display: none;
+}
+  
+.faq-questions ul li { 
+    margin-bottom: 10px;
+    list-style: none; 
+}
+
+.btn-outline-success {
+    background: var(--color-base);
+    color: var(--color-white);
+    border: none;
+}
