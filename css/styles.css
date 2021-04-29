@@ -80,7 +80,7 @@ body {
     height: 50px;
     position: absolute;
     margin-left: 5rem;
-    stroke: var(--color-text);
+    fill: var(--color-text);
 }
 
 .nav-logo svg:hover {
@@ -88,15 +88,13 @@ body {
     position: absolute;
     margin-left: 5rem;
     fill: var(--color-base);
-    stroke: var(--color-base);
-    stroke-width: 5px;   
     -webkit-animation: shake-vertical 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 	animation: shake-vertical 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 } 
 
 .nav-ul {
     width: 100%;
-    text-align: center;
+    text-align: right;
 }
 
 .nav-ul li {
@@ -630,6 +628,12 @@ a:active {
 }
 
 #navbar .ul-container .active a {
+    color: var(--color-base);
+    font-weight: 800;
+}
+
+#navbar .ul-container .active a, 
+#navbar .ul-container .active a h1 {
     color: var(--color-base);
     font-weight: 800;
 }
