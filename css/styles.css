@@ -834,8 +834,9 @@ textarea[name=message]:focus{
 
 /* ----------- */
 .titles .search-input {
+    width: 50%;
     font-size: 16px; 
-    padding: 1rem 2rem 1rem 2rem; 
+    padding: 12px 2rem 1rem 2rem; 
     margin-top: 1rem;
     border: 1px solid var(--border-color);
     background: #fff url("https://francosbenitez.github.io/mepc/img/search.svg") 1rem no-repeat;
@@ -877,7 +878,7 @@ textarea[name=message]:focus{
         transform: translateX(105%);
         transition: transform 0.5s ease-in;
         overflow-x: hidden;
-        height: 18rem;
+        height: 10rem;
     }
 
     .nav-ul li {
