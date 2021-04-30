@@ -445,7 +445,7 @@ body {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .features-section .feature {
@@ -520,7 +520,6 @@ body {
     height: auto;
     background-image: -webkit-linear-gradient(top, #f4f1ee, #fff);
     background-image: linear-gradient(top, #f4f1ee, #fff);
-    border-radius: 50%;
     box-shadow: 0px 8px 10px 0px rgb(0 0 0 / 30%), inset 0px 4px 1px 1px white, inset 0px -3px 1px 1px rgb(204 198 197 / 50%);
     -webkit-transition: all .1s linear;
     transition: all .1s linear;
@@ -725,7 +724,7 @@ a:active {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background: -webkit-linear-gradient(right, var(--color-base), var(--color-white))
+/*    background: -webkit-linear-gradient(right, var(--color-base), var(--color-white))*/
 }
 
 .section-form .form {
@@ -992,10 +991,6 @@ textarea[name=message]:focus{
         text-align: left;
     }
 
-    .hidden {
-        
-    }
-
 }
 
 
@@ -1058,19 +1053,16 @@ textarea[name=message]:focus{
 }
 
 .faq {
-    background: var(--color-base);
     padding: 1rem 0 2rem 0;
     margin: 2rem 0 1rem 0;
 }
 
 .faq .faq-titles h1 {
-    color: var(--color-white);
     font-size: 3rem;
     margin: 0 0 1rem 5rem;
 }
 
 .faq .faq-questions {
-    color: var(--color-white);
     font-size: 16px; 
     margin-top: 1rem;
     padding: 0 .2rem 0 .2rem;
@@ -1088,12 +1080,54 @@ textarea[name=message]:focus{
 }
 
 .faq .faq-questions ul li .btn-outline-success {
-    background: var(--color-base);
-    color: var(--color-white);
+    background: var(--color-white);
+    color: var(--color-text);
     border: none;
     cursor: pointer;
 }
 
 .hidden {
     display: none;
+}
+
+pre p {
+    color: var(--color-text);
+}
+
+
+/* --------- */
+
+
+#about .container-description .asd .feature-title,
+#about .container-description .asd .feature-description {
+    text-align: left;
+    margin: 1rem 0 1rem 0;
+}
+
+.avatar-image img {
+}
+
+
+
+
+
+.container-description {
+    flex-basis: 20%; 
+    color: var(--color-text);
+    display: flex;
+    padding: 10rem 1rem;
+    text-align: left;
+}
+
+@media (max-width: 1300px) {
+
+    .container-description {
+        padding: 0 0 0 0;
+        text-align: center;
+    }
+
+    pre p {
+        width: 100%;
+    }
+
 }
