@@ -1099,30 +1099,32 @@ pre p {
 /* --------- */
 
 
-#about .container-description .asd .feature-title,
-#about .container-description .asd .feature-description {
-    text-align: left;
-    margin: 1rem 0 1rem 0;
-}
+
 
 .features-section-asd {
     color: var(--color-text);
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     margin-bottom: 1rem;
 }
 
 .container-feature .avatar .avatar-image img {
     width: 10rem;
+    max-width: 344px;
+    height: auto;
+    border-radius: 50%;
+    border: 1px solid var(--color-base);
 }
 
-.container-feature {
+.features-section-asd .container-description .asd .feature-title,
+.features-section-asd .container-description .asd .feature-description {
+    margin: 1rem 0 1rem 0;
 }
 
 
 .container-description {
-    flex-basis: 20%; 
+    flex-basis: 50%; 
     color: var(--color-text);
     display: flex;
     text-align: left;
