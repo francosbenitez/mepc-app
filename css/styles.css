@@ -992,6 +992,10 @@ textarea[name=message]:focus{
         text-align: left;
     }
 
+    .hidden {
+        
+    }
+
 }
 
 
@@ -1048,6 +1052,10 @@ textarea[name=message]:focus{
 
 /*  ---------- Faq ---------- */
 
+
+.hidden {
+    display: none;
+}
 
 .faq {
     background: var(--color-base);
