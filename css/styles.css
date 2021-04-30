@@ -1107,19 +1107,20 @@ pre p {
 
 .features-section-asd {
     color: var(--color-text);
-    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
+.container-feature .avatar .avatar-image img {
+    width: 10rem;
+}
 
 
 .container-description {
     flex-basis: 20%; 
     color: var(--color-text);
     display: flex;
-    padding: 10rem 1rem;
     text-align: left;
 }
 
