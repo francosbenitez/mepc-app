@@ -1113,8 +1113,8 @@ pre p {
     width: 10rem;
     max-width: 344px;
     height: auto;
-    /*border-radius: 50%;
-    border: 1px solid var(--color-base);*/
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
 }
 
 .features-section-asd .container-description .asd .feature-title,
