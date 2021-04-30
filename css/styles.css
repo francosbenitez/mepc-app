@@ -964,6 +964,7 @@ textarea[name=message]:focus{
     }
 
 
+
 /* Study groups */
 
 
@@ -1131,6 +1132,12 @@ pre p {
 
     pre p {
         width: 100%;
+    }
+
+    
+    .features-section-asd {
+        flex-direction: column;
+        align-items: center;
     }
 
 }
