@@ -984,6 +984,14 @@ textarea[name=message]:focus{
         width: 100%;
     }
 
+
+/* FAQ */
+
+
+    .faq .faq-questions ul li .btn-outline-success {
+        text-align: left;
+    }
+
 }
 
 
@@ -1034,6 +1042,7 @@ textarea[name=message]:focus{
 
 }
 
+
 /* -------- */
 
 
@@ -1049,8 +1058,7 @@ textarea[name=message]:focus{
     margin: 0 0 1rem 5rem;
 }
 
-.faq-questions {
-    
+.faq .faq-questions {
     color: var(--color-white);
     font-size: 16px; 
     margin-top: 1rem;
@@ -1059,24 +1067,22 @@ textarea[name=message]:focus{
     text-align: left;
 }
 
-.faq-questions p {
+.faq .faq-questions p {
     margin: 1rem 0 1rem 0;
 }
-
-/* This class will simply be added or removed to show/hide elements */
-/* All answers have this applied by default*/
-.hidden {
-    display: none;
-}
-  
-.faq-questions ul li { 
-    margin-bottom: 10px;
+ 
+.faq .faq-questions ul li { 
+    margin-bottom: 1rem;
     list-style: none; 
 }
 
-.btn-outline-success {
+.faq .faq-questions ul li .btn-outline-success {
     background: var(--color-base);
     color: var(--color-white);
     border: none;
     cursor: pointer;
+}
+
+.hidden {
+    display: none;
 }
