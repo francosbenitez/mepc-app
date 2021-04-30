@@ -344,19 +344,19 @@ body {
     float: left;
 }
 
-.container-avatar .avatar-image svg {
+.container-avatar .avatar-image img {
     width: 80%;
     max-width: 344px;
     height: auto;
     border-radius: 50%;
 }
 
-.container-avatar .avatar-image svg:hover {
+/*.container-avatar .avatar-image img:hover {
     width: 80%;
     max-width: 344px;
     height: auto;
     border-radius: 50%;
-}
+}*/
 
 .container-avatar .avatar-description h2 {
     color: var(--color-text);
@@ -1044,6 +1044,9 @@ textarea[name=message]:focus{
 
 
 /* -------- */
+
+
+/*  ---------- Faq ---------- */
 
 
 .faq {
