@@ -707,7 +707,7 @@ a:active {
 /*------------ */
 
 /*------------ */
-.titles .alert-note-right {
+.alert-note-right {
     background-color: #f0f7fb;
     border-right: solid 4px #3498db;
     padding: 12px;
@@ -1132,6 +1132,13 @@ pre p {
 }
 
 @media (max-width: 1300px) {
+
+    .alert-note-left, 
+    .alert-note-right, 
+    .alert-note-top,
+    .titles .search-input {
+        width: 90%;
+    }
 
     .container-description {
         padding: 0 1rem 0 1rem;
