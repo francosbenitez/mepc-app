@@ -1137,9 +1137,8 @@ pre p {
     }
 
     .faq {
-        text-align: center;
-        padding: 0 0 0 0;
-        margin: 0 0 0 0;
+        padding: 0 2rem 0 2rem;
+        text-align: left;
     }
     
     .faq .faq-titles h1 {
@@ -1148,7 +1147,6 @@ pre p {
     }
 
     .faq .faq-questions {
-        padding: 0 2rem 0 2rem;
         margin: 0 0 0 0;
         text-align: left;
     }
