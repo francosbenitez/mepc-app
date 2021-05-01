@@ -8,6 +8,6 @@ buttonArray.forEach(function(button){
 });
 
 function myFunction(element) { 
-  var answer = element.nextElementSibling.querySelector("pre");
+  var answer = element.nextElementSibling.querySelector("p");
   answer.classList.toggle("hidden");
 }
