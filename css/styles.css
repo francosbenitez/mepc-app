@@ -939,7 +939,7 @@ textarea[name=message]:focus{
     }
 
     .container-hero .hero-description {
-        padding: 0 0 0 0;
+        padding: 0 1rem 0 1rem;
     }
 
     .container-hero .hero-image img {
@@ -1122,6 +1122,8 @@ pre p {
 }
 
 
+
+
 .container-description {
     flex-basis: 60%; 
     color: var(--color-text);
@@ -1132,7 +1134,7 @@ pre p {
 @media (max-width: 1300px) {
 
     .container-description {
-        padding: 0 5rem 0 5rem;
+        padding: 0 1rem 0 1rem;
         text-align: center;
     }
 
