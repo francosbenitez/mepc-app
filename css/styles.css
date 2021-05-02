@@ -1057,11 +1057,6 @@ textarea[name=message]:focus{
     display: none;
 }
 
-.faq {
-    padding: 1rem 0 2rem 0;
-    margin: 2rem 0 1rem 0;
-}
-
 .faq .faq-titles h1 {
     padding: 5rem 0 0 0;
     font-size: 3rem;
