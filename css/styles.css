@@ -1178,10 +1178,10 @@ pre p {
 
 .blog-slider__container {
     background-color: var(--color-text);
-    max-width: 80%;
+    max-width: 60%;
     position: relative;
-    padding-bottom: 56.25%; 
-    padding-top: 25px;
+    padding-bottom: 26%; 
+    padding-top: 12px;
     height: 0;
     margin: auto;
 }
@@ -1297,6 +1297,16 @@ animation-duration: 1.5s;
     .slider .titles h1 {
     text-align: center;
     padding: 0 2rem 0 2rem;
+    }
+
+    .blog-slider__container {
+        background-color: var(--color-text);
+        max-width: 80%;
+        position: relative;
+        padding-bottom: 56.25%; 
+        padding-top: 25px;
+        height: 0;
+        margin: auto;
     }
 
 }
