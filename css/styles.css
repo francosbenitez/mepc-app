@@ -743,6 +743,10 @@ a:active {
     flex-direction: column;
 }
 
+.section-form .form .form-wrapper .form-image img {
+    width: 50%;
+}
+
 .section-form .form .form-wrapper .form-group {
     display: flex;
     flex-direction: column;
