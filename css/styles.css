@@ -1189,7 +1189,7 @@ pre p {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-.blog-slider__text {
+.blog-slider-text {
     color: #f2f2f2;
     font-size: 15px;
     padding: 8px 12px;
@@ -1199,7 +1199,7 @@ pre p {
     text-align: center;
 }
 
-.blog-slider__numbertext {
+.blog-slider-numbertext {
     color: #f2f2f2;
     font-size: 12px;
     padding: 8px 12px;
