@@ -872,6 +872,36 @@ pre p {
 }
 
 
+/* ---------- Features asd ----------  */
+
+
+.features-section-asd {
+    color: var(--color-text);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.container-feature .avatar .avatar-image img {
+    width: 10rem;
+    max-width: 344px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.features-section-asd .container-description .asd .feature-title,
+.features-section-asd .container-description .asd .feature-description {
+    margin: 1rem 0 1rem 0;
+}
+
+.container-description {
+    flex-basis: 60%; 
+    color: var(--color-text);
+    display: flex;
+    text-align: left;
+}
+
+
 /*---------- Media query max. 1300px ----------*/
 
 
@@ -1006,9 +1036,50 @@ pre p {
     /* FAQ */
 
 
+    .faq {
+        padding: 0 2rem 0 2rem;
+        text-align: left;
+    }
+    
+    .faq .faq-titles h1 {
+        font-size: 3rem;
+        margin: 0 0 0 0;
+    }
+
+    .faq .faq-questions {
+        margin: 0 0 0 0;
+        text-align: left;
+    }
+
     .faq .faq-questions ul li .btn-outline-success {
         text-align: left;
     }
+
+
+    /* Resources */
+
+
+    .alert-note-left, 
+    .alert-note-right, 
+    .alert-note-top,
+    .titles .search-input {
+        width: 90%;
+    }
+
+
+    /* Features section asd */
+
+
+    .container-description {
+        padding: 0 1rem 0 1rem;
+        text-align: center;
+    }
+
+    .features-section-asd {
+        flex-direction: column;
+        align-items: center;
+    }
+
 
 }
 
@@ -1063,73 +1134,6 @@ pre p {
 
 
 /* ---------------------------------------------------------- */
-
-
-/* ---------- Features ----------  */
-
-
-.features-section-asd {
-    color: var(--color-text);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.container-feature .avatar .avatar-image img {
-    width: 10rem;
-    max-width: 344px;
-    height: auto;
-    border-radius: 50%;
-    /*border: 1px solid var(--color-base);*/
-}
-
-.features-section-asd .container-description .asd .feature-title,
-.features-section-asd .container-description .asd .feature-description {
-    margin: 1rem 0 1rem 0;
-}
-
-.container-description {
-    flex-basis: 60%; 
-    color: var(--color-text);
-    display: flex;
-    text-align: left;
-}
-
-@media (max-width: 1300px) {
-
-    .alert-note-left, 
-    .alert-note-right, 
-    .alert-note-top,
-    .titles .search-input {
-        width: 90%;
-    }
-
-    .container-description {
-        padding: 0 1rem 0 1rem;
-        text-align: center;
-    }
-
-    .faq {
-        padding: 0 2rem 0 2rem;
-        text-align: left;
-    }
-    
-    .faq .faq-titles h1 {
-        font-size: 3rem;
-        margin: 0 0 0 0;
-    }
-
-    .faq .faq-questions {
-        margin: 0 0 0 0;
-        text-align: left;
-    }
-    
-    .features-section-asd {
-        flex-direction: column;
-        align-items: center;
-    }
-
-}
 
 
 /* ----------- Slider ----------- */
@@ -1231,6 +1235,10 @@ animation-name: fade;
 animation-duration: 1.5s;
 }
   
+
+/* Slider animation */
+
+
 @-webkit-keyframes fade {
 
     from {
@@ -1257,10 +1265,14 @@ animation-duration: 1.5s;
 
 @media (max-width: 1300px) {
     
+
+    /* Slider */
+
+
     .titles h1, 
     .slider .titles h1 {
-    text-align: center;
-    padding: 0 2rem 0 2rem;
+        text-align: center;
+        padding: 0 2rem 0 2rem;
     }
 
     .blog-slider__container {
