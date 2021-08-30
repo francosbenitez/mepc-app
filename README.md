@@ -1,4 +1,4 @@
-# Website of the MEPC
+# Website of the MEPC: Project Overview 
 - Created four HTML pages to display different sections of the website. 
 - Combined JavaScript functions to add interactivity to the website. 
 
