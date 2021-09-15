@@ -6,5 +6,8 @@
 - **Main Technologies:** CSS, HTML, JavaScript
 - **External Resources:** Google Fonts, Font Awesome Icons
 
+## Live Demo
+- [Website](francosbenitez.github.io/mepc)
+
 ## Project Images
 ![MEPC view](/mepc.png "MEPC website")
