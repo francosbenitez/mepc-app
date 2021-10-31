@@ -24,7 +24,7 @@
   </header>
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
 .main-header {
   position: fixed;
   z-index: 10;
