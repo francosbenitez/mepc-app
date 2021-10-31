@@ -1,15 +1,15 @@
 ---
 author:
-  name: Benjamin
-  bio: All about Benjamin
+  name: Mario
+  bio: All about Mario
   image: https://miro.medium.com/max/1000/0*5bjkLBf1VvAiMwhp
-title: My first Blog Post
-description: Learning how to use @nuxt/content to create a blog
-img: first-blog-post.jpg
-alt: my first blog post
+title: My second Blog Post
+description: Learning how to use @nuxt/content to create a blog 2
+img: second-blog-post.jpg
+alt: my second blog post
 ---
 
-<author :author="author"></author>
+<!-- <author :author="author"></author>
 
 ## This is a heading
 
@@ -35,4 +35,4 @@ This is some more info
   <template #info-box>
     This is a vue component inside markdown using slots
   </template>
-</info-box>
+</info-box> -->
