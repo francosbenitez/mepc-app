@@ -1,4 +1,7 @@
 export default {
+  content: {
+    nestedProperties: ['author.name']
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'v2',
