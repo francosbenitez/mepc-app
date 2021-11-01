@@ -1,6 +1,10 @@
 <template>
   <header class="main-header">
     <nav class="navbar">
+      <div class="nav-logo">
+        <!-- <img src="~assets/svg/logo.svg" alt="Logo MEPC"> -->
+        <NavLogo />
+      </div>
       <ul class="nav-ul">
         <li>
           <nuxt-link to="/que-estudiamos">¿Qué estudiamos?</nuxt-link>
@@ -26,6 +30,17 @@
     </nav>
   </header>
 </template>
+
+<script>
+import NavLogo from '../NavLogo.vue'
+
+export default {
+  components: {
+    NavLogo
+  }
+}
+</script>
+
 
 <style scoped lang="scss">
 .main-header {
