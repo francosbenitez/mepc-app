@@ -3,23 +3,25 @@
     <nav class="navbar">
       <div class="nav-logo">
         <!-- <img src="~assets/svg/logo.svg" alt="Logo MEPC"> -->
-        <NavLogo />
+        <NuxtLink to="/">
+          <NavLogo />
+        </NuxtLink>
       </div>
       <ul class="nav-ul">
         <li>
-          <nuxt-link to="/que-estudiamos">¿Qué estudiamos?</nuxt-link>
+          <NuxtLink to="/que-estudiamos">¿Qué estudiamos?</NuxtLink>
         </li>
         <li>
-          <nuxt-link to="/documentos">Documentos</nuxt-link>
+          <NuxtLink to="/documentos">Documentos</NuxtLink>
         </li>
         <li>
-          <nuxt-link to="/recursos">Recursos</nuxt-link>
+          <NuxtLink to="/recursos">Recursos</NuxtLink>
         </li>
         <li>
-          <nuxt-link to="/articulos">Artículos</nuxt-link>
+          <NuxtLink to="/articulos">Artículos</NuxtLink>
         </li>
         <li>
-          <nuxt-link to="/articulos">Equipo</nuxt-link>
+          <NuxtLink to="/articulos">Equipo</NuxtLink>
         </li>
       </ul>
       <div class="nav-btn">
