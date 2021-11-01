@@ -1,6 +1,7 @@
 <template>
   <div>
     <Hero />
+    <About />
     <h1>Blog Posts</h1>
     <ul>
       <li v-for="article of articles" :key="article.slug">

@@ -14,6 +14,9 @@
         <li>
           <nuxt-link to="/articulos">Artículos</nuxt-link>
         </li>
+        <li>
+          <nuxt-link to="/articulos">Equipo</nuxt-link>
+        </li>
       </ul>
       <div class="nav-btn">
         <div class="line-1"></div>
