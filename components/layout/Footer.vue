@@ -22,13 +22,18 @@
     cursor: pointer;
 }
 
+footer {
+    background-color: var(--color-base);
+}
+
 .site-footer {
-    color: var(--color-text);
+    color: var(--color-white);
+    background-color: var(--color-base);
     text-align: center;
     font-size: 13px;
     padding: 1rem;
-    max-width: 1200px;
-    margin: 30px auto;
+    /* max-width: 1200px; */
+    /* margin: 30px auto; */
 }
 
 .site-footer p {
