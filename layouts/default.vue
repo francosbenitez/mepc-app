@@ -1,17 +1,23 @@
 <template>
     <div>
-        <NavBar />
+        <Navbar />
         <Nuxt />
         <!-- <bottom-bar /> -->
     </div>
 </template>
 
 <script>
-import NavBar from '~/components/layout/NavBar'
+import Navbar from '~/components/layout/Navbar'
 
 export default {
   components: {
-    NavBar
+    Navbar
   }
 }
 </script>
+
+<style lang="scss">
+
+html {
+  font-family: 'Montserrat',
+}
