@@ -18,8 +18,12 @@
 .site-footer p a:hover,
 .avatar-title p a:hover,
 .alert-note-right a:hover {
-    border-bottom: 1.5px #004aad dotted;
+    border-bottom: 1.5px var(--color-white) dotted;
     cursor: pointer;
+}
+
+.site-footer p a {
+    color: var(--color-white);
 }
 
 footer {

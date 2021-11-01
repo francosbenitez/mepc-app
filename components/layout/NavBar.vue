@@ -9,7 +9,7 @@
       </div>
       <ul class="nav-ul">
         <li>
-          <NuxtLink to="/what-we-study">¿Qué estudiamos?</NuxtLink>
+          <NuxtLink to="/groups">¿Qué estudiamos?</NuxtLink>
         </li>
         <li>
           <NuxtLink to="/docs">Documentos</NuxtLink>
