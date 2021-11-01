@@ -24,7 +24,7 @@
           <NuxtLink to="/team">Equipo</NuxtLink>
         </li>
       </ul>
-      <div class="nav-btn">
+      <div @click="navSlide" class="nav-btn">
         <div class="line-1"></div>
         <div class="line-2"></div>
         <div class="line-3"></div>
@@ -39,6 +39,17 @@ import NavLogo from '../NavLogo.vue'
 export default {
   components: {
     NavLogo
+  },
+  methods: {
+    navSlide () {
+      const btn = document.querySelector('.nav-btn');
+      const ul = document.querySelector('.nav-ul');
+
+      // btn.addEventListener('click', () => {
+          ul.classList.toggle('nav-active');
+          btn.classList.toggle('toggle');
+      // });
+    }
   }
 }
 </script>
@@ -251,7 +262,7 @@ export default {
     transform: translateX(105%);
     transition: transform 0.5s ease-in;
     overflow-x: hidden;
-    height: 10rem;
+    /* height: 10rem; */
   }
 
   .nav-ul li {
