@@ -9,19 +9,19 @@
       </div>
       <ul class="nav-ul">
         <li>
-          <NuxtLink to="/que-estudiamos">¿Qué estudiamos?</NuxtLink>
+          <NuxtLink to="/what-we-study">¿Qué estudiamos?</NuxtLink>
         </li>
         <li>
-          <NuxtLink to="/documentos">Documentos</NuxtLink>
+          <NuxtLink to="/docs">Documentos</NuxtLink>
         </li>
         <li>
-          <NuxtLink to="/recursos">Recursos</NuxtLink>
+          <NuxtLink to="/resources">Recursos</NuxtLink>
         </li>
         <li>
-          <NuxtLink to="/articulos">Artículos</NuxtLink>
+          <NuxtLink to="/articles">Artículos</NuxtLink>
         </li>
         <li>
-          <NuxtLink to="/articulos">Equipo</NuxtLink>
+          <NuxtLink to="/team">Equipo</NuxtLink>
         </li>
       </ul>
       <div class="nav-btn">
