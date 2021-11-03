@@ -15,7 +15,7 @@
         <div class="footer__links">
             <img src="~assets/svg/logo.svg" alt="" class="footer__logo">
 
-            <div class="footer__links--grid">
+            <div class="footer__links-grid">
                 <a href="#" target="_blank" rel="noopener">
                     Grupos de estudio
                 </a>
@@ -75,11 +75,26 @@ export default {
     }
 }
 
+.footer__icons {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 0.75rem;
+}
+
 .footer__icons-icons {
+    display: flex;
+    grid-gap: 0.75rem;
     color: $color__primary;
 }
 
-.footer__links--grid {
+.footer__links {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 1.25rem;
+}
+
+.footer__links-grid {
     display: grid;
     grid-column-gap: 1.25rem;
     grid-row-gap: 0.5rem;
