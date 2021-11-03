@@ -1,6 +1,5 @@
 <template>
-  <main>
-    <AppSearchInput />
+  <main class="spaces">
     <nav>
       <ul>
         <li v-for="link of article.toc" :key="link.id">
@@ -57,6 +56,10 @@
 </script>
 
 <style>
+.spaces {
+  padding-top: 10rem;
+}
+
 .nuxt-content h2 {
   font-weight: bold;
   font-size: 28px;

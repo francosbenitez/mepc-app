@@ -1,7 +1,12 @@
 // CSS variables
+:root {
+    $color__primary: #004aad;
+    --color__primary: #{$color__primary};
+    --color__primary--muted: #{transparentize($color__primary, 0.7)};
+}
 
-
-
+// Colours
+$color__primary: var(--color__primary);
 
 // Breakpoints
 $breakpoint--sm: 640px;

@@ -19,9 +19,9 @@ export default {
 }
 </script>
 
-<style lang="scss">
+// <style lang="scss">
 
-html {
-  font-family: 'Montserrat',
-}
-</style>
+// html {
+//   font-family: 'Montserrat',
+// }
+// </style>

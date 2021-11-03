@@ -1,6 +1,19 @@
 <template>
-    <footer class="site-footer">
-        <p>MEPC © 2021</p>
+    <footer>
+        <div class="footer__icons">
+            Encuéntranos en 
+        </div>
+
+        <div class="footer__links">
+            <div>
+                <img src="~assets/svg/logo.svg" alt="">
+            </div>
+            <a href="#" target="_blank" rel="noopener">
+                
+            </a>
+        </div>
+        
+        <!-- <p>MEPC © 2021</p>
         <p>Desarrollado con ☕️ y <a href="https://github.com/francosbenitez/mepc" target="_blank" rel="noopener">
             <i class="fas fa-code-branch"></i></a> por <a href="https://francosbenitez.github.io" target="_blank" rel="noopener">
                 Franco Sebastián Benítez</a>
@@ -9,12 +22,14 @@
                     <i class="fas fa-chevron-up fa-2x"></i>
                 </a>
             </span>
-        </p>
+        </p> -->
     </footer>
 </template>
 
 <style lang="scss" scoped>
-.feature-description a:hover,
+
+
+/* .feature-description a:hover,
 .site-footer p a:hover,
 .avatar-title p a:hover,
 .alert-note-right a:hover {
@@ -36,8 +51,6 @@ footer {
     text-align: center;
     font-size: 13px;
     padding: 1rem;
-    /* max-width: 1200px; */
-    /* margin: 30px auto; */
 }
 
 .site-footer p {
@@ -46,6 +59,5 @@ footer {
 
 .site-footer .float-right {
     float: right;
-}
-
+} */
 </style>

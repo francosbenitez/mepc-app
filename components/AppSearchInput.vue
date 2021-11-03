@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="search">
     <input
       v-model="searchQuery"
       type="search"
@@ -8,7 +8,7 @@
     />
     <ul v-if="articles.length">
       <li v-for="article of articles" :key="article.slug">
-        <NuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">
+        <NuxtLink :to="{ name: 'articles-slug', params: { slug: article.slug } }">
           {{ article.title }}
         </NuxtLink>
       </li>
@@ -38,3 +38,9 @@
     }
   }
 </script>
+
+<style scoped lang="scss">
+.search {
+  margin-top: 10rem;
+}
+</style>
