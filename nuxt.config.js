@@ -1,3 +1,5 @@
+import path from 'path'
+
 export default {
   content: {
     nestedProperties: ['author.name']
@@ -63,5 +65,13 @@ export default {
         implementation: require('sass'),
       },
     },
+    extend(config) {
+
+      // Resolve path to material design icons
+      config.resolve.alias.icons = path.resolve(
+        __dirname,
+        'node_modules/vue-material-design-icons'
+      )
+    }
   }
 }

@@ -5,13 +5,13 @@
         </div>
 
         <div class="footer__links">
-            <div>
-                <img src="~assets/svg/logo.svg" alt="">
-            </div>
+            <img src="~assets/svg/logo.svg" alt="" class="footer__logo">
             <a href="#" target="_blank" rel="noopener">
                 
             </a>
         </div>
+
+        <EmailIcon />
         
         <!-- <p>MEPC © 2021</p>
         <p>Desarrollado con ☕️ y <a href="https://github.com/francosbenitez/mepc" target="_blank" rel="noopener">
@@ -26,8 +26,27 @@
     </footer>
 </template>
 
-<style lang="scss" scoped>
+<script>
+import EmailIcon from 'icons/EmailVariant'
+import TwitterIcon from 'icons/Twitter'
+import GithubIcon from 'icons/Github'
+import DevpostIcon from 'icons/HexagonOutline'
+import LinkedinIcon from 'icons/Linkedin'
+export default {
+  components: {
+    EmailIcon,
+    TwitterIcon,
+    GithubIcon,
+    DevpostIcon,
+    LinkedinIcon
+  }
+}
+</script>
 
+<style lang="scss" scoped>
+.footer__logo {
+    height: 3rem;
+}
 
 /* .feature-description a:hover,
 .site-footer p a:hover,
