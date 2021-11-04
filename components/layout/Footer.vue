@@ -13,8 +13,9 @@
             </div>
         </div>
         <div class="footer__links">
-            <img src="~assets/svg/logo.svg" alt="" class="footer__logo">
-
+            <div class="footer__logo-wrapper">
+                <img src="~assets/svg/logo.svg" alt="" class="footer__logo">
+            </div>
             <div class="footer__links-grid">
                 <a href="#" target="_blank" rel="noopener">
                     Grupos de estudio
@@ -35,7 +36,6 @@
                     Equipo
                 </a>
             </div>
-
             <div class="footer__copyright"> 
                 &copy; MEPC {{ new Date().getFullYear() }}
             </div>
@@ -68,7 +68,7 @@ export default {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 5rem;
+    padding: 3rem;
 
     @media (min-width: $breakpoint--md) {
         flex-direction: row-reverse;
@@ -104,6 +104,9 @@ export default {
     @media (min-width: $breakpoint--md) {
         grid-template-columns: repeat(3,minmax(0,1fr));
     }
+}
+
+.footer__logo-wrapper {
 }
 
 .footer__logo {
