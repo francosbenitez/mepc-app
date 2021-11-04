@@ -21,7 +21,7 @@
 .hero {
   width: 100%;
   display: flex;
-  background-color: var(--color-base);
+  background-color: $color__primary;
   padding: 4rem 0 4rem 0;
 
   @media (max-width: $breakpoint--xl) {
@@ -36,13 +36,13 @@
   
   h1 {
     font-size: 55px;
-    color: var(--color-white);
+    color: $color__background;
     margin: 2rem 0 1rem 0;
   }
   
   h2 {
     font-size: 23px;
-    color: var(--color-white);
+    color: $color__background;
     font-family: 'Montserrat';
     font-weight: 400;
   }
@@ -75,8 +75,8 @@
 
 @keyframes slide-bottom {
   100% { 
-      bottom: 0; 
-      opacity: 1; 
+    bottom: 0; 
+    opacity: 1; 
   }
 }
 </style>

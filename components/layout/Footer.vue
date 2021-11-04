@@ -5,11 +5,27 @@
                 Encuéntranos en 
             </div>
             <div class="footer__icons-icons">
-                <TwitterIcon />
-                <InstagramIcon />
-                <YoutubeIcon />
+                <a href="https://twitter.com/MEPC_oficial" target="_blank">
+                    <TwitterIcon />
+                </a>
+                <a href="https://www.instagram.com/mepc.oficial/" target="_blank">
+                    <InstagramIcon />
+                </a>
+                <a href="https://www.youtube.com/channel/UCJpN1ANkID-67MQ2alMek-g" target="_blank" rel="noopener">
+                    <YoutubeIcon />
+                </a>
                 <DiscordIcon />
                 <LinkedinIcon />
+                <!-- <ul class="network-icon" aria-hidden="true">
+                    <li><a href="mailto:mepc.org@gmail.com" target="_blank"><i class="fas fa-envelope fa-2x"></i></a></li>
+                    <li><a href="https://www.facebook.com/mepc.oficial/" target="_blank"><i class="fab fa-facebook fa-2x"></i></a></li>
+                    <li><a href="https://www.facebook.com/groups/2641583789449049" target="_blank"><i class="fab fa-facebook fa-2x"></i></a></li>
+                    <li><a href="https://www.instagram.com/mepc.oficial/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></li>
+                    <li><a href="https://twitter.com/MEPC_oficial" target="_blank"><i class="fab fa-twitter fa-2x"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCJpN1ANkID-67MQ2alMek-g" target="_blank" rel="noopener"><i class="fab fa-youtube fa-2x"></i></a></li>
+                    <li><a href="https://chat.whatsapp.com/LXTB9dRdP2z0d8meLKz1eg" target="_blank"><i class="fab fa-whatsapp fa-2x"></i></a></li>
+                    <li><a href="https://chat.whatsapp.com/LWqNQwz5UxhJIJwrArgJ3E" target="_blank"><i class="fab fa-whatsapp fa-2x"></i></a></li>
+                </ul> -->
             </div>
         </div>
         <div class="footer__links">

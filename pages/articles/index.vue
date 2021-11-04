@@ -1,7 +1,7 @@
 <template>
     <main>
     <h1>Blog Posts</h1>
-    <AppSearchInput />
+    <SearchInput />
     <ul>
       <li v-for="article of articles" :key="article.slug">
         <NuxtLink :to="{ name: 'articles-slug', params: { slug: article.slug } }">

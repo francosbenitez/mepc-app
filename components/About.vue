@@ -1,36 +1,23 @@
 <template>
-  <section id="about">
-    <div class="container-avatar">
-      <div class="avatar">
-        <div class="avatar-image">
-          <img src="~assets/svg/avatar.svg" alt="Avatar MEPC">
+  <main class="about">
+    <div class="about__avatar">
+      <div class="about__avatar-wrapper">
+        <div class="about__avatar-svg-wrapper">
+          <img src="~assets/svg/avatar.svg" alt="">
         </div>
-        <div class="avatar-description">
+        <div class="about__avatar-description">
           <h2>MEPC</h2>
           <h3>Movimiento Estudiantil por la Psicología Científica</h3>
-          <!-- <ul class="network-icon" aria-hidden="true">
-            <li><a href="mailto:mepc.org@gmail.com" target="_blank"><i class="fas fa-envelope fa-2x"></i></a></li>
-            <li><a href="https://www.facebook.com/mepc.oficial/" target="_blank"><i class="fab fa-facebook fa-2x"></i></a></li>
-            <li><a href="https://www.facebook.com/groups/2641583789449049" target="_blank"><i class="fab fa-facebook fa-2x"></i></a></li>
-            <li><a href="https://www.instagram.com/mepc.oficial/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></li>
-            <li><a href="https://twitter.com/MEPC_oficial" target="_blank"><i class="fab fa-twitter fa-2x"></i></a></li>
-            <li><a href="https://www.youtube.com/channel/UCJpN1ANkID-67MQ2alMek-g" target="_blank" rel="noopener"><i class="fab fa-youtube fa-2x"></i></a></li>
-            <li><a href="https://chat.whatsapp.com/LXTB9dRdP2z0d8meLKz1eg" target="_blank"><i class="fab fa-whatsapp fa-2x"></i></a></li>
-            <li><a href="https://chat.whatsapp.com/LWqNQwz5UxhJIJwrArgJ3E" target="_blank"><i class="fab fa-whatsapp fa-2x"></i></a></li>
-          </ul> -->
         </div>
       </div>
     </div>
-    <div class="container-video">
-      <div class="video">
-        <div class="video-link">
+    <div class="about__video">
+      <div class="about__video-wrapper">
+        <div class="about__video-youtube">
           <iframe width="800" height="500" src="https://www.youtube.com/embed/ieSG5JVLOow"></iframe>
         </div>
-        <div class="video-description">
-          <br />
+        <div class="about__video-description">
           <hr>
-          <br />
-          <!-- <hr /> -->
           <p>
             Somos el Movimiento Estudiantil por la Psicología Científica (MEPC), un grupo de estudiantes y 
             graduades autoconvocades de diferentes puntos del país que compartimos un mismo ideal: 
@@ -42,11 +29,11 @@
         </div>
       </div>
     </div>
-  </section>
+  </main>
 </template>
 
 <style scoped lang="scss">
-.container-avatar {
+.about__avatar {
   display: flex;
   padding: 60px 0px 0px 0px;
   justify-content: space-around;
@@ -56,75 +43,53 @@
   width: 33%;
   text-align: center;
   float: left;
+
+  @media (max-width: $breakpoint--xl) {
+    width: 100%;
+  }
 }
 
-.container-avatar .avatar-image img {
+.about__avatar-svg-wrapper img {
   width: 80%;
   max-width: 344px;
   height: auto;
   border-radius: 50%;
 }
 
-.container-avatar .avatar-description h2 {
-  color: var(--color-text);
-  font-family: 'Montserrat';
-  margin: 10px 0 10px 0;
+.about__avatar-description {
+  h2 {
+    color: var(--color-text);
+    font-family: 'Montserrat';
+    margin: 10px 0 10px 0;
+  }
+
+  h3 {
+    color: var(--color-text);
+    font-family: 'Montserrat';
+    font-weight: 400;
+    margin: 10px 0 10px 0;
+  }
 }
 
-.container-avatar .avatar-description h3 {
-  color: var(--color-text);
-  font-family: 'Montserrat';
-  font-weight: 400;
-  margin: 10px 0 10px 0;
-}
-
-.container-avatar .network-icon {
-  list-style: none;
-  display: inline-block;
-  text-rendering: auto;
-  line-height: 1;
-  display: inline-flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 0;
-}
-
-.container-avatar .network-icon i {
-  margin-right: 5px;
-  padding: 3px;
-  transition: all 0.7s ease-in-out;
-}
-
-.container-avatar .network-icon i:hover {
-  transform: rotateY(360deg);
-}
-
-.container-video {
+.about__video {
   color: var(--color-text);
   display: flex;
   padding: 60px 20px;
   text-align: center;
 }
 
-.container-video .video-link {
+.about__video-youtube {
   position: relative;
   padding-bottom: 56.25%; 
   padding-top: 25px;
   height: 0;
- }
+}
 
- .container-video .video-link iframe {
+.about__video-youtube iframe {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-}
-
-@media (max-width: 1300px) {
-  .container-avatar {
-    width: 100%;
-  }
 }
 </style>

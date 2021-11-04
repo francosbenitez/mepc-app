@@ -2,11 +2,32 @@
 :root {
   $color__primary: #004aad;
   --color__primary: #{$color__primary};
+
+  $color__secondary: #dee7e7;
+  --color__secondary: #{$color__secondary};
+
   $color__background: #f4faff;
+  --color__background: #{$color__background};
+
+  $color__text: #313131;
+  --color-text: #{$color__text};
+
+  $color__border: #c1c1c1;
+  --color__border: #{$color__border};
+
+  // Dark mode
+  @media screen {
+    &[data-theme='dark'] {
+    }
+  }
 }
 
 // Colours
 $color__primary: var(--color__primary);
+$color__secondary: var(--color__secondary);
+$color__background: var(--color__background);
+$color__border: var(--color__border);
+$color__text: var(--color__text);
 
 // Breakpoints
 $breakpoint--sm: 640px;
