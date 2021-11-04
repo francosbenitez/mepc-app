@@ -1,10 +1,10 @@
 <template>
-    <div>
-        <Navbar />
-        <Nuxt />
-        <!-- <bottom-bar /> -->
-        <Footer />
-    </div>
+  <div>
+    <Navbar />
+    <Nuxt />
+    <!-- <bottom-bar /> -->
+    <Footer />
+  </div>
 </template>
 
 <script>
@@ -20,8 +20,7 @@ export default {
 </script>
 
 // <style lang="scss">
-
 // html {
-//   font-family: 'Montserrat',
+//   font-family: 'Montserrat', sans-serif;
 // }
 // </style>

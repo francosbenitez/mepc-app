@@ -9,13 +9,13 @@
   font-family: 'Montserrat';
   box-sizing: border-box;
   --color-base: #004aad;
-  --color-white: #F4FAFF;
-  --color-secondary: #DEE7E7;
-  --color-tertiary: #B7ADCF;
+  --color-white: #f4faff;
+  --color-secondary: #dee7e7;
+  --color-tertiary: #b7adcf;
   --color-fourth: #618985;
-  --color-fifth: #C19875;
+  --color-fifth: #c19875;
   --color-text: #313131;
-  --border-color: #C1C1C1;
+  --border-color: #c1c1c1;
   /* Firefox */
   scrollbar-width: thin;
   scrollbar-color: var(--color-white) var(--color-base);
@@ -30,9 +30,13 @@ body::-webkit-scrollbar-track {
   background: var(--color-white);
 }
 body::-webkit-scrollbar-thumb {
-  background-color: var(--color-base); 
-  border-radius: 20px;       
-  border: 3px solid var(--color-white);  
+  background-color: var(--color-base);
+  border-radius: 20px;
+  border: 3px solid var(--color-white);
+}
+
+body {
+  font-family: 'Montserrat';
 }
 
 a {
