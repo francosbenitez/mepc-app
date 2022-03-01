@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ["rickandmortyapi.com"],
+    domains: ["ws-public.interpol.int", "rickandmortyapi.com"],
     loader: "custom",
     path: "/",
   },
