@@ -483,8 +483,8 @@ body {
   width: 80%;
   max-width: 150px;
   height: auto;
-  background-image: -webkit-linear-gradient(top, #f4f1ee, #fff);
-  background-image: linear-gradient(top, #f4f1ee, #fff);
+  background-image: -webkit-linear-gradient(to top, #f4f1ee, #fff);
+  background-image: linear-gradient(to top, #f4f1ee, #fff);
   box-shadow: 0px 8px 10px 0px rgb(0 0 0 / 30%), inset 0px 4px 1px 1px white,
     inset 0px -3px 1px 1px rgb(204 198 197 / 50%);
   -webkit-transition: all 0.1s linear;
@@ -504,15 +504,15 @@ body {
 }
 
 .row .groups-section .column .group-avatar:hover {
-  background-image: -webkit-linear-gradient(top, #efedec, #f7f4f4);
-  background-image: linear-gradient(top, #efedec, #f7f4f4);
+  background-image: -webkit-linear-gradient(to top, #efedec, #f7f4f4);
+  background-image: linear-gradient(to top, #efedec, #f7f4f4);
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1),
     inset 0px -3px 1px 1px rgba(204, 198, 197, 0.5);
 }
 
 .row .groups-section .column .group-avatar:active {
-  background-image: -webkit-linear-gradient(top, #efedec, #f7f4f4);
-  background-image: linear-gradient(top, #efedec, #f7f4f4);
+  background-image: -webkit-linear-gradient(to top, #efedec, #f7f4f4);
+  background-image: linear-gradient(to top, #efedec, #f7f4f4);
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.4),
     inset 0px -3px 1px 1px rgba(204, 198, 197, 0.5);
 }
