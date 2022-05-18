@@ -175,8 +175,7 @@ export default {
         @media (max-width: $breakpoint--md) {
           display: block;
           cursor: pointer;
-          position: absolute;
-          right: 0;
+          margin-left: auto;
         }
 
         div {
