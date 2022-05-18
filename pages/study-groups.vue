@@ -1,4 +1,6 @@
-<template></template>
+<template>
+  <main></main>
+</template>
 
 <style lang="scss">
 /*---------- Study groups ----------*/

@@ -1,5 +1,7 @@
 <template>
-  <div><HomeHero /></div>
+  <main class="home">
+    <HomeHero />
+  </main>
 </template>
 
 <script>
@@ -12,3 +14,8 @@ export default {
   },
 }
 </script>
+
+<style lang="scss">
+.home {
+}
+</style>

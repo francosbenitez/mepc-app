@@ -1,7 +1,7 @@
 <template>
   <section id="hero">
-    <div class="container-hero">
-      <div class="hero-description">
+    <div class="hero__container">
+      <div class="hero__description">
         <h1>¿Quiénes somos?</h1>
         <h2>
           Somos una organización independiente de estudiantes y graduades, que
@@ -10,7 +10,7 @@
           por una formación actualizada, plural y científica.
         </h2>
       </div>
-      <div class="hero-image">
+      <div class="hero__image">
         <img src="./assets/images/hero.svg" alt="MEPC cover" />
       </div>
     </div>
@@ -18,53 +18,55 @@
 </template>
 
 <style lang="scss">
-.container-hero {
-  width: 100%;
-  display: flex;
+#hero {
   background-color: $color__primary;
-  padding: 4rem 0 4rem 0;
-
-  .hero-description {
-    flex-basis: 50%;
-    padding-left: 5vw;
-
-    h1 {
-      font-size: 55px;
-      color: $color__white;
-      margin: 2rem 0 1rem 0;
-      @include hero-animation;
-    }
-
-    h2 {
-      font-size: 23px;
-      color: $color__white;
-      font-family: 'Montserrat';
-      font-weight: 400;
-      @include hero-animation;
-    }
-  }
-
-  .hero-image {
-    img {
-      width: 200%;
-      margin: 3rem 0 0 0;
-      @include hero-animation;
-    }
-  }
-}
-
-@media (max-width: 1300px) {
-  .container-hero {
+  .hero__container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
     flex-direction: column;
     text-align: center;
+    padding: 4rem;
 
-    .hero-description {
+    max-width: 1152px;
+
+    .hero__description {
+      flex-basis: 50%;
       padding: 0 1rem 0 1rem;
+
+      h1 {
+        font-size: 55px;
+        line-height: 4rem;
+        color: $color__white;
+        margin: 2rem 0 1rem 0;
+        @include hero-animation;
+      }
+
+      h2 {
+        font-size: 23px;
+        line-height: 2.5rem;
+        color: $color__white;
+        font-family: 'Montserrat';
+        font-weight: 400;
+        @include hero-animation;
+      }
+
+      @media (min-width: $breakpoint--md) {
+        text-align: left;
+      }
     }
 
-    .hero-image img {
+    .hero__image {
+      flex-basis: 50%;
       width: 100%;
-      margin: 0 0 0 0;
+
+      img {
+        @include hero-animation;
+      }
+    }
+
+    @media (min-width: $breakpoint--md) {
+      flex-direction: row;
     }
   }
 }
