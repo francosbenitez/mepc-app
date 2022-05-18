@@ -2,7 +2,7 @@
   <header class="header">
     <div class="header__content">
       <nav class="nav">
-        <div class="nav__logo">MEPC</div>
+        <div class="nav__logo"><Logo /></div>
         <ul class="nav__list">
           <li>
             <NuxtLink to="/what-do-we-study"> ¿Qué estudiamos? </NuxtLink>
@@ -25,13 +25,13 @@
 </template>
 
 <script>
-// import Logo from './assets/icons/logo.svg'
+import Logo from './assets/icons/logo.svg?inline'
 
-// export default {
-//   components: {
-//     Logo,
-//   },
-// }
+export default {
+  components: {
+    Logo,
+  },
+}
 </script>
 
 <style lang="scss">
@@ -60,20 +60,17 @@
         svg {
           height: 50px;
           position: absolute;
-          margin-left: 5rem;
           fill: $color__text;
 
           @media (max-width: $breakpoint--md) {
             height: 45px;
             z-index: 10;
             position: relative;
-            margin-left: 0.5rem;
           }
 
           &:hover {
             height: 50px;
             position: absolute;
-            margin-left: 5rem;
             fill: $color__primary;
             -webkit-animation: shake-vertical 1s
               cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
