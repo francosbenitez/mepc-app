@@ -22,3 +22,20 @@
     </p>
   </footer>
 </template>
+
+<style lang="scss">
+.site-footer {
+  color: var(--color-text);
+  text-align: center;
+  font-size: 13px;
+  max-width: 1200px;
+}
+
+.site-footer p {
+  margin: 10px 0 10px 0;
+}
+
+.site-footer .float-right {
+  float: right;
+}
+</style>

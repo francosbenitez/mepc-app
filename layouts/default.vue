@@ -1,7 +1,7 @@
 <template>
   <div>
     <TheNavbar />
-    <Nuxt />
+    <Nuxt class="wrapper" />
     <TheFooter />
   </div>
 </template>
@@ -17,3 +17,11 @@ export default {
   },
 }
 </script>
+
+<style lang="scss">
+.wrapper {
+  min-height: 100vh;
+  position: relative;
+  width: 100%;
+}
+</style>
