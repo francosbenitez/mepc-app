@@ -11,7 +11,10 @@
           <ul class="about__items">
             <template v-for="item in content.social_networks">
               <a :href="item.url" :key="item.url" class="about__items-networks">
-                <component :is="item.component" :key="item"></component>
+                <component
+                  :is="item.component"
+                  :key="item.component"
+                ></component>
               </a>
             </template>
           </ul>

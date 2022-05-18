@@ -12,7 +12,6 @@ import { getStudyGroupData } from '../../lib/study-groups'
 export default {
   async asyncData({ params }) {
     const studyGroupData = await getStudyGroupData(params.id)
-    console.log('studyGroupData', studyGroupData)
     return {
       studyGroupData,
     }
