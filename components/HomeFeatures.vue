@@ -1,33 +1,47 @@
-<template>
-  <div></div>
-</template>
+<template></template>
 
 <style lang="scss">
-/* ---------- Features asd ----------  */
+/* ---------- Features ---------- */
 
-.features-section-asd {
+.features-section {
   color: var(--color-text);
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
-.container-feature .avatar .avatar-image img {
-  width: 10rem;
-  max-width: 344px;
-  height: auto;
-  border-radius: 50%;
+.features-section .feature {
+  width: 250px;
+  text-align: center;
 }
 
-.features-section-asd .container-description .asd .feature-title,
-.features-section-asd .container-description .asd .feature-description {
+.features-section .feature .feature-icon {
+  color: var(--color-base);
+  text-align: center;
+  margin: 0 auto;
+}
+
+.features-section .feature .fab,
+.features-section .feature .fas {
+  font-size: 5rem;
+  color: var(--color-base);
+  text-align: center;
+  margin: 1rem;
+}
+
+.features-section .feature .feature-icon img {
+  width: 100px;
+}
+
+.features-section .feature .feature-description {
   margin: 1rem 0 1rem 0;
 }
 
-.container-description {
-  flex-basis: 60%;
-  color: var(--color-text);
-  display: flex;
-  text-align: left;
+@media (max-width: 1300px) {
+  .features-section {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 </style>

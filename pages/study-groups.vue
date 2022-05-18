@@ -83,4 +83,14 @@
 .row .groups-section .column .avatar-title .network-icon i:hover {
   transform: rotateY(360deg);
 }
+
+@media (max-width: 1300px) {
+  .row .groups-section {
+    flex-direction: column;
+  }
+
+  .row .groups-section .column .avatar-title .network-icon {
+    margin-bottom: 2rem;
+  }
+}
 </style>

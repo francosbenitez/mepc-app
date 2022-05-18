@@ -78,4 +78,10 @@
   width: 100%;
   height: 100%;
 }
+
+@media (max-width: 1300px) {
+  .container-avatar {
+    width: 100%;
+  }
+}
 </style>

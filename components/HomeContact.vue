@@ -85,4 +85,10 @@ textarea[name='message']:focus {
   border-color: var(--color-white);
   background-color: var(--color-base);
 }
+
+@media (max-width: 1300px) {
+  .section-form .form .form-wrapper .form-image img {
+    width: 100%;
+  }
+}
 </style>

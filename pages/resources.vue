@@ -65,4 +65,13 @@
   background: #fff url('https://francosbenitez.github.io/mepc/img/search.svg')
     1rem no-repeat;
 }
+
+@media (max-width: 1300px) {
+  .alert-note-left,
+  .alert-note-right,
+  .alert-note-top,
+  .titles .search-input {
+    width: 90%;
+  }
+}
 </style>

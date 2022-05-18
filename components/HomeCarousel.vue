@@ -120,4 +120,22 @@
     opacity: 1;
   }
 }
+
+@media (max-width: 1300px) {
+  .titles h1,
+  .slider .titles h1 {
+    text-align: center;
+    padding: 0 2rem 0 2rem;
+  }
+
+  .blog-slider-container {
+    background-color: var(--color-text);
+    max-width: 80%;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+    margin: auto;
+  }
+}
 </style>

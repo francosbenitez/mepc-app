@@ -44,4 +44,25 @@
 pre p {
   color: var(--color-text);
 }
+
+@media (max-width: 1300px) {
+  .faq {
+    padding: 0 2rem 0 2rem;
+    text-align: left;
+  }
+
+  .faq .faq-titles h1 {
+    font-size: 3rem;
+    margin: 0 0 0 0;
+  }
+
+  .faq .faq-questions {
+    margin: 0 0 0 0;
+    text-align: left;
+  }
+
+  .faq .faq-questions ul li .btn-outline-success {
+    text-align: left;
+  }
+}
 </style>
