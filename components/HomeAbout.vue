@@ -129,6 +129,11 @@ export default {
         position: relative;
         margin: 10px;
 
+        &:hover {
+          border-bottom: none;
+          transform: scale(1.2);
+        }
+
         svg {
           fill: $color__primary;
         }
