@@ -128,6 +128,10 @@ export default {
       .about__items-networks {
         position: relative;
         margin: 10px;
+
+        svg {
+          fill: $color__primary;
+        }
       }
 
       i {

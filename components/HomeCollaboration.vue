@@ -22,7 +22,6 @@
             class="collaboration__description"
             v-html="content.description"
           ></p>
-          .
         </div>
       </div>
     </div>
