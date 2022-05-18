@@ -26,13 +26,11 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 4rem;
-
+    padding: 4rem 0;
     max-width: 1152px;
 
     .hero__description {
       flex-basis: 50%;
-      padding: 0 1rem 0 1rem;
 
       h1 {
         font-size: 55px;
@@ -59,6 +57,7 @@
     .hero__image {
       flex-basis: 50%;
       width: 100%;
+      margin: auto;
 
       img {
         @include hero-animation;
