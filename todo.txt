@@ -1,8 +1,10 @@
 - TO-DO:
   - Only refactor the HTML/JS/CSS website to Nuxt/SASS.
     - Don't new features! It's only a refactoring.
-  - Home 
+  - Home:
     - Components to show:
       - HomeHero.vue 
       - HomeAbout.vue
       - HomeFeatures2.vue
+  - Study groups:
+    - Use _slug instead of _id for each study group.
