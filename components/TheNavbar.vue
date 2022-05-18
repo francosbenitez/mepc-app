@@ -5,13 +5,13 @@
         <div class="nav__logo"><Logo /></div>
         <ul class="nav__list" :class="{ 'nav-active': clicked }">
           <li>
-            <NuxtLink to="/what-do-we-study"> ¿Qué estudiamos? </NuxtLink>
+            <NuxtLink to="/what-do-we-study"> What Do We Study? </NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/documents"> Documentos </NuxtLink>
+            <NuxtLink to="/documents"> Documents </NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/resources"> Recursos </NuxtLink>
+            <NuxtLink to="/resources"> Resources </NuxtLink>
           </li>
         </ul>
         <div
@@ -79,8 +79,6 @@ export default {
           }
 
           &:hover {
-            height: 50px;
-            position: absolute;
             fill: $color__primary;
             -webkit-animation: shake-vertical 1s
               cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
@@ -97,7 +95,7 @@ export default {
         @media (max-width: $breakpoint--md) {
           position: absolute;
           right: 0;
-          top: 55px;
+          top: 0;
           background-color: $color__white;
           display: flex;
           flex-direction: column;
@@ -106,7 +104,24 @@ export default {
           transform: translateX(105%);
           transition: transform 0.5s ease-in;
           overflow-x: hidden;
-          height: 10rem;
+          height: 100vh;
+
+          // https://stackoverflow.com/questions/28455100/how-to-center-div-vertically-inside-of-absolutely-positioned-parent-div
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -moz-box;
+          display: -moz-flex;
+          display: -ms-flexbox;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          -webkit-justify-content: center;
+          -moz-justify-content: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          -webkit-align-items: center;
+          -moz-align-items: center;
+          align-items: center;
         }
 
         li {
@@ -180,6 +195,7 @@ export default {
 
       .nav__btn {
         display: none;
+        z-index: 10;
 
         @media (max-width: $breakpoint--md) {
           display: block;
