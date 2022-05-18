@@ -5,3 +5,18 @@
   -webkit-animation: slide-bottom 2.5s cubic-bezier(0.87, 0, 0.13, 1) forwards;
   animation: slide-bottom 2.5s forwards cubic-bezier(0.87, 0, 0.13, 1) forwards;
 }
+
+@mixin titles {
+  padding: 5rem 0 0 0;
+  text-align: center;
+  color: $color__text;
+
+  h1 {
+    font-size: 3rem;
+
+    @media (max-width: $breakpoint--md) {
+      text-align: center;
+      padding: 0 2rem 0 2rem;
+    }
+  }
+}

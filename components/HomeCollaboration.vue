@@ -1,6 +1,6 @@
 <template>
   <section id="collaboration">
-    <div class="titles">
+    <div class="collaboration__title--primary">
       <h1>¿Cómo colaborar?</h1>
       <hr />
     </div>
@@ -9,14 +9,14 @@
       v-for="content in content.collaboration"
       :key="content.title"
     >
-      <div class="avatar__image">
+      <div class="collaboration__image">
         <img
           :src="require('./assets/images/' + content.img)"
           :alt="content.alt"
         />
       </div>
-      <div class="container-description">
-        <div class="asd">
+      <div class="collaboration__text">
+        <div>
           <h2 class="collaboration__title">{{ content.title }}</h2>
           <p
             class="collaboration__description"
@@ -42,6 +42,10 @@ export default {
 </script>
 
 <style lang="scss">
+.collaboration__title--primary {
+  @include titles;
+}
+
 .collaboration__content {
   color: $color__text;
   display: flex;
@@ -53,7 +57,7 @@ export default {
     align-items: center;
   }
 
-  .avatar__image {
+  .collaboration__image {
     img {
       width: 10rem;
       max-width: 344px;
@@ -62,7 +66,7 @@ export default {
     }
   }
 
-  .container-description {
+  .collaboration__text {
     flex-basis: 60%;
     color: $color__text;
     display: flex;
@@ -73,14 +77,12 @@ export default {
       text-align: center;
     }
 
-    .asd {
-      .collaboration__title {
-        margin: 1rem 0 1rem 0;
-      }
+    .collaboration__title {
+      margin: 1rem 0 1rem 0;
+    }
 
-      .collaboration__description {
-        margin: 1rem 0 1rem 0;
-      }
+    .collaboration__description {
+      margin: 1rem 0 1rem 0;
     }
   }
 }
