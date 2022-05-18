@@ -7,8 +7,12 @@
           <li>
             <NuxtLink to="/what-do-we-study"> ¿Qué estudiamos? </NuxtLink>
           </li>
-          <li><NuxtLink to="/documents">Documentos</NuxtLink></li>
-          <li><NuxtLink to="/resources">Recursos</NuxtLink></li>
+          <li>
+            <NuxtLink to="/documents"> Documentos </NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/resources"> Recursos </NuxtLink>
+          </li>
         </ul>
         <div class="nav__btn">
           <div class="line__1"></div>
