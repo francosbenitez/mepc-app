@@ -4,29 +4,28 @@
       <h1>¿Cómo colaborar?</h1>
       <hr />
     </div>
-    <section
+    <div
       class="collaboration__content"
       v-for="content in content.collaboration"
       :key="content.title"
     >
-      <div class="container-feature">
-        <div class="avatar">
-          <div class="avatar-image">
-            <img
-              :src="require('./assets/images/' + content.img)"
-              :alt="content.alt"
-            />
-          </div>
-        </div>
+      <div class="avatar__image">
+        <img
+          :src="require('./assets/images/' + content.img)"
+          :alt="content.alt"
+        />
       </div>
       <div class="container-description">
         <div class="asd">
-          <h2 class="feature-title">{{ content.title }}</h2>
-          <p class="feature-description" v-html="content.description"></p>
+          <h2 class="collaboration__title">{{ content.title }}</h2>
+          <p
+            class="collaboration__description"
+            v-html="content.description"
+          ></p>
           .
         </div>
       </div>
-    </section>
+    </div>
   </section>
 </template>
 
@@ -54,16 +53,12 @@ export default {
     align-items: center;
   }
 
-  .container-feature {
-    .avatar {
-      .avatar-image {
-        img {
-          width: 10rem;
-          max-width: 344px;
-          height: auto;
-          border-radius: 50%;
-        }
-      }
+  .avatar__image {
+    img {
+      width: 10rem;
+      max-width: 344px;
+      height: auto;
+      border-radius: 50%;
     }
   }
 
@@ -77,12 +72,13 @@ export default {
       padding: 0 1rem 0 1rem;
       text-align: center;
     }
+
     .asd {
-      .feature-title {
+      .collaboration__title {
         margin: 1rem 0 1rem 0;
       }
 
-      .feature-description {
+      .collaboration__description {
         margin: 1rem 0 1rem 0;
       }
     }
