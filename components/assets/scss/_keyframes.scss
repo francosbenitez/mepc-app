@@ -1,4 +1,12 @@
-/* nav-ul animation */
+/* Hero */
+@keyframes slide-bottom {
+  100% {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+/* Nav-ul */
 @-webkit-keyframes fill {
   0% {
     width: 0%;
@@ -17,7 +25,7 @@
   }
 }
 
-/* nav-logo animation */
+/* Nav-logo */
 @-webkit-keyframes shake-vertical {
   0%,
   100% {
