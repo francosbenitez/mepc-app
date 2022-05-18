@@ -1,5 +1,5 @@
 <template>
-  <main class="home">
+  <main>
     <HomeHero />
     <HomeAbout />
     <HomeCollaboration />
@@ -20,8 +20,3 @@ export default {
   },
 }
 </script>
-
-<style lang="scss">
-.home {
-}
-</style>
