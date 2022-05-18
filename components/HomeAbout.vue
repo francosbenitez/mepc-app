@@ -8,56 +8,16 @@
         <div class="avatar-description">
           <h2>MEPC</h2>
           <h3>Movimiento Estudiantil por la Psicología Científica</h3>
-          <ul class="network-icon" aria-hidden="true">
-            <li>
-              <a href="mailto:mepc.org@gmail.com" target="_blank"
-                ><i class="fas fa-envelope fa-2x"></i
-              ></a>
-            </li>
-            <li>
-              <a href="https://www.facebook.com/mepc.oficial/" target="_blank"
-                ><i class="fab fa-facebook fa-2x"></i
-              ></a>
-            </li>
-            <li>
+          <ul class="network-icon">
+            <template v-for="item in content.social_networks">
               <a
-                href="https://www.facebook.com/groups/2641583789449049"
-                target="_blank"
-                ><i class="fab fa-facebook fa-2x"></i
-              ></a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/mepc.oficial/" target="_blank"
-                ><i class="fab fa-instagram fa-2x"></i
-              ></a>
-            </li>
-            <li>
-              <a href="https://twitter.com/MEPC_oficial" target="_blank"
-                ><i class="fab fa-twitter fa-2x"></i
-              ></a>
-            </li>
-            <li>
-              <a
-                href="https://www.youtube.com/channel/UCJpN1ANkID-67MQ2alMek-g"
-                target="_blank"
-                rel="noopener"
-                ><i class="fab fa-youtube fa-2x"></i
-              ></a>
-            </li>
-            <li>
-              <a
-                href="https://chat.whatsapp.com/LXTB9dRdP2z0d8meLKz1eg"
-                target="_blank"
-                ><i class="fab fa-whatsapp fa-2x"></i
-              ></a>
-            </li>
-            <li>
-              <a
-                href="https://chat.whatsapp.com/LWqNQwz5UxhJIJwrArgJ3E"
-                target="_blank"
-                ><i class="fab fa-whatsapp fa-2x"></i
-              ></a>
-            </li>
+                :href="item.url"
+                :key="item.url"
+                style="position: relative; margin: 10px"
+              >
+                <component :is="item.component" :key="item"></component>
+              </a>
+            </template>
           </ul>
         </div>
       </div>
@@ -88,6 +48,28 @@
     </div>
   </section>
 </template>
+
+<script>
+import content from '../lib/content.json'
+import Email from './assets/icons/email.svg?inline'
+import Facebook from './assets/icons/facebook.svg?inline'
+import Instagram from './assets/icons/instagram.svg?inline'
+import Twitter from './assets/icons/twitter.svg?inline'
+
+export default {
+  data() {
+    return {
+      content: content,
+    }
+  },
+  components: {
+    Email,
+    Facebook,
+    Instagram,
+    Twitter,
+  },
+}
+</script>
 
 <style lang="scss">
 #about {

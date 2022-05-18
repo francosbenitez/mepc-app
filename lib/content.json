@@ -1,5 +1,23 @@
 {
-  "social_networks": {
+  "social_networks": [
+    {
+      "component": "email",
+      "url": "mailto:mepc.org@gmail.com"
+    },
+    {
+      "component": "facebook",
+      "url": "https://www.facebook.com/groups/2641583789449049"
+    },
+    {
+      "component": "twitter",
+      "url": "https://twitter.com/MEPC_oficial"
+    },
+    {
+      "component": "instagram",
+      "url": "https://www.instagram.com/mepc.oficial/"
+    }
+  ],
+  "social_networks_backup": {
     "email_url": "mailto:mepc.org@gmail.com",
     "facebook_page_url": "https://www.facebook.com/mepc.oficial/",
     "facebook_group_url": "https://www.facebook.com/groups/2641583789449049",
