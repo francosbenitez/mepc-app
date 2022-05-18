@@ -46,12 +46,25 @@
     .nav {
       display: flex;
 
+      @media (max-width: 1300px) {
+        justify-content: left;
+        align-items: center;
+        height: 55px;
+      }
+
       .nav__logo {
         svg {
           height: 50px;
           position: absolute;
           margin-left: 5rem;
           fill: $color__text;
+
+          @media (max-width: 1300px) {
+            height: 45px;
+            z-index: 10;
+            position: relative;
+            margin-left: 0.5rem;
+          }
 
           &:hover {
             height: 50px;
@@ -70,6 +83,21 @@
         width: 100%;
         text-align: right;
 
+        @media (max-width: 1300px) {
+          position: absolute;
+          right: 0;
+          top: 55px;
+          background-color: $color__white;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          transform: translateX(105%);
+          transition: transform 0.5s ease-in;
+          overflow-x: hidden;
+          height: 10rem;
+        }
+
         li {
           display: inline;
           position: relative;
@@ -78,6 +106,10 @@
           padding: 15px 20px;
           height: 55px;
           line-height: 55px;
+
+          @media (max-width: 1300px) {
+            padding: 0;
+          }
 
           a {
             color: $color__text;
@@ -91,6 +123,10 @@
             .is-active {
               color: $color__white;
               background: $color__primary;
+
+              @media (max-width: 1300px) {
+                color: $color__white;
+              }
             }
 
             &:hover {
@@ -134,6 +170,13 @@
       .nav__btn {
         display: none;
 
+        @media (max-width: 1300px) {
+          display: block;
+          cursor: pointer;
+          position: absolute;
+          right: 0;
+        }
+
         div {
           width: 25px;
           height: 3px;
@@ -147,52 +190,6 @@
 }
 
 @media (max-width: 1300px) {
-  .nav {
-    justify-content: left;
-    align-items: center;
-    height: 55px;
-  }
-
-  .nav__logo svg,
-  .nav__logo svg:hover {
-    height: 45px;
-    z-index: 10;
-    position: relative;
-    margin-left: 0.5rem;
-  }
-
-  .nav__list {
-    position: absolute;
-    right: 0;
-    top: 55px;
-    background-color: $color__white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    transform: translateX(105%);
-    transition: transform 0.5s ease-in;
-    overflow-x: hidden;
-    height: 10rem;
-
-    li {
-      padding: 0 0 0 0;
-
-      a {
-        .is-active {
-          color: $color__white;
-        }
-      }
-    }
-  }
-
-  .nav__btn {
-    display: block;
-    cursor: pointer;
-    position: absolute;
-    right: 0;
-  }
-
   .nav-active {
     transform: translateX(0%);
   }
