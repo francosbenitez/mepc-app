@@ -1,19 +1,19 @@
 <template>
   <main class="home">
     <HomeHero />
-    <HomeFeatures2 />
+    <HomeCollaboration />
   </main>
 </template>
 
 <script>
 import HomeHero from '../components/HomeHero'
-import HomeFeatures2 from '../components/HomeFeatures2'
+import HomeCollaboration from '../components/HomeCollaboration'
 
 export default {
   name: 'IndexPage',
   components: {
     HomeHero,
-    HomeFeatures2,
+    HomeCollaboration,
   },
 }
 </script>
