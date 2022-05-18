@@ -1,20 +1,16 @@
 <template>
   <section id="about">
-    <div class="container-avatar">
-      <div class="avatar">
-        <div class="avatar-image">
+    <div class="about__avatar">
+      <div>
+        <div class="about__image">
           <img src="./assets/images/avatar.svg" alt="Avatar MEPC" />
         </div>
-        <div class="avatar-description">
+        <div class="about__social">
           <h2>MEPC</h2>
           <h3>Movimiento Estudiantil por la Psicología Científica</h3>
-          <ul class="network-icon">
+          <ul class="about__items">
             <template v-for="item in content.social_networks">
-              <a
-                :href="item.url"
-                :key="item.url"
-                style="position: relative; margin: 10px"
-              >
+              <a :href="item.url" :key="item.url" class="about__items-networks">
                 <component :is="item.component" :key="item"></component>
               </a>
             </template>
@@ -22,16 +18,16 @@
         </div>
       </div>
     </div>
-    <div class="container-video">
-      <div class="video">
-        <div class="video-link">
+    <div class="about__video">
+      <div>
+        <div class="about__iframe-wrapper">
           <iframe
             width="800"
             height="500"
             src="https://www.youtube.com/embed/ieSG5JVLOow"
           ></iframe>
         </div>
-        <div class="video-description">
+        <div class="about__description">
           <hr />
           <p>
             Somos el Movimiento Estudiantil por la Psicología Científica (MEPC),
@@ -78,7 +74,7 @@ export default {
   width: 90%;
   margin: 0 auto;
 
-  .container-avatar {
+  .about__avatar {
     display: flex;
     padding: 60px 0px 0px 0px;
     justify-content: space-around;
@@ -93,7 +89,7 @@ export default {
       width: 100%;
     }
 
-    .avatar-image {
+    .about__image {
       img {
         width: 80%;
         max-width: 344px;
@@ -102,7 +98,7 @@ export default {
       }
     }
 
-    .avatar-description {
+    .about__social {
       h2 {
         color: $color__text;
         font-family: 'Montserrat';
@@ -117,7 +113,7 @@ export default {
       }
     }
 
-    .network-icon {
+    .about__items {
       list-style: none;
       display: inline-block;
       text-rendering: auto;
@@ -127,6 +123,11 @@ export default {
       flex-wrap: wrap;
       justify-content: center;
       padding: 0;
+
+      .about__items-networks {
+        position: relative;
+        margin: 10px;
+      }
 
       i {
         margin-right: 5px;
@@ -140,13 +141,13 @@ export default {
     }
   }
 
-  .container-video {
+  .about__video {
     color: $color__text;
     display: flex;
     padding: 60px 20px;
     text-align: center;
 
-    .video-link {
+    .about__iframe-wrapper {
       position: relative;
       padding-bottom: 56.25%;
       padding-top: 25px;
