@@ -20,6 +20,7 @@
 <style lang="scss">
 #hero {
   background-color: $color__primary;
+
   .hero__container {
     width: 90%;
     margin: 0 auto;

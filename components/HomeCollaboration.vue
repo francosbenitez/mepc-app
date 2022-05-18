@@ -42,47 +42,54 @@ export default {
 </script>
 
 <style lang="scss">
-.collaboration__title--primary {
-  @include titles;
-}
+#collaboration {
+  max-width: 1152px;
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
 
-.collaboration__content {
-  color: $color__text;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-
-  @media (max-width: $breakpoint--md) {
-    flex-direction: column;
-    align-items: center;
+  .collaboration__title--primary {
+    @include titles;
   }
 
-  .collaboration__image {
-    img {
-      width: 10rem;
-      max-width: 344px;
-      height: auto;
-      border-radius: 50%;
-    }
-  }
-
-  .collaboration__text {
-    flex-basis: 60%;
+  .collaboration__content {
     color: $color__text;
     display: flex;
-    text-align: left;
+    flex-direction: row;
+    justify-content: space-evenly;
 
     @media (max-width: $breakpoint--md) {
-      padding: 0 1rem 0 1rem;
-      text-align: center;
+      flex-direction: column;
+      align-items: center;
     }
 
-    .collaboration__title {
-      margin: 1rem 0 1rem 0;
+    .collaboration__image {
+      img {
+        width: 10rem;
+        max-width: 344px;
+        height: auto;
+        border-radius: 50%;
+      }
     }
 
-    .collaboration__description {
-      margin: 1rem 0 1rem 0;
+    .collaboration__text {
+      flex-basis: 60%;
+      color: $color__text;
+      display: flex;
+      text-align: left;
+
+      @media (max-width: $breakpoint--md) {
+        padding: 0 1rem 0 1rem;
+        text-align: center;
+      }
+
+      .collaboration__title {
+        margin: 1rem 0 1rem 0;
+      }
+
+      .collaboration__description {
+        margin: 1rem 0 1rem 0;
+      }
     }
   }
 }
