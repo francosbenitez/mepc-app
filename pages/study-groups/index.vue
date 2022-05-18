@@ -4,12 +4,12 @@
       <div class="study__title--primary">
         <h1>¿Qué estudiamos?</h1>
         <hr />
-        <div class="alert-note-left">
+        <div class="alert__note--left">
           Para saber más acerca de los grupos de estudio, pulsá encima de ellos.
           Si querés participar, sólo tenés que enviar un mail al grupo deseado.
           En breve te vamos a estar contactando.
         </div>
-        <h2>Grupos de estudio</h2>
+        <h2 class="study__subtitle">Grupos de estudio</h2>
       </div>
       <div class="study__content">
         <div
@@ -17,20 +17,18 @@
           v-for="item in content.studyGroups"
           :key="item.id"
         >
-          <NuxtLink :to="'/study-groups/' + item.id">
+          <NuxtLink :to="'/study-groups/' + item.id" class="study__link">
             <img
-              class="group-avatar"
+              class="study__image"
               :src="require('../../components/assets/images/' + item.img)"
-              alt="Avatar Análisis Conductual Aplicado"
+              alt=""
             />
           </NuxtLink>
-          <div class="avatar-title">
+          <div class="study__title">
             <p>
-              <a href="#">
-                {{ item.name }}
-              </a>
+              {{ item.name }}
             </p>
-            <ul class="network-icon" aria-hidden="true">
+            <ul class="study__social-icon">
               <li>
                 <a :href="item.email">
                   <Email />
@@ -72,23 +70,30 @@ export default {
 
   .study__title--primary {
     @include titles;
+
+    .study__subtitle {
+      margin: 1rem 0;
+    }
   }
 
   .study__content {
-    color: var(--color-text);
+    color: $color__text;
     width: 100%;
-    display: flex;
-    flex-direction: study;
+    display: grid;
+    grid-row-gap: 30px;
     justify-content: space-around;
-
-    @media (max-width: $breakpoint--md) {
-      flex-direction: column;
-    }
+    grid-template-columns: 1fr;
 
     .study__item {
       width: 100%;
 
-      .group-avatar {
+      .study__link {
+        &:hover {
+          border-bottom: none;
+        }
+      }
+
+      .study__image {
         border-radius: 50%;
         width: 80%;
         max-width: 150px;
@@ -133,14 +138,18 @@ export default {
         }
       }
 
-      .avatar-title {
+      .study__title {
         p {
-          margin-top: 1rem;
+          margin: 1.5rem 0 0.5rem 0;
           font-weight: 800;
         }
 
-        .network-icon {
+        .study__social-icon {
           list-style: none;
+
+          a:hover {
+            border-bottom: none;
+          }
 
           @media (max-width: $breakpoint--md) {
             margin-bottom: 2rem;
@@ -156,6 +165,18 @@ export default {
           }
         }
       }
+    }
+
+    @media (min-width: $breakpoint--sm) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-width: $breakpoint--md) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @media (min-width: $breakpoint--lg) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
     }
   }
 }

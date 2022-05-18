@@ -43,8 +43,8 @@ a {
   }
 }
 
-.alert-note {
-  &-left {
+.alert__note {
+  &--left {
     background-color: $color__alert--bg;
     border-left: solid 4px $color__alert;
     padding: 12px;
@@ -52,7 +52,7 @@ a {
     margin: auto;
   }
 
-  &-top {
+  &--top {
     background-color: $color__alert--bg;
     border-top: solid 4px $color__alert;
     padding: 12px;
@@ -60,7 +60,7 @@ a {
     margin: auto;
   }
 
-  &-right {
+  &--right {
     background-color: $color__alert--bg;
     border-right: solid 4px $color__alert;
     padding: 12px;
