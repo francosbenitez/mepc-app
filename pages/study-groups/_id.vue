@@ -1,15 +1,20 @@
 <template>
   <div style="padding-top: 10rem">
-    {{ params.id }}
+    <div v-for="studyGroup in studyGroupData" :key="studyGroup.id">
+      <p>{{ studyGroup.name }}</p>
+    </div>
   </div>
 </template>
 
 <script>
+import { getStudyGroupData } from '../../lib/study-groups'
+
 export default {
   async asyncData({ params }) {
-    console.log('params.id', params.id)
+    const studyGroupData = await getStudyGroupData(params.id)
+    console.log('studyGroupData', studyGroupData)
     return {
-      params,
+      studyGroupData,
     }
   },
 }
