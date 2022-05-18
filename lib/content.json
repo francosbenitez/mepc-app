@@ -1,18 +1,15 @@
 {
-  "social_networks": [
-    {
-      "facebook_url": "https://www.facebook.com/mepc.oficial/"
-    },
-    {
-      "twitter_url": "https://twitter.com/MEPC_oficial"
-    },
-    {
-      "instagram_url": "https://www.instagram.com/mepc.oficial/"
-    },
-    {
-      "youtube_url": "https://www.youtube.com/channel/UCJpN1ANkID-67MQ2alMek-g"
-    }
-  ],
+  "social_networks": {
+    "email_url": "mailto:mepc.org@gmail.com",
+    "facebook_page_url": "https://www.facebook.com/mepc.oficial/",
+    "facebook_group_url": "https://www.facebook.com/groups/2641583789449049",
+    "twitter_url": "https://twitter.com/MEPC_oficial",
+    "instagram_url": "https://www.instagram.com/mepc.oficial/",
+    "youtube_url": "https://www.youtube.com/channel/UCJpN1ANkID-67MQ2alMek-g",
+    "whatsapp_1_url": "https://chat.whatsapp.com/LXTB9dRdP2z0d8meLKz1eg",
+    "whatsapp_2_url": "https://chat.whatsapp.com/LWqNQwz5UxhJIJwrArgJ3E",
+    "linkedin": ""
+  },
   "collaboration": [
     {
       "title": "Corré la voz",

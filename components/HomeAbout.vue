@@ -167,7 +167,7 @@
   height: 100%;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: $breakpoint--md) {
   .container-avatar {
     width: 100%;
   }
