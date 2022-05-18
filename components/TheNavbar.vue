@@ -3,7 +3,7 @@
     <div class="header__content">
       <nav class="nav">
         <div class="nav__logo"><Logo /></div>
-        <ul class="nav__list">
+        <ul class="nav__list" :class="{ 'nav-active': clicked }">
           <li>
             <NuxtLink to="/what-do-we-study"> ¿Qué estudiamos? </NuxtLink>
           </li>
@@ -14,7 +14,11 @@
             <NuxtLink to="/resources"> Recursos </NuxtLink>
           </li>
         </ul>
-        <div class="nav__btn">
+        <div
+          class="nav__btn"
+          @click="clicked = !clicked"
+          :class="{ toggle: clicked }"
+        >
           <div class="line__1"></div>
           <div class="line__2"></div>
           <div class="line__3"></div>
@@ -30,6 +34,11 @@ import Logo from './assets/icons/logo.svg?inline'
 export default {
   components: {
     Logo,
+  },
+  data() {
+    return {
+      clicked: false,
+    }
   },
 }
 </script>
@@ -192,7 +201,7 @@ export default {
 
 @media (max-width: $breakpoint--md) {
   .nav-active {
-    transform: translateX(0%);
+    transform: translateX(0%) !important;
   }
 
   .nav-close {
