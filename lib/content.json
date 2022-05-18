@@ -47,5 +47,27 @@
       "img": "studying.svg",
       "alt": ""
     }
+  ],
+  "studyGroups": [
+    {
+      "name": "Análisis Conductual Aplicado",
+      "img": "aba.png"
+    },
+    {
+      "name": "Ciencias Cognitivas",
+      "img": "ciencias-cognitivas.png"
+    },
+    {
+      "name": "Clínica",
+      "img": "clinica.png"
+    },
+    {
+      "name": "Evolutiva",
+      "img": "evolutiva.png"
+    },
+    {
+      "name": "Ciencias Cognitivas",
+      "img": "ciencias-cognitivas.png"
+    }
   ]
 }
