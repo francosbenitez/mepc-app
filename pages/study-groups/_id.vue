@@ -1,7 +1,19 @@
 <template>
-  <div style="padding-top: 10rem">
-    <div v-for="studyGroup in studyGroupData" :key="studyGroup.id">
-      <p>{{ studyGroup.name }}</p>
+  <div id="group">
+    <div
+      v-for="studyGroup in studyGroupData"
+      :key="studyGroup.id"
+      class="group__item"
+    >
+      <div class="group__image">
+        <img
+          :src="require('../../components/assets/images/' + studyGroup.img)"
+        />
+        <p>{{ studyGroup.name }}</p>
+      </div>
+      <div class="group__description">
+        <p>{{ studyGroup.description }}</p>
+      </div>
     </div>
   </div>
 </template>
@@ -18,3 +30,37 @@ export default {
   },
 }
 </script>
+
+<style lang="scss">
+#group {
+  max-width: 1152px;
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+  .group__item {
+    display: flex;
+
+    .group__image {
+      flex-direction: column;
+
+      img {
+        border-radius: 50%;
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+      }
+
+      p {
+        text-align: center;
+      }
+    }
+
+    .group__description {
+      flex-direction: column;
+    }
+  }
+}
+</style>

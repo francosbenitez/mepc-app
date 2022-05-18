@@ -52,30 +52,35 @@
     {
       "id": 1,
       "name": "Análisis Conductual Aplicado",
+      "description": "Description Test",
       "img": "aba.png",
       "email": "mailto:abaenpsicouba.mepc@gmail.com"
     },
     {
       "id": 2,
       "name": "Ciencias Cognitivas",
+      "description": "Description Test",
       "img": "ciencias-cognitivas.png",
       "email": "mailto:abaenpsicouba.mepc@gmail.com"
     },
     {
       "id": 3,
       "name": "Clínica",
+      "description": "Description Test",
       "img": "clinica.png",
       "email": "mailto:abaenpsicouba.mepc@gmail.com"
     },
     {
       "id": 4,
       "name": "Evolutiva",
+      "description": "Description Test",
       "img": "evolutiva.png",
       "email": "mailto:abaenpsicouba.mepc@gmail.com"
     },
     {
       "id": 5,
       "name": "Test",
+      "description": "Description Test",
       "img": "evolutiva.png",
       "email": "mailto:abaenpsicouba.mepc@gmail.com"
     }
