@@ -4,5 +4,25 @@
     "twitter": "https://twitter.com/MEPC_oficial",
     "instagram": "https://www.instagram.com/mepc.oficial/",
     "youtube": "https://www.youtube.com/channel/UCJpN1ANkID-67MQ2alMek-g"
-  }
+  },
+  "collaboration": [
+    {
+      "title": "Corré la voz",
+      "description": "Una mejor educación es para todes. Ayudanos a correr la voz siguiéndonos y compartiendo nuestros contenidos en <a href='https://twitter.com/MEPC_oficial'>Twitter</a>, <a href='https://www.youtube.com/channel/UCJpN1ANkID-67MQ2alMek-g'>YouTube</a>, <a href='https://www.facebook.com/mepc.oficial/'>Facebook</a>, <a href='https://www.instagram.com/mepc.oficial/''>Instagram</a> y otras redes sociales",
+      "img": "speaker.svg",
+      "alt": ""
+    },
+    {
+      "title": "Unite a nuestro equipo",
+      "description": "Podés unirte a nuestros departamentos <a href='./contacto.html'>enviándonos un mail</a>. También podés colaborar con el sitio web a través de <a href='https://github.com/francosbenitez/mepc'>Github</a>.",
+      "img": "remote-team.svg",
+      "alt": ""
+    },
+    {
+      "title": "Unite a nuestros grupos de estudio",
+      "description": "Contamos con <a href='./que-estudiamos.html'>nueve grupos de estudio</a> sobre diferentes temas relacionados a la psicología científica. ¡Sumándote a ellos podremos compartir y aprender en conjunto!",
+      "img": "studying.svg",
+      "alt": ""
+    }
+  ]
 }
