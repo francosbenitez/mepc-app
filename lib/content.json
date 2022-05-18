@@ -1,14 +1,22 @@
 {
-  "social_networks": {
-    "facebook": "https://www.facebook.com/mepc.oficial/",
-    "twitter": "https://twitter.com/MEPC_oficial",
-    "instagram": "https://www.instagram.com/mepc.oficial/",
-    "youtube": "https://www.youtube.com/channel/UCJpN1ANkID-67MQ2alMek-g"
-  },
+  "social_networks": [
+    {
+      "facebook_url": "https://www.facebook.com/mepc.oficial/"
+    },
+    {
+      "twitter_url": "https://twitter.com/MEPC_oficial"
+    },
+    {
+      "instagram_url": "https://www.instagram.com/mepc.oficial/"
+    },
+    {
+      "youtube_url": "https://www.youtube.com/channel/UCJpN1ANkID-67MQ2alMek-g"
+    }
+  ],
   "collaboration": [
     {
       "title": "Corré la voz",
-      "description": "Una mejor educación es para todes. Ayudanos a correr la voz siguiéndonos y compartiendo nuestros contenidos en <a href='https://twitter.com/MEPC_oficial'>Twitter</a>, <a href='https://www.youtube.com/channel/UCJpN1ANkID-67MQ2alMek-g'>YouTube</a>, <a href='https://www.facebook.com/mepc.oficial/'>Facebook</a>, <a href='https://www.instagram.com/mepc.oficial/''>Instagram</a> y otras redes sociales",
+      "description": "Una mejor educación es para todes. Ayudanos a correr la voz siguiéndonos y compartiendo nuestros contenidos en <a href='https://twitter.com/MEPC_oficial'>Twitter</a>, <a href='https://www.youtube.com/channel/UCJpN1ANkID-67MQ2alMek-g'>YouTube</a>, <a href='https://www.facebook.com/mepc.oficial/'>Facebook</a>, <a href='https://www.instagram.com/mepc.oficial/''>Instagram</a> y otras redes sociales.",
       "img": "speaker.svg",
       "alt": ""
     },

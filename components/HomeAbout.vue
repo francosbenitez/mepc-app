@@ -1,8 +1,96 @@
-<template></template>
+<template>
+  <section id="about">
+    <div class="container-avatar">
+      <div class="avatar">
+        <div class="avatar-image">
+          <img src="./assets/images/avatar.svg" alt="Avatar MEPC" />
+        </div>
+        <div class="avatar-description">
+          <h2>MEPC</h2>
+          <h3>Movimiento Estudiantil por la Psicología Científica</h3>
+          <ul class="network-icon" aria-hidden="true">
+            <li>
+              <a href="mailto:mepc.org@gmail.com" target="_blank"
+                ><i class="fas fa-envelope fa-2x"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/mepc.oficial/" target="_blank"
+                ><i class="fab fa-facebook fa-2x"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/groups/2641583789449049"
+                target="_blank"
+                ><i class="fab fa-facebook fa-2x"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/mepc.oficial/" target="_blank"
+                ><i class="fab fa-instagram fa-2x"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/MEPC_oficial" target="_blank"
+                ><i class="fab fa-twitter fa-2x"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/channel/UCJpN1ANkID-67MQ2alMek-g"
+                target="_blank"
+                rel="noopener"
+                ><i class="fab fa-youtube fa-2x"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://chat.whatsapp.com/LXTB9dRdP2z0d8meLKz1eg"
+                target="_blank"
+                ><i class="fab fa-whatsapp fa-2x"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://chat.whatsapp.com/LWqNQwz5UxhJIJwrArgJ3E"
+                target="_blank"
+                ><i class="fab fa-whatsapp fa-2x"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container-video">
+      <div class="video">
+        <div class="video-link">
+          <iframe
+            width="800"
+            height="500"
+            src="https://www.youtube.com/embed/ieSG5JVLOow"
+          ></iframe>
+        </div>
+        <div class="video-description">
+          <br />
+          <hr />
+          <p>
+            Somos el Movimiento Estudiantil por la Psicología Científica (MEPC),
+            un grupo de estudiantes y graduades autoconvocades de diferentes
+            puntos del país que compartimos un mismo ideal: el desarrollo de una
+            formación y una práctica profesional basadas en fundamentos
+            científicos. Nacimos en la Facultad de Psicología de la Universidad
+            de Buenos Aires (UBA), y ya sumamos casi 3000 personas de diferentes
+            casas de estudio que creemos que la ciencia es el camino que debemos
+            seguir en psicología para mejorar nuestra formación.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
 
 <style lang="scss">
-/*---------- About ----------*/
-
 .container-avatar {
   display: flex;
   padding: 60px 0px 0px 0px;
