@@ -11,9 +11,9 @@
           <li><NuxtLink to="/resources">Recursos</NuxtLink></li>
         </ul>
         <div class="nav__btn">
-          <div class="line-1"></div>
-          <div class="line-2"></div>
-          <div class="line-3"></div>
+          <div class="line__1"></div>
+          <div class="line__2"></div>
+          <div class="line__3"></div>
         </div>
       </nav>
     </div>
@@ -46,7 +46,7 @@
     .nav {
       display: flex;
 
-      @media (max-width: 1300px) {
+      @media (max-width: $breakpoint--md) {
         justify-content: left;
         align-items: center;
         height: 55px;
@@ -59,7 +59,7 @@
           margin-left: 5rem;
           fill: $color__text;
 
-          @media (max-width: 1300px) {
+          @media (max-width: $breakpoint--md) {
             height: 45px;
             z-index: 10;
             position: relative;
@@ -83,7 +83,7 @@
         width: 100%;
         text-align: right;
 
-        @media (max-width: 1300px) {
+        @media (max-width: $breakpoint--md) {
           position: absolute;
           right: 0;
           top: 55px;
@@ -107,7 +107,7 @@
           height: 55px;
           line-height: 55px;
 
-          @media (max-width: 1300px) {
+          @media (max-width: $breakpoint--md) {
             padding: 0;
           }
 
@@ -124,7 +124,7 @@
               color: $color__white;
               background: $color__primary;
 
-              @media (max-width: 1300px) {
+              @media (max-width: $breakpoint--md) {
                 color: $color__white;
               }
             }
@@ -170,7 +170,7 @@
       .nav__btn {
         display: none;
 
-        @media (max-width: 1300px) {
+        @media (max-width: $breakpoint--md) {
           display: block;
           cursor: pointer;
           position: absolute;
@@ -189,7 +189,7 @@
   }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: $breakpoint--md) {
   .nav-active {
     transform: translateX(0%);
   }
@@ -200,16 +200,16 @@
 
   .toggle {
     .line {
-      &-1 {
+      &__1 {
         transform: rotate(-45deg) translate(-5px, 6px);
         background-color: $color__primary;
       }
 
-      &-2 {
+      &__2 {
         opacity: 0;
       }
 
-      &-3 {
+      &__3 {
         transform: rotate(45deg) translate(-5px, -6px);
         background-color: $color__primary;
       }
