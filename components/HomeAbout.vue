@@ -73,10 +73,11 @@ export default {
   position: relative;
   width: 90%;
   margin: 0 auto;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 
   .about__avatar {
     display: flex;
-    padding: 60px 0px 0px 0px;
     justify-content: space-around;
     align-content: space-around;
     align-items: center;
@@ -144,7 +145,7 @@ export default {
   .about__video {
     color: $color__text;
     display: flex;
-    padding: 60px 20px;
+    padding-left: 2rem;
     text-align: center;
 
     .about__iframe-wrapper {

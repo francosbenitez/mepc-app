@@ -20,6 +20,8 @@
 <style lang="scss">
 #hero {
   background-color: $color__primary;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 
   .hero__container {
     width: 90%;
@@ -27,7 +29,6 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 4rem 0;
     max-width: 1152px;
 
     .hero__description {

@@ -47,6 +47,8 @@ export default {
   position: relative;
   width: 90%;
   margin: 0 auto;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 
   .collaboration__title--primary {
     @include titles;
