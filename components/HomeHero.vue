@@ -21,7 +21,7 @@
 #hero {
   background-color: $color__primary;
   .hero__container {
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
