@@ -72,7 +72,6 @@
           ></iframe>
         </div>
         <div class="video-description">
-          <br />
           <hr />
           <p>
             Somos el Movimiento Estudiantil por la Psicología Científica (MEPC),
@@ -91,85 +90,94 @@
 </template>
 
 <style lang="scss">
-.container-avatar {
-  display: flex;
-  padding: 60px 0px 0px 0px;
-  justify-content: space-around;
-  align-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 33%;
-  text-align: center;
-  float: left;
-}
-
-.container-avatar .avatar-image img {
-  width: 80%;
-  max-width: 344px;
-  height: auto;
-  border-radius: 50%;
-}
-
-.container-avatar .avatar-description h2 {
-  color: var(--color-text);
-  font-family: 'Montserrat';
-  margin: 10px 0 10px 0;
-}
-
-.container-avatar .avatar-description h3 {
-  color: var(--color-text);
-  font-family: 'Montserrat';
-  font-weight: 400;
-  margin: 10px 0 10px 0;
-}
-
-.container-avatar .network-icon {
-  list-style: none;
-  display: inline-block;
-  text-rendering: auto;
-  line-height: 1;
-  display: inline-flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 0;
-}
-
-.container-avatar .network-icon i {
-  margin-right: 5px;
-  padding: 3px;
-  transition: all 0.7s ease-in-out;
-}
-
-.container-avatar .network-icon i:hover {
-  transform: rotateY(360deg);
-}
-
-.container-video {
-  color: var(--color-text);
-  display: flex;
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.container-video .video-link {
+#about {
+  max-width: 1152px;
   position: relative;
-  padding-bottom: 56.25%;
-  padding-top: 25px;
-  height: 0;
-}
+  width: 90%;
+  margin: 0 auto;
 
-.container-video .video-link iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-@media (max-width: $breakpoint--md) {
   .container-avatar {
-    width: 100%;
+    display: flex;
+    padding: 60px 0px 0px 0px;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 33%;
+    text-align: center;
+    float: left;
+
+    @media (max-width: $breakpoint--md) {
+      width: 100%;
+    }
+
+    .avatar-image {
+      img {
+        width: 80%;
+        max-width: 344px;
+        height: auto;
+        border-radius: 50%;
+      }
+    }
+
+    .avatar-description {
+      h2 {
+        color: $color__text;
+        font-family: 'Montserrat';
+        margin: 10px 0 10px 0;
+      }
+
+      h3 {
+        color: $color__text;
+        font-family: 'Montserrat';
+        font-weight: 400;
+        margin: 10px 0 10px 0;
+      }
+    }
+
+    .network-icon {
+      list-style: none;
+      display: inline-block;
+      text-rendering: auto;
+      line-height: 1;
+      display: inline-flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 0;
+
+      i {
+        margin-right: 5px;
+        padding: 3px;
+        transition: all 0.7s ease-in-out;
+
+        &:hover {
+          transform: rotateY(360deg);
+        }
+      }
+    }
+  }
+
+  .container-video {
+    color: $color__text;
+    display: flex;
+    padding: 60px 20px;
+    text-align: center;
+
+    .video-link {
+      position: relative;
+      padding-bottom: 56.25%;
+      padding-top: 25px;
+      height: 0;
+
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
   }
 }
 </style>
