@@ -36,46 +36,45 @@ hr {
 
 a {
   color: $color__primary;
-}
 
-.feature-description a:hover,
-.site-footer p a:hover,
-.avatar-title p a:hover,
-.alert-note-right a:hover {
-  border-bottom: 1.5px $color__primary dotted;
-  cursor: pointer;
+  &:hover {
+    border-bottom: 1.5px $color__primary dotted;
+    cursor: pointer;
+  }
 }
 
 .titles {
   padding: 5rem 0 0 0;
   text-align: center;
   color: $color__text;
+
+  h1 {
+    font-size: 3rem;
+  }
 }
 
-.titles h1 {
-  font-size: 3rem;
-}
+.alert-note {
+  &-left {
+    background-color: $color__alert--bg;
+    border-left: solid 4px $color__alert;
+    padding: 12px;
+    width: 50%;
+    margin: auto;
+  }
 
-.alert-note-left {
-  background-color: $color__alert--bg;
-  border-left: solid 4px $color__alert;
-  padding: 12px;
-  width: 50%;
-  margin: auto;
-}
+  &-top {
+    background-color: $color__alert--bg;
+    border-top: solid 4px $color__alert;
+    padding: 12px;
+    width: 50%;
+    margin: auto;
+  }
 
-.alert-note-top {
-  background-color: $color__alert--bg;
-  border-top: solid 4px $color__alert;
-  padding: 12px;
-  width: 50%;
-  margin: auto;
-}
-
-.alert-note-right {
-  background-color: $color__alert--bg;
-  border-right: solid 4px $color__alert;
-  padding: 12px;
-  width: 50%;
-  margin: auto;
+  &-right {
+    background-color: $color__alert--bg;
+    border-right: solid 4px $color__alert;
+    padding: 12px;
+    width: 50%;
+    margin: auto;
+  }
 }
