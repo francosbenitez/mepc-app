@@ -50,24 +50,28 @@
   ],
   "studyGroups": [
     {
+      "id": 1,
       "name": "Análisis Conductual Aplicado",
-      "img": "aba.png"
+      "img": "aba.png",
+      "email": "mailto:abaenpsicouba.mepc@gmail.com"
     },
     {
+      "id": 2,
       "name": "Ciencias Cognitivas",
-      "img": "ciencias-cognitivas.png"
+      "img": "ciencias-cognitivas.png",
+      "email": "mailto:abaenpsicouba.mepc@gmail.com"
     },
     {
+      "id": 3,
       "name": "Clínica",
-      "img": "clinica.png"
+      "img": "clinica.png",
+      "email": "mailto:abaenpsicouba.mepc@gmail.com"
     },
     {
+      "id": 4,
       "name": "Evolutiva",
-      "img": "evolutiva.png"
-    },
-    {
-      "name": "Ciencias Cognitivas",
-      "img": "ciencias-cognitivas.png"
+      "img": "evolutiva.png",
+      "email": "mailto:abaenpsicouba.mepc@gmail.com"
     }
   ]
 }

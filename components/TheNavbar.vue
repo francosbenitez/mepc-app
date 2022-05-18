@@ -5,7 +5,7 @@
         <div class="nav__logo"><Logo /></div>
         <ul class="nav__list" :class="{ 'nav-active': clicked }">
           <li>
-            <NuxtLink to="/what-do-we-study"> What Do We Study? </NuxtLink>
+            <NuxtLink to="/study-groups"> What Do We Study? </NuxtLink>
           </li>
           <li>
             <NuxtLink to="/documents"> Documents </NuxtLink>
