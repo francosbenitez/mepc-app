@@ -13,7 +13,7 @@
       </div>
       <div class="group__description">
         <h1>Description</h1>
-        <p>{{ studyGroup.description }}</p>
+        <!-- <p>{{ studyGroup.description }}</p> -->
         <nuxt-content :document="markdown" />
       </div>
     </div>
@@ -50,7 +50,7 @@ export default {
 
     .group__image {
       flex-direction: column;
-      flex-basis: 60%;
+      flex-basis: 20%;
 
       img {
         border-radius: 50%;
@@ -66,9 +66,15 @@ export default {
 
     .group__description {
       flex-direction: column;
+      flex-basis: 80%;
 
       h1 {
         font-weight: bold;
+      }
+
+      p {
+        margin: 16px 0;
+        font-size: 1.2rem;
       }
     }
   }

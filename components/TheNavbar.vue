@@ -2,7 +2,7 @@
   <header class="header">
     <div class="header__content">
       <nav class="nav">
-        <div class="nav__logo"><Logo /></div>
+        <NuxtLink to="/" class="nav__logo"><Logo /></NuxtLink>
         <ul class="nav__list" :class="{ 'nav-active': clicked }">
           <li>
             <NuxtLink to="/study-groups"> What Do We Study? </NuxtLink>
