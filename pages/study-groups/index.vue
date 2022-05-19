@@ -4,13 +4,13 @@
       <div class="study__title--primary">
         <h1>¿Qué estudiamos?</h1>
         <hr />
-        <div class="alert__note--left">
-          Para saber más acerca de los grupos de estudio, pulsá encima de ellos.
-          Si querés participar, sólo tenés que enviar un mail al grupo deseado.
-          En breve te vamos a estar contactando.
-        </div>
-        <h2 class="study__subtitle">Grupos de estudio</h2>
       </div>
+      <div class="alert__note--left">
+        Para saber más acerca de los grupos de estudio, pulsá encima de ellos.
+        Si querés participar, sólo tenés que enviar un mail al grupo deseado. En
+        breve te vamos a estar contactando.
+      </div>
+      <h2 class="study__subtitle">Grupos de estudio</h2>
       <div class="study__content">
         <div
           class="study__item"
