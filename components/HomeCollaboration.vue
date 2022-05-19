@@ -29,7 +29,7 @@
 </template>
 
 <script>
-import content from '../lib/content.json'
+import content from '@/lib/content.json'
 
 export default {
   data() {

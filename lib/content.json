@@ -48,7 +48,7 @@
       "alt": ""
     }
   ],
-  "studyGroups": [
+  "study_groups": [
     {
       "id": 1,
       "name": "Análisis Conductual Aplicado",
@@ -96,6 +96,18 @@
       "slug": "juridica",
       "img": "juridica.png",
       "email": "mailto:abaenpsicouba.mepc@gmail.com"
+    }
+  ],
+  "resources": [
+    {
+      "title": "Formación de grado en psicología en argentina Período 2009-2015",
+      "description": "A la fecha no se cuenta con datos descriptivos y comparativos actualizados sobre el estado de las carreras de psicología en ...",
+      "url": "https://www.researchgate.net/publication/342061092_Formacion_de_Grado_en_Psicologia_en_Argentina_Periodo_2009-2015_Undergraduate_Psychology_Education_in_Argentina_2009-2015"
+    },
+    {
+      "title": "Guía de materias y prácticas recomendadas",
+      "description": "El estudiante que elige cursar psicología en la universidad más importante de Argentina debe lidiar con la realidad de que mientras que ...",
+      "url": "https://drive.google.com/file/d/1W_iHIjU1QnXo6vjTUxyPiI3Ty9LAzPuq/view?fbclid=IwAR17wVreWiZylutZZwN4vK64_5cuQoscURQF0jdrGCtJx4OgmpvGtuIAGrc"
     }
   ]
 }

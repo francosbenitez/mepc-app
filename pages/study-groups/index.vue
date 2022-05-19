@@ -14,7 +14,7 @@
       <div class="study__content">
         <div
           class="study__item"
-          v-for="item in content.studyGroups"
+          v-for="item in content.study_groups"
           :key="item.id"
         >
           <NuxtLink

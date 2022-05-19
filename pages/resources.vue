@@ -1,6 +1,6 @@
 <template>
   <main>
-    <section class="contact">
+    <section class="resources">
       <section class="titles">
         <h1>Recursos</h1>
         <hr />
@@ -24,39 +24,19 @@
       </section>
       <section class="resources-section">
         <div class="resources-wrapper">
-          <div class="resource-card">
-            <a
-              href="https://www.researchgate.net/publication/342061092_Formacion_de_Grado_en_Psicologia_en_Argentina_Periodo_2009-2015_Undergraduate_Psychology_Education_in_Argentina_2009-2015"
-              target="_blank"
-            >
+          <div
+            class="resource-card"
+            v-for="item in content.resources"
+            :key="item.title"
+          >
+            <a :href="item.url" target="_blank">
               <div class="resource-card-texts">
                 <div class="resource-card-name">
-                  Formación de grado en psicología en argentina. Período
-                  2009-2015
+                  {{ item.title }}
                 </div>
                 <hr />
                 <div class="resource-card-description">
-                  A la fecha no se cuenta con datos descriptivos y comparativos
-                  actualizados sobre el estado de las carreras de psicología en
-                  …
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="resource-card">
-            <a
-              href="https://drive.google.com/file/d/1W_iHIjU1QnXo6vjTUxyPiI3Ty9LAzPuq/view?fbclid=IwAR17wVreWiZylutZZwN4vK64_5cuQoscURQF0jdrGCtJx4OgmpvGtuIAGrc"
-              target="_blank"
-            >
-              <div class="resource-card-texts">
-                <div class="resource-card-name">
-                  Guía de materias y prácticas recomendadas
-                </div>
-                <hr />
-                <div class="resource-card-description">
-                  El estudiante que elige cursar psicología en la universidad
-                  más importante de Argentina debe lidiar con la realidad de que
-                  mientras que …
+                  {{ item.description }}
                 </div>
               </div>
             </a>
@@ -67,58 +47,70 @@
   </main>
 </template>
 
+<script>
+import content from '@/lib/content.json'
+
+export default {
+  data() {
+    return {
+      content: content,
+    }
+  },
+}
+</script>
+
 <style lang="scss">
 .resources-section {
-  color: var(--color-text);
+  color: $color__text;
   width: 100%;
   align-items: center;
-}
 
-.resources-wrapper {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: 0 auto;
-  max-width: 75vw;
-}
+  .resources-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 75vw;
 
-.resource-card {
-  width: 250px;
-  height: auto;
-  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 20px;
-  overflow: hidden;
-  margin: 20px 10px;
-  transition: all 0.2s ease-in-out;
-}
+    .resource-card {
+      width: 250px;
+      height: auto;
+      box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
+      border: 1px solid rgba(0, 0, 0, 0.125);
+      border-radius: 20px;
+      overflow: hidden;
+      margin: 20px 10px;
+      transition: all 0.2s ease-in-out;
 
-.resource-card:hover {
-  transform: scale(1.2);
-}
+      &:hover {
+        transform: scale(1.2);
+      }
 
-.resource-card-texts {
-  color: var(--color-text);
-  padding: 3rem 2rem;
-}
+      hr {
+        margin-top: 1rem;
+        color: $color__text;
+      }
 
-.resource-card-name {
-  font-size: 1rem;
-  font-weight: 800;
-  text-align: center;
-}
+      .resource-card-texts {
+        color: $color__text;
+        padding: 3rem 2rem;
 
-.resource-card hr {
-  margin-top: 1rem;
-  color: var(--color-text);
-}
+        .resource-card-name {
+          font-size: 1rem;
+          font-weight: 800;
+          text-align: center;
+        }
 
-.resource-card-description {
-  font-size: 0.8rem;
-  margin-top: 1rem;
-  text-align: center;
+        .resource-card-description {
+          font-size: 0.8rem;
+          margin-top: 1rem;
+          text-align: center;
+        }
+      }
+    }
+  }
 }
 
 .titles .search-input {
