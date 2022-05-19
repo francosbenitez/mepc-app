@@ -9,6 +9,6 @@
   - Study groups:
     - Use _slug instead of _id for each study group. DONE
   - Refactor: 
-    - Move /assets to the root.
-    - Pass TheFooter and TheNavbar to the /layout folder.
+    - Move /assets to the root. DONE
+    - Pass TheFooter and TheNavbar to the /layout folder. DONE
     - Fix mobile navbar.

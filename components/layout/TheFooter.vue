@@ -25,7 +25,7 @@
 </template>
 
 <script>
-import GitHub from '@/components/assets/icons/github.svg?inline'
+import GitHub from '@/assets/icons/github.svg?inline'
 
 export default {
   components: {

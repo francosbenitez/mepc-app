@@ -6,9 +6,7 @@
       class="group__item"
     >
       <div class="group__image">
-        <img
-          :src="require('../../components/assets/images/' + studyGroup.img)"
-        />
+        <img :src="require('../../assets/images/' + studyGroup.img)" />
         <p>{{ studyGroup.name }}</p>
       </div>
       <div class="group__description">

@@ -11,7 +11,7 @@
         </h2>
       </div>
       <div class="hero__image">
-        <img src="./assets/images/hero.svg" alt="MEPC cover" />
+        <img src="../assets/images/hero.svg" alt="MEPC cover" />
       </div>
     </div>
   </section>

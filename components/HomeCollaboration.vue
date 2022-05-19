@@ -11,7 +11,7 @@
     >
       <div class="collaboration__image">
         <img
-          :src="require('./assets/images/' + content.img)"
+          :src="require('../assets/images/' + content.img)"
           :alt="content.alt"
         />
       </div>

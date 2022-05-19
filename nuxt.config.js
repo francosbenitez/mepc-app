@@ -1,4 +1,10 @@
+// import { resolve } from 'path'
+
 export default {
+  // alias: {
+  //   assets: resolve(__dirname, './assets'),
+  // },
+
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
@@ -18,7 +24,7 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ['./components/assets/scss/default.scss'],
+  css: ['./assets/scss/default.scss'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
@@ -40,9 +46,9 @@ export default {
   // Instead of importing into every component
   styleResources: {
     scss: [
-      './components/assets/scss/_mixins.scss',
-      './components/assets/scss/_keyframes.scss',
-      './components/assets/scss/_variables.scss',
+      './assets/scss/_mixins.scss',
+      './assets/scss/_keyframes.scss',
+      './assets/scss/_variables.scss',
     ],
   },
 

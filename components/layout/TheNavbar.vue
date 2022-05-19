@@ -29,7 +29,7 @@
 </template>
 
 <script>
-import Logo from '@/components/assets/icons/logo.svg?inline'
+import Logo from '@/assets/icons/logo.svg?inline'
 
 export default {
   components: {

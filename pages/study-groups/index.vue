@@ -26,7 +26,7 @@
           >
             <img
               class="study__image"
-              :src="require('../../components/assets/images/' + item.img)"
+              :src="require('../../assets/images/' + item.img)"
               alt=""
             />
           </NuxtLink>
@@ -50,7 +50,7 @@
 
 <script>
 import content from '../../lib/content.json'
-import Email from '../../components/assets/icons/email.svg?inline'
+import Email from '@/assets/icons/email.svg?inline'
 
 export default {
   data() {
