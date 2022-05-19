@@ -1,40 +1,34 @@
 <template>
   <main>
     <section id="documents">
-      <nav id="navbar">
-        <div class="secondary-nav">
-          <header>
-            <input type="text" id="search" placeholder="Buscar..." />
-          </header>
+      <nav class="documents__nav">
+        <div class="documents__search">
+          <input type="text" placeholder="Buscar..." />
         </div>
-        <div class="ul-container" id="nav">
-          <ul>
-            <div v-for="key in Object.keys(content.documents)" :key="key">
-              <li
-                class="hvr-sweep-to-top link"
-                :class="{ active: key === 'departments' }"
-              >
-                <a class="nav-link">
-                  <h1 v-if="key === 'departments'">Departamentos</h1>
-                  <h1 v-else>Areas</h1>
-                </a>
-              </li>
-              <li
-                v-for="item in content.documents[key]"
-                class="hvr-sweep-to-top link"
-                :key="item"
-              >
-                <a class="nav-link" :href="item.url">{{ item.name }}</a>
-              </li>
-            </div>
-          </ul>
-        </div>
+        <ul class="documents__list">
+          <div v-for="key in Object.keys(content.documents)" :key="key">
+            <li
+              class="documents__list-item link"
+              :class="{ active: key === 'departments' }"
+            >
+              <a class="documents__link">
+                <h1 v-if="key === 'departments'">Departamentos</h1>
+                <h1 v-else>Areas</h1>
+              </a>
+            </li>
+            <li
+              v-for="item in content.documents[key]"
+              class="documents__list-item link"
+              :key="item"
+            >
+              <a class="documents__link" :href="item.url">{{ item.name }}</a>
+            </li>
+          </div>
+        </ul>
       </nav>
-      <main id="main-doc">
-        <section class="main-section" id="departamentos">
-          <nuxt-content :document="markdown" />
-        </section>
-      </main>
+      <div class="documents__content">
+        <nuxt-content :document="markdown" />
+      </div>
     </section>
   </main>
 </template>
@@ -66,14 +60,14 @@ export default {
   padding-top: 5rem;
   padding-bottom: 5rem;
 
-  #navbar {
+  .documents__nav {
     width: 100%;
     padding: 5rem 0.2rem 0 0.2rem;
     margin: 0 0 1rem 0;
     text-align: center;
 
-    .secondary-nav {
-      #search {
+    .documents__search {
+      input {
         width: 100%;
         font-size: 16px;
         padding: 12px 20px 12px 40px;
@@ -92,7 +86,7 @@ export default {
       }
     }
 
-    .ul-container {
+    .documents__list {
       margin: 1rem 0 0 0;
       width: 100%;
       height: 10rem;
@@ -152,7 +146,7 @@ export default {
     }
   }
 
-  #main-doc {
+  .documents__content {
     padding: 0.5rem;
 
     header {
@@ -161,34 +155,32 @@ export default {
       margin: 0.5rem 0 0.5rem 0;
     }
 
-    .main-section {
-      h3 {
+    /* .main-section { */
+    h3 {
+      margin: 1rem 0 1rem 0;
+    }
+
+    li {
+      margin: 0 0 0 3rem;
+      font-size: 1.1rem;
+    }
+
+    header {
+      margin: 5rem 0 1rem 0;
+    }
+
+    .img-container {
+      width: 100%;
+      max-width: 35rem;
+      margin: 0 auto;
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
         margin: 1rem 0 1rem 0;
       }
-
-      .properties {
-        li {
-          margin: 0 0 0 3rem;
-          font-size: 1.1rem;
-        }
-      }
-
-      header {
-        margin: 5rem 0 1rem 0;
-      }
-
-      .img-container {
-        width: 100%;
-        max-width: 35rem;
-        margin: 0 auto;
-
-        img {
-          display: block;
-          width: 100%;
-          height: auto;
-          margin: 1rem 0 1rem 0;
-        }
-      }
+      /* } */
 
       hr {
         margin: 1rem 0 1rem 0;
