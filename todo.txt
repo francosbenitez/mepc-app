@@ -14,3 +14,5 @@
     - Fix mobile navbar.
   - Documents:
     - Split up the navbar, on the one hand, and the texts, on the other hand.
+  - Design:
+    - Fix avatar.svg to take the Monserrat font.
