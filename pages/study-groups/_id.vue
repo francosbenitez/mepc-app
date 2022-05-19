@@ -14,7 +14,7 @@
       <div class="group__description">
         <h1>Description</h1>
         <p>{{ studyGroup.description }}</p>
-        <nuxt-content :document="doc" />
+        <nuxt-content :document="markdown" />
       </div>
     </div>
   </div>
@@ -26,15 +26,13 @@ import { getStudyGroupData } from '../../lib/study-groups'
 export default {
   async asyncData({ $content, params }) {
     const studyGroupData = await getStudyGroupData(params.id)
+    const markdown = await $content('study-groups', params.slug).fetch()
 
-    console.log('params', params)
+    console.log('markdown', markdown)
 
-    const doc = await $content('juridica').fetch()
-
-    console.log('doc', doc)
     return {
       studyGroupData,
-      doc,
+      markdown,
     }
   },
 }
