@@ -9,24 +9,24 @@
         </div>
         <div class="ul-container" id="nav">
           <ul>
-            <li
-              class="hvr-sweep-to-top link"
-              v-for="key in Object.keys(content.documents)"
-              :key="key"
-            >
-              <span v-if="key === 'departments'">
-                <h1>Departamentos</h1>
-                <div v-for="item in content.documents[key]" :key="item">
-                  <a class="nav-link" :href="item.url">{{ item.name }}</a>
-                </div>
-              </span>
-              <span v-else>
-                <h1>Áreas</h1>
-                <div v-for="item in content.documents[key]" :key="item">
-                  <a class="nav-link" :href="item.url">{{ item.name }}</a>
-                </div>
-              </span>
-            </li>
+            <div v-for="key in Object.keys(content.documents)" :key="key">
+              <li
+                class="hvr-sweep-to-top link"
+                :class="{ active: key === 'departments' }"
+              >
+                <a class="nav-link">
+                  <h1 v-if="key === 'departments'">Departamentos</h1>
+                  <h1 v-else>Areas</h1>
+                </a>
+              </li>
+              <li
+                v-for="item in content.documents[key]"
+                class="hvr-sweep-to-top link"
+                :key="item"
+              >
+                <a class="nav-link" :href="item.url">{{ item.name }}</a>
+              </li>
+            </div>
           </ul>
         </div>
       </nav>
