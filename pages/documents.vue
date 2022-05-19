@@ -71,6 +71,7 @@ export default {
     padding: 5rem 0.2rem 0 0.2rem;
     margin: 0 0 1rem 0;
     text-align: center;
+    z-index: -1;
 
     .secondary-nav {
       #search {
