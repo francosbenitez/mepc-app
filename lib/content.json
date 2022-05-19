@@ -109,5 +109,55 @@
       "description": "El estudiante que elige cursar psicología en la universidad más importante de Argentina debe lidiar con la realidad de que mientras que ...",
       "url": "https://drive.google.com/file/d/1W_iHIjU1QnXo6vjTUxyPiI3Ty9LAzPuq/view?fbclid=IwAR17wVreWiZylutZZwN4vK64_5cuQoscURQF0jdrGCtJx4OgmpvGtuIAGrc"
     }
-  ]
+  ],
+  "documents": {
+    "departments": [
+      {
+        "name": "Delegados",
+        "url": ""
+      },
+      {
+        "name": "Diseño",
+        "url": ""
+      },
+      {
+        "name": "Divulgación",
+        "url": ""
+      },
+      {
+        "name": "Recursos Humanos",
+        "url": ""
+      },
+      {
+        "name": "Divulgación",
+        "url": ""
+      },
+      {
+        "name": "Relaciones Públicas",
+        "url": ""
+      },
+      {
+        "name": "Revisión",
+        "url": ""
+      }
+    ],
+    "areas": [
+      {
+        "name": "Facebook",
+        "url": ""
+      },
+      {
+        "name": "Twitter",
+        "url": ""
+      },
+      {
+        "name": "Instagram",
+        "url": ""
+      },
+      {
+        "name": "YouTube",
+        "url": ""
+      }
+    ]
+  }
 }
