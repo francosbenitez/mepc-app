@@ -14,6 +14,7 @@
       <div class="group__description">
         <h1>Description</h1>
         <p>{{ studyGroup.description }}</p>
+        <nuxt-content :document="doc" />
       </div>
     </div>
   </div>
@@ -23,10 +24,17 @@
 import { getStudyGroupData } from '../../lib/study-groups'
 
 export default {
-  async asyncData({ params }) {
+  async asyncData({ $content, params }) {
     const studyGroupData = await getStudyGroupData(params.id)
+
+    console.log('params', params)
+
+    const doc = await $content('juridica').fetch()
+
+    console.log('doc', doc)
     return {
       studyGroupData,
+      doc,
     }
   },
 }

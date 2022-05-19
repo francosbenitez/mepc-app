@@ -17,7 +17,13 @@
           v-for="item in content.studyGroups"
           :key="item.id"
         >
-          <NuxtLink :to="'/study-groups/' + item.id" class="study__link">
+          <NuxtLink
+            :to="{
+              name: 'study-groups-id',
+              params: { slug: item.slug, id: item.id },
+            }"
+            class="study__link"
+          >
             <img
               class="study__image"
               :src="require('../../components/assets/images/' + item.img)"
