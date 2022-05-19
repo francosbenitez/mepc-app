@@ -87,6 +87,13 @@ export default {
           url('https://francosbenitez.github.io/mepc/img/search.svg') 1rem
           no-repeat;
       }
+
+      @media (min-width: $breakpoint--md) {
+        width: 100%;
+        font-size: 16px;
+        padding: 12px 20px 12px 0;
+        border-bottom: 1px solid $color__border;
+      }
     }
 
     .ul-container {
@@ -123,17 +130,18 @@ export default {
         margin-left: 0.2rem;
         color: $color__primary;
         font-weight: 800;
+      }
 
-        h1 {
-          /* color: $color__primary;
-        font-weight: 800; */
-        }
+      @media (min-width: $breakpoint--md) {
+        width: 100%;
+        height: auto;
+        overflow: auto;
+        border: none;
+        margin: 0;
       }
     }
-  }
 
-  @media (min-width: 850px) {
-    #navbar {
+    @media (min-width: $breakpoint--md) {
       width: 20rem;
       height: 100vh;
       position: fixed;
@@ -145,25 +153,6 @@ export default {
       justify-content: center;
       padding: 5rem 0 0 0;
       border-right: 1px solid $color__border;
-
-      .secondary-nav {
-        width: 100%;
-        font-size: 16px;
-        padding: 12px 20px 12px;
-        border-bottom: 1px solid $color__border;
-      }
-
-      .ul-container {
-        width: 100%;
-        height: auto;
-        overflow: auto;
-        border: none;
-        margin: 0 0 0 0;
-      }
-    }
-
-    #main-doc {
-      margin: 0 0 0 21rem;
     }
   }
 
@@ -208,6 +197,10 @@ export default {
       hr {
         margin: 1rem 0 1rem 0;
       }
+    }
+
+    @media (min-width: $breakpoint--md) {
+      margin: 0 0 0 21rem;
     }
   }
 }
