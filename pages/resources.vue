@@ -1,10 +1,10 @@
 <template>
   <main>
-    <section class="resources">
+    <section id="resources">
       <section class="titles">
         <h1>Recursos</h1>
         <hr />
-        <div class="alert-note-right">
+        <div class="alert__note--right">
           En esta sección presentamos todos los recursos que consideramos que
           son importantes para una formación científica en psicología.
           <br />
@@ -60,6 +60,16 @@ export default {
 </script>
 
 <style lang="scss">
+#resources {
+  max-width: 1152px;
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  text-align: center;
+}
+
 .resources-section {
   color: $color__text;
   width: 100%;
