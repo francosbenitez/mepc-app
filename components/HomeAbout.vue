@@ -3,7 +3,7 @@
     <div class="about__avatar">
       <div>
         <div class="about__image">
-          <img src="../assets/images/avatar.svg" alt="Avatar MEPC" />
+          <img src="@/assets/images/avatar.svg" alt="Avatar MEPC" />
         </div>
         <div class="about__social">
           <h2>MEPC</h2>
@@ -49,7 +49,7 @@
 </template>
 
 <script>
-import content from '../lib/content.json'
+import content from '@/lib/content.json'
 import Email from '@/assets/icons/email.svg?inline'
 import Facebook from '@/assets/icons/facebook.svg?inline'
 import Instagram from '@/assets/icons/instagram.svg?inline'

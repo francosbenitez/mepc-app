@@ -1,10 +1,4 @@
-// import { resolve } from 'path'
-
 export default {
-  // alias: {
-  //   assets: resolve(__dirname, './assets'),
-  // },
-
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 

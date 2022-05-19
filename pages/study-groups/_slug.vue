@@ -6,7 +6,7 @@
       class="group__item"
     >
       <div class="group__image">
-        <img :src="require('../../assets/images/' + studyGroup.img)" />
+        <img :src="require('@/assets/images/' + studyGroup.img)" />
         <p>{{ studyGroup.name }}</p>
       </div>
       <div class="group__description">
@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import { getStudyGroupData } from '../../lib/study-groups'
+import { getStudyGroupData } from '@/lib/study-groups'
 
 export default {
   async asyncData({ $content, params }) {

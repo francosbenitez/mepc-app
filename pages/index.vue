@@ -7,9 +7,9 @@
 </template>
 
 <script>
-import HomeHero from '../components/HomeHero'
-import HomeAbout from '../components/HomeAbout'
-import HomeCollaboration from '../components/HomeCollaboration'
+import HomeHero from '@/components/HomeHero'
+import HomeAbout from '@/components/HomeAbout'
+import HomeCollaboration from '@/components/HomeCollaboration'
 
 export default {
   name: 'IndexPage',
