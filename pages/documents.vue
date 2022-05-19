@@ -62,7 +62,6 @@ export default {
 
   .documents__nav {
     width: 100%;
-    padding: 5rem 0.2rem 0 0.2rem;
     margin: 0 0 1rem 0;
     text-align: center;
 
@@ -141,8 +140,6 @@ export default {
       flex-flow: column nowrap;
       align-items: center;
       justify-content: center;
-      /* padding: 5rem 0 0 0; */
-      padding: 0;
       border-right: 1px solid $color__border;
     }
   }
