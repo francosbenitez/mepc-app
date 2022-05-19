@@ -19,8 +19,8 @@
         >
           <NuxtLink
             :to="{
-              name: 'study-groups-id',
-              params: { slug: item.slug, id: item.id },
+              name: 'study-groups-slug',
+              params: { slug: item.slug },
             }"
             class="study__link"
           >

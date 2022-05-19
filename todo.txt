@@ -3,8 +3,8 @@
     - Don't new features! It's only a refactoring.
   - Home:
     - Components to show:
-      - HomeHero.vue 
-      - HomeAbout.vue
-      - HomeFeatures2.vue
+      - HomeHero.vue. DONE
+      - HomeAbout.vue. DONE
+      - HomeFeatures2.vue. DONE
   - Study groups:
-    - Use _slug instead of _id for each study group.
+    - Use _slug instead of _id for each study group. DONE

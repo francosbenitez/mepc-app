@@ -25,10 +25,8 @@ import { getStudyGroupData } from '../../lib/study-groups'
 
 export default {
   async asyncData({ $content, params }) {
-    const studyGroupData = await getStudyGroupData(params.id)
+    const studyGroupData = await getStudyGroupData(params.slug)
     const markdown = await $content('study-groups', params.slug).fetch()
-
-    console.log('markdown', markdown)
 
     return {
       studyGroupData,
@@ -52,6 +50,7 @@ export default {
 
     .group__image {
       flex-direction: column;
+      flex-basis: 60%;
 
       img {
         border-radius: 50%;
