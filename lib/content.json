@@ -83,6 +83,13 @@
       "description": "Description Test",
       "img": "evolutiva.png",
       "email": "mailto:abaenpsicouba.mepc@gmail.com"
+    },
+    {
+      "id": 6,
+      "name": "Jurídica",
+      "description": "Jurídica Description",
+      "img": "juridica.png",
+      "email": "mailto:abaenpsicouba.mepc@gmail.com"
     }
   ]
 }

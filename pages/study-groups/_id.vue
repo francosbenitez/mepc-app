@@ -12,6 +12,7 @@
         <p>{{ studyGroup.name }}</p>
       </div>
       <div class="group__description">
+        <h1>Description</h1>
         <p>{{ studyGroup.description }}</p>
       </div>
     </div>
@@ -60,6 +61,10 @@ export default {
 
     .group__description {
       flex-direction: column;
+
+      h1 {
+        font-weight: bold;
+      }
     }
   }
 }
