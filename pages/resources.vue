@@ -1,10 +1,73 @@
 <template>
-  <main></main>
+  <main>
+    <section class="contact">
+      <section class="titles">
+        <h1>Recursos</h1>
+        <hr />
+        <div class="alert-note-right">
+          En esta sección presentamos todos los recursos que consideramos que
+          son importantes para una formación científica en psicología.
+          <br />
+          Si sabés de recursos que deban estar acá, llená
+          <a
+            href="https://docs.google.com/forms/u/2/d/e/1FAIpQLSeu8qfWfBGWc1XtMdc21my_0OazVdG3iaGdgtAhNynSKYzTBA/viewform?usp=send_form"
+          >
+            este formulario</a
+          >.
+        </div>
+        <input
+          type="text"
+          class="search-input"
+          onkeyup="myFunction()"
+          placeholder=" Ingresá texto de búsqueda"
+        />
+      </section>
+      <section class="resources-section">
+        <div class="resources-wrapper">
+          <div class="resource-card">
+            <a
+              href="https://www.researchgate.net/publication/342061092_Formacion_de_Grado_en_Psicologia_en_Argentina_Periodo_2009-2015_Undergraduate_Psychology_Education_in_Argentina_2009-2015"
+              target="_blank"
+            >
+              <div class="resource-card-texts">
+                <div class="resource-card-name">
+                  Formación de grado en psicología en argentina. Período
+                  2009-2015
+                </div>
+                <hr />
+                <div class="resource-card-description">
+                  A la fecha no se cuenta con datos descriptivos y comparativos
+                  actualizados sobre el estado de las carreras de psicología en
+                  …
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="resource-card">
+            <a
+              href="https://drive.google.com/file/d/1W_iHIjU1QnXo6vjTUxyPiI3Ty9LAzPuq/view?fbclid=IwAR17wVreWiZylutZZwN4vK64_5cuQoscURQF0jdrGCtJx4OgmpvGtuIAGrc"
+              target="_blank"
+            >
+              <div class="resource-card-texts">
+                <div class="resource-card-name">
+                  Guía de materias y prácticas recomendadas
+                </div>
+                <hr />
+                <div class="resource-card-description">
+                  El estudiante que elige cursar psicología en la universidad
+                  más importante de Argentina debe lidiar con la realidad de que
+                  mientras que …
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
 </template>
 
 <style lang="scss">
-/* ----------- Resources ---------- */
-
 .resources-section {
   color: var(--color-text);
   width: 100%;

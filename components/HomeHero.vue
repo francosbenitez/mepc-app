@@ -38,7 +38,7 @@
         font-size: 55px;
         line-height: 4rem;
         color: $color__white;
-        margin: 2rem 0 1rem 0;
+        margin-bottom: 1rem;
         @include hero-animation;
       }
 

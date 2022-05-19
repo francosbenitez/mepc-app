@@ -46,9 +46,10 @@ export default {
 <style lang="scss">
 .header {
   position: fixed;
+  top: 0;
   z-index: 10;
   width: 100%;
-  height: 55px;
+  height: 70px;
   background-color: $color__white;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 
@@ -56,6 +57,11 @@ export default {
     width: 90%;
     margin: 0 auto;
     max-width: 1152px;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 
     .nav {
       display: flex;

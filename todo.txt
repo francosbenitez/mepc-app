@@ -11,3 +11,4 @@
   - Refactor: 
     - Move /assets to the root.
     - Pass TheFooter and TheNavbar to the /layout folder.
+    - Fix mobile navbar.
