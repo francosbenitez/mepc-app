@@ -12,3 +12,5 @@
     - Move /assets to the root. DONE
     - Pass TheFooter and TheNavbar to the /layout folder. DONE
     - Fix mobile navbar.
+  - Documents:
+    - Split up the navbar, on the one hand, and the texts, on the other hand.
