@@ -141,7 +141,8 @@ export default {
       flex-flow: column nowrap;
       align-items: center;
       justify-content: center;
-      padding: 5rem 0 0 0;
+      /* padding: 5rem 0 0 0; */
+      padding: 0;
       border-right: 1px solid $color__border;
     }
   }

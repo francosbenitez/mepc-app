@@ -13,6 +13,8 @@
     - Pass TheFooter and TheNavbar to the /layout folder. DONE
     - Fix mobile navbar.
   - Documents:
+    - Build routes for each document/markdown (area/department).
     - Split up the navbar, on the one hand, and the texts, on the other hand.
   - Design:
     - Fix avatar.svg to take the Monserrat font.
+  
