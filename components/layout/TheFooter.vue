@@ -39,7 +39,7 @@ export default {
   color: $color__text;
   text-align: center;
   font-size: 13px;
-  z-index: 1;
+  position: relative;
   background-color: $color__white;
   padding: 0.75rem 0 1rem;
   box-shadow: 0 0 2rem -1rem rgba(0, 0, 0, 0.2);
