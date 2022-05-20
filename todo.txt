@@ -17,4 +17,9 @@
     - Split up the navbar, on the one hand, and the texts, on the other hand.
   - Design:
     - Fix avatar.svg to take the Monserrat font.
+  - Resources: 
+    - Implement the forrt resources in the resources view.
+      - Implement filters:
+        - by buttons: "All", "Reproducible Analyses", "Open Data and Materials", "Reproducibility and Replicability Knowledge", "Replication Research", "Conceptual and Statistical Knowledge", "Preregistration".
+        - by title.
   
