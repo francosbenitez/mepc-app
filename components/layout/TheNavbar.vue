@@ -5,13 +5,13 @@
         <NuxtLink to="/" class="nav__logo"><Logo /></NuxtLink>
         <ul class="nav__list" :class="{ 'nav-active': clicked }">
           <li>
-            <NuxtLink to="/study-groups"> What Do We Study? </NuxtLink>
+            <NuxtLink to="/study-groups"> Grupos de estudio </NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/documents"> Documents </NuxtLink>
+            <NuxtLink to="/documents"> Documentos </NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/resources"> Resources </NuxtLink>
+            <NuxtLink to="/resources"> Recursos </NuxtLink>
           </li>
         </ul>
         <div
