@@ -18,4 +18,8 @@
   - Design:
     - Fix avatar.svg to take the Monserrat font.
   - Move project to TypeScript.
-  
+  - Resources: 
+    - Implement the forrt resources in the resources view.
+      - Implement filters:
+        - by buttons: "All", "Reproducible Analyses", "Open Data and Materials", "Reproducibility and Replicability Knowledge", "Replication Research", "Conceptual and Statistical Knowledge", "Preregistration".
+        - by title.
