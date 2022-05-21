@@ -72,6 +72,8 @@ export default {
 
 <style lang="scss">
 #about {
+  display: flex;
+  flex-direction: column;
   max-width: 1152px;
   position: relative;
   width: 90%;
@@ -103,6 +105,8 @@ export default {
     }
 
     .about__social {
+      margin-bottom: 2rem;
+
       h2 {
         color: $color__text;
         font-family: 'Montserrat';
@@ -114,6 +118,10 @@ export default {
         font-family: 'Montserrat';
         font-weight: 400;
         margin: 10px 0 10px 0;
+      }
+
+      @media (min-width: $breakpoint--md) {
+        margin-bottom: 0;
       }
     }
 
@@ -152,12 +160,16 @@ export default {
         }
       }
     }
+
+    @media (min-width: $breakpoint--md) {
+      flex-basis: 40%;
+      align-content: flex-start;
+    }
   }
 
   .about__video {
     color: $color__text;
     display: flex;
-    padding-left: 2rem;
     text-align: center;
 
     .about__iframe-wrapper {
@@ -174,6 +186,15 @@ export default {
         height: 100%;
       }
     }
+
+    @media (min-width: $breakpoint--md) {
+      padding-left: 2rem;
+      flex-basis: 60%;
+    }
+  }
+
+  @media (min-width: $breakpoint--md) {
+    flex-direction: row;
   }
 }
 </style>
