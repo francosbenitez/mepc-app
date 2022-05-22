@@ -117,51 +117,45 @@
     "departments": [
       {
         "name": "Delegados",
-        "slug": "delegados",
-        "url": ""
+        "slug": "delegados"
       },
       {
         "name": "Diseño",
-        "slug": "diseno",
-        "url": ""
+        "slug": "diseno"
       },
       {
         "name": "Divulgación",
-        "slug": "divulgacion",
-        "url": ""
+        "slug": "divulgacion"
       },
       {
         "name": "Recursos Humanos",
-        "slug": "recursos-humanos",
-        "url": ""
+        "slug": "recursos-humanos"
       },
       {
         "name": "Relaciones Públicas",
-        "slug": "relaciones-publicas",
-        "url": ""
+        "slug": "relaciones-publicas"
       },
       {
         "name": "Revisión",
-        "slug": "revision",
-        "url": ""
+        "slug": "revision"
       }
     ],
     "areas": [
       {
         "name": "Facebook",
-        "url": ""
+        "slug": "facebook"
       },
       {
         "name": "Twitter",
-        "url": ""
+        "slug": "twitter"
       },
       {
         "name": "Instagram",
-        "url": ""
+        "slug": "instagram"
       },
       {
         "name": "YouTube",
-        "url": ""
+        "slug": "youtube"
       }
     ]
   },

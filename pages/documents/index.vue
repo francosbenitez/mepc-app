@@ -7,10 +7,7 @@
         </div>
         <ul class="documents__list">
           <div v-for="key in Object.keys(content.documents)" :key="key">
-            <li
-              class="documents__list-item link"
-              :class="{ active: key === 'departments' }"
-            >
+            <li class="documents__list-item link">
               <a class="documents__link">
                 <h1 v-if="key === 'departments'">Departamentos</h1>
                 <h1 v-else>Areas</h1>
@@ -21,13 +18,20 @@
               class="documents__list-item link"
               :key="item"
             >
-              <a class="documents__link" :href="item.url">{{ item.name }}</a>
+              <NuxtLink
+                class="documents__link"
+                :to="{
+                  name: 'documents-slug',
+                  params: { slug: item.slug },
+                }"
+                >{{ item.name }}</NuxtLink
+              >
             </li>
           </div>
         </ul>
       </nav>
       <div class="documents__content">
-        <nuxt-content :document="markdown" />
+        <slot></slot>
       </div>
     </section>
   </main>
@@ -40,12 +44,6 @@ export default {
   data() {
     return {
       content: content,
-    }
-  },
-  async asyncData({ $content }) {
-    const markdown = await $content('documents', 'delegados').fetch()
-    return {
-      markdown,
     }
   },
 }
@@ -93,6 +91,15 @@ export default {
       li {
         list-style: none;
 
+        .nuxt-link-active {
+          color: $color__primary;
+          font-weight: 800;
+          border-left: solid 4px $color__primary;
+          margin-left: 0.2rem;
+          color: $color__primary;
+          font-weight: 800;
+        }
+
         a {
           display: block;
           text-align: left;
@@ -111,14 +118,14 @@ export default {
         }
       }
 
-      .active a {
+      /* .active a {
         color: $color__primary;
         font-weight: 800;
         border-left: solid 4px $color__primary;
         margin-left: 0.2rem;
         color: $color__primary;
         font-weight: 800;
-      }
+      } */
 
       @media (min-width: $breakpoint--md) {
         width: 100%;
