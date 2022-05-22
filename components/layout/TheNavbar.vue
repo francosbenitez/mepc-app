@@ -143,7 +143,7 @@ export default {
             padding: 0;
           }
 
-          .nuxt-link-exact-active.nuxt-link-active {
+          .nuxt-link-active {
             color: $color__white;
             background: $color__primary;
           }
