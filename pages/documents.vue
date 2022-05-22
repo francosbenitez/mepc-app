@@ -72,9 +72,7 @@ export default {
         padding: 12px 20px 12px 40px;
         border: 1px solid $color__border;
         margin-bottom: 12px;
-        background: #fff
-          url('https://francosbenitez.github.io/mepc/img/search.svg') 1rem
-          no-repeat;
+        background: #fff url('../assets/icons/search.svg') 1rem no-repeat;
       }
 
       @media (min-width: $breakpoint--md) {

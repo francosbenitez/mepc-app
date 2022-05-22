@@ -81,8 +81,7 @@ export default {
     padding: 12px 2rem 1rem 2rem;
     margin-top: 1rem;
     border: 1px solid $color__border;
-    background: #fff url('https://francosbenitez.github.io/mepc/img/search.svg')
-      1rem no-repeat;
+    background: #fff url('../assets/icons/search.svg') 1rem no-repeat;
 
     @media (max-width: $breakpoint--md) {
       width: 90%;
