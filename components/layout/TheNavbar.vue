@@ -143,6 +143,11 @@ export default {
             padding: 0;
           }
 
+          .nuxt-link-exact-active.nuxt-link-active {
+            color: $color__white;
+            background: $color__primary;
+          }
+
           a {
             color: $color__text;
             font-family: 'Montserrat';
@@ -151,15 +156,6 @@ export default {
             padding: 15px;
             position: relative;
             transition: all 2s;
-
-            .is-active {
-              color: $color__white;
-              background: $color__primary;
-
-              @media (max-width: $breakpoint--md) {
-                color: $color__white;
-              }
-            }
 
             &:hover {
               color: $color__white;

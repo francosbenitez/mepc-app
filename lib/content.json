@@ -61,56 +61,56 @@
       "name": "Ciencias Cognitivas",
       "slug": "ciencias-cognitivas",
       "img": "ciencias-cognitivas.png",
-      "email": "mailto:abaenpsicouba.mepc@gmail.com"
+      "email": "mailto:cs.cognitivas.mepc@gmail.com"
     },
     {
       "id": 3,
       "name": "Clínica",
       "slug": "clinica",
       "img": "clinica.png",
-      "email": "mailto:abaenpsicouba.mepc@gmail.com"
+      "email": "mailto:clinicamepc@gmail.com"
     },
     {
       "id": 4,
       "name": "Evolutiva",
       "slug": "evolutiva",
       "img": "evolutiva.png",
-      "email": "mailto:abaenpsicouba.mepc@gmail.com"
+      "email": "mailto:evolutivamepc@gmail.com"
     },
     {
       "id": 5,
       "name": "Filosofía",
       "slug": "filosofia",
       "img": "filosofia.png",
-      "email": "mailto:abaenpsicouba.mepc@gmail.com"
+      "email": "mailto:mepc.filo@gmail.com"
     },
     {
       "id": 6,
       "name": "Jurídica",
       "slug": "juridica",
       "img": "juridica.png",
-      "email": "mailto:abaenpsicouba.mepc@gmail.com"
+      "email": "mailto:grupomepcjuridica@gmail.com"
     },
     {
       "id": 7,
       "name": "Metodología",
       "slug": "metodologia",
       "img": "metodologia.png",
-      "email": "mailto:abaenpsicouba.mepc@gmail.com"
+      "email": "mailto:metodologiamepc@gmail.com"
     },
     {
       "id": 8,
       "name": "Neurociencias",
       "slug": "neurociencias",
       "img": "evolutiva.png",
-      "email": "mailto:abaenpsicouba.mepc@gmail.com"
+      "email": "mailto:neuromepc@gmail.com"
     },
     {
       "id": 9,
       "name": "Psicoeconomía",
       "slug": "psicoeconomia",
       "img": "psicoeconomia.png",
-      "email": "mailto:abaenpsicouba.mepc@gmail.com"
+      "email": "mailto:mepc.psicoecon.101@gmail.com"
     }
   ],
   "resources": [
