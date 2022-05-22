@@ -76,10 +76,10 @@ export default {
 
   .study__title--primary {
     @include titles;
+  }
 
-    .study__subtitle {
-      margin: 1rem 0;
-    }
+  .study__subtitle {
+    margin: 1rem 0;
   }
 
   .study__content {

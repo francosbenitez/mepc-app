@@ -52,7 +52,6 @@
     {
       "id": 1,
       "name": "Análisis Conductual Aplicado",
-      "description": "Description Test",
       "slug": "aba",
       "img": "aba.png",
       "email": "mailto:abaenpsicouba.mepc@gmail.com"
@@ -60,7 +59,6 @@
     {
       "id": 2,
       "name": "Ciencias Cognitivas",
-      "description": "Description Test",
       "slug": "ciencias-cognitivas",
       "img": "ciencias-cognitivas.png",
       "email": "mailto:abaenpsicouba.mepc@gmail.com"
@@ -68,7 +66,6 @@
     {
       "id": 3,
       "name": "Clínica",
-      "description": "Description Test",
       "slug": "clinica",
       "img": "clinica.png",
       "email": "mailto:abaenpsicouba.mepc@gmail.com"
@@ -76,25 +73,43 @@
     {
       "id": 4,
       "name": "Evolutiva",
-      "description": "Description Test",
       "slug": "evolutiva",
       "img": "evolutiva.png",
       "email": "mailto:abaenpsicouba.mepc@gmail.com"
     },
     {
       "id": 5,
-      "name": "Test",
-      "description": "Description Test",
-      "slug": "test",
-      "img": "evolutiva.png",
+      "name": "Filosofía",
+      "slug": "filosofia",
+      "img": "filosofia.png",
       "email": "mailto:abaenpsicouba.mepc@gmail.com"
     },
     {
       "id": 6,
       "name": "Jurídica",
-      "description": "Jurídica Description",
       "slug": "juridica",
       "img": "juridica.png",
+      "email": "mailto:abaenpsicouba.mepc@gmail.com"
+    },
+    {
+      "id": 7,
+      "name": "Metodología",
+      "slug": "metodologia",
+      "img": "metodologia.png",
+      "email": "mailto:abaenpsicouba.mepc@gmail.com"
+    },
+    {
+      "id": 8,
+      "name": "Neurociencias",
+      "slug": "neurociencias",
+      "img": "evolutiva.png",
+      "email": "mailto:abaenpsicouba.mepc@gmail.com"
+    },
+    {
+      "id": 9,
+      "name": "Psicoeconomía",
+      "slug": "psicoeconomia",
+      "img": "psicoeconomia.png",
       "email": "mailto:abaenpsicouba.mepc@gmail.com"
     }
   ],
