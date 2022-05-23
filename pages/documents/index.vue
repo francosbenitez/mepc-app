@@ -37,7 +37,7 @@
         </ul>
       </nav>
       <div class="documents__content">
-        <slot></slot>
+        <slot>¡Bievenidx a los Documentos de MEPC!</slot>
       </div>
     </section>
   </main>
