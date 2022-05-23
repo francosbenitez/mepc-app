@@ -8,10 +8,16 @@
         <ul class="documents__list">
           <div v-for="key in Object.keys(content.documents)" :key="key">
             <li class="documents__list-item link">
-              <a class="documents__link">
+              <NuxtLink
+                class="documents__link"
+                :to="{
+                  name: 'documents-slug',
+                  params: { slug: key },
+                }"
+              >
                 <h1 v-if="key === 'departments'">Departamentos</h1>
                 <h1 v-else>Areas</h1>
-              </a>
+              </NuxtLink>
             </li>
             <li
               v-for="item in content.documents[key]"
