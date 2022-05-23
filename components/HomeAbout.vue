@@ -3,7 +3,7 @@
     <div class="about__avatar">
       <div>
         <div class="about__image">
-          <img src="@/assets/images/avatar.svg" alt="Avatar MEPC" />
+          <img src="@/assets/images/avatar.png" alt="Avatar MEPC" />
         </div>
         <div class="about__social">
           <h2>MEPC</h2>
