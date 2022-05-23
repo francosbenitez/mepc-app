@@ -8,7 +8,7 @@
             <NuxtLink to="/study-groups"> Grupos de estudio </NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/documents/departments"> Documentos </NuxtLink>
+            <NuxtLink to="/documents"> Documentos </NuxtLink>
           </li>
           <li>
             <NuxtLink to="/resources"> Recursos </NuxtLink>
