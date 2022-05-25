@@ -54,8 +54,6 @@ export default {
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 
   .header__content {
-    width: 90%;
-    margin: 0 auto;
     max-width: 1152px;
     position: relative;
     top: 50%;
@@ -63,13 +61,19 @@ export default {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 
+    @media (max-width: $breakpoint--md) {
+      height: 100%;
+    }
+
     .nav {
       display: flex;
 
       @media (max-width: $breakpoint--md) {
         justify-content: left;
         align-items: center;
-        height: 55px;
+        height: 100%;
+        width: 90%;
+        margin: 0 auto;
       }
 
       .nav__logo {
@@ -213,6 +217,11 @@ export default {
           transition: all 0.3s ease;
         }
       }
+    }
+
+    @media (min-width: $breakpoint--md) {
+      width: 90%;
+      margin: 0 auto;
     }
   }
 }
