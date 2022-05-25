@@ -8,7 +8,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Home | Movimiento Estudiantil por la Psicología Científica (MEPC)',
+    title: '',
     htmlAttrs: {
       lang: 'en',
     },

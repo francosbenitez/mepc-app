@@ -52,6 +52,12 @@ export default {
       content: content,
     }
   },
+  head() {
+    return {
+      title:
+        'Recursos | Movimiento Estudiantil por la Psicología Científica (MEPC)',
+    }
+  },
 }
 </script>
 

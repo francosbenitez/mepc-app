@@ -18,5 +18,11 @@ export default {
     HomeAbout,
     HomeCollaboration,
   },
+  head() {
+    return {
+      title:
+        'Home | Movimiento Estudiantil por la Psicología Científica (MEPC)',
+    }
+  },
 }
 </script>
