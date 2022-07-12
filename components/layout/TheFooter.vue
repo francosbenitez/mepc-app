@@ -5,7 +5,7 @@
       <p>
         Desarrollado con ☕️ y
         <a
-          href="https://github.com/francosbenitez/mepc"
+          href="https://github.com/francosbenitez/mepc-frontend"
           target="_blank"
           rel="noopener"
         >
