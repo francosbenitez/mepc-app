@@ -1,6 +1,6 @@
 # mepc.app
 
-*Website of the Movimiento Estudiantil por la Psicología Científica (MEPC)*
+_Website of the Movimiento Estudiantil por la Psicología Científica (MEPC)_
 
 - Organizational website.
 
@@ -10,4 +10,4 @@
 
 ## Live Demo
 
-- [Link](francosbenitez.github.io/mepc-frontend)
+- [Link](https://mepc.app)
