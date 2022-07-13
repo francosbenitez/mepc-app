@@ -1,11 +1,13 @@
-# Website of the MEPC
+# mepc.app
 
-- Developed a fast website with server side rendering (SSR).
+*Website of the Movimiento Estudiantil por la Psicología Científica (MEPC)*
+
+- Organizational website.
 
 ## Code and Resources Used
 
-- **Main Technologies:** Vue, Nuxt, SASS.
+- **Main Technologies:** Vue, Nuxt, SASS
 
 ## Live Demo
 
-- [Website](francosbenitez.github.io/mepc-frontend)
+- [Link](francosbenitez.github.io/mepc-frontend)
