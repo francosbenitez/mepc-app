@@ -2,7 +2,7 @@
 
 _Website of the Movimiento Estudiantil por la Psicología Científica (MEPC)_
 
-- It uses an API which can be found on [this other repository](https://github.com/francosbenitez/mepc-backend).
+- It uses an API which can be found on <a href="https://github.com/francosbenitez/mepc-backend" target="_blank">this other repository</a>.
 
 ## Code and Resources Used
 
@@ -10,4 +10,4 @@ _Website of the Movimiento Estudiantil por la Psicología Científica (MEPC)_
 
 ## Live Demo
 
-- [Link](https://mepc.app)
+- <a href="https://mepc.app" target="_blank">Link</a>
