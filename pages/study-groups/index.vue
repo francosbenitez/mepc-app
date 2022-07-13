@@ -61,6 +61,12 @@ export default {
   components: {
     Email,
   },
+  head() {
+    return {
+      title:
+        'Grupos de estudio | Movimiento Estudiantil por la Psicología Científica (MEPC)',
+    }
+  },
 }
 </script>
 
