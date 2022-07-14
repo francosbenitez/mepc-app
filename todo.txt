@@ -29,3 +29,4 @@
 - Two buttons in the navbar for "Log in" and "Sign up", respectively. 
 - Navbar:
   - ... Recursos | Aprender -> e-learning platform | Aportar (-> ecommerce)
+- Think more about refactoring this project using Angular (specially for security issues).
