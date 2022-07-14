@@ -32,3 +32,5 @@
     - Aprender -> "/learn"
     - Aportar -> "/shop"
 - Think more about refactoring this project using Angular (specially for security issues).
+- First of all:
+  - _Make the e-learning platform_.
