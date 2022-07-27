@@ -26,3 +26,5 @@
 - Next features: 
   - Learning platform to learn evidence-based psychology stuff.
   - Ecommerce to buy t-shirts, toys, and funny stuff evidence-based and psychology-related. 
+- ***Move the project to Next/React/TypeScript***. 
+  - And I could implement Chakra as a CSS-in-JS tool.
