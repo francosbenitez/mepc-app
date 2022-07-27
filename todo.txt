@@ -35,3 +35,5 @@
 - First of all:
   - _Make the e-learning platform_.
 - Create a platform to write posts easily, so that the website can be used as a Blog written by psychology students.
+- ***Move the project to Next/React/TypeScript***. 
+  - And I could implement Chakra as a CSS-in-JS tool.
