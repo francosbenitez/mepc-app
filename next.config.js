@@ -1,7 +1,18 @@
 /** @type {import('next').NextConfig} */
+
+const path = require("path");
+
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-}
+  sassOptions: {
+    includePaths: [path.join(__dirname, "styles")],
+    prependData: `
+      @import "keyframes";
+      @import "mixins";
+      @import "variables";
+      `,
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
