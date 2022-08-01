@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import styles from "./styles.module.scss";
+import contents from "../../../lib/content.json";
 
 const HomeAbout = () => {
   return (
@@ -19,14 +20,20 @@ const HomeAbout = () => {
             <h2>MEPC</h2>
             <h3>Movimiento Estudiantil por la Psicología Científica</h3>
             <ul className={styles.about__items}>
-              {/* <template v-for="item in content.social_networks">
-              <a :href="item.url" :key="item.url" className="about__items-networks">
-                <component
-                  :is="item.component"
-                  :key="item.component"
-                ></component>
-              </a>
-            </template> */}
+              {contents.social_networks.map((item) => (
+                <a
+                  href={item.url}
+                  key={item.url}
+                  className={styles["about__items-networks"]}
+                >
+                  <Image
+                    width="20"
+                    height="20"
+                    src={`/icons/${item.component}.svg`}
+                    alt={item.component}
+                  />
+                </a>
+              ))}
             </ul>
           </div>
         </div>
