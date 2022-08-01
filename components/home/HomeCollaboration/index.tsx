@@ -1,5 +1,5 @@
 import React from "react";
-import contents from "../../lib/content.json";
+import contents from "../../../lib/content.json";
 import Image from "next/image";
 import styles from "./styles.module.scss";
 
