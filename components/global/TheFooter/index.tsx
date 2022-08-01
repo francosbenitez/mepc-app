@@ -1,6 +1,6 @@
 import React from "react";
-import GitHub from "../../../public/icons/github.svg";
 import styles from "./styles.module.scss";
+import Image from "next/image";
 
 const TheFooter = () => {
   return (
@@ -14,9 +14,14 @@ const TheFooter = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <GitHub />
+            {" "}
+            <Image
+              width="10"
+              height="10"
+              alt=""
+              src="/icons/github.svg"
+            /> por{" "}
           </a>
-          por
           <a
             href="https://www.francosbenitez.com/"
             target="_blank"

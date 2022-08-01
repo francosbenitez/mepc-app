@@ -10,8 +10,8 @@ const HomeAbout = () => {
         <div>
           <div className={styles.about__image}>
             <Image
-              width="100"
-              height="100"
+              width="250"
+              height="250"
               src="/images/avatar.png"
               alt="Avatar MEPC"
             />

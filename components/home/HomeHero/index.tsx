@@ -18,8 +18,8 @@ const HomeHero = () => {
         <div className={styles.hero__image}>
           <Image
             src="/images/hero.svg"
-            width="300"
-            height="300"
+            width="400"
+            height="400"
             alt="MEPC cover"
           />
         </div>

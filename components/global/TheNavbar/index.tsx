@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
-import Logo from "../../../public/icons/logo.svg";
 import styles from "./styles.module.scss";
+import Image from "next/image";
 
 const TheNavbar = () => {
   const [clicked, setClicked] = useState<boolean>(false);
@@ -11,7 +11,7 @@ const TheNavbar = () => {
       <div className={styles.header__content}>
         <nav className={styles.nav}>
           <Link href="/" className={styles.nav__logo}>
-            {/* <Logo /> */}LOGO
+            <Image width="40" height="40" src="/icons/logo.svg" alt="" />
           </Link>
           <ul
             className={`${styles.nav__list} ${
