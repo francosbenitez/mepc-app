@@ -4,21 +4,34 @@ import styles from "./styles.module.scss";
 
 const HomeHero = () => {
   return (
-    <div
-      className={`${styles["encabezado"]} flex items-end`}
-      style={{
-        background:
-          "url('https://www.cerveceriaymalteriaquilmes.com/wp-content/uploads/2021/04/home.jpg') no-repeat center center",
-      }}
-    >
-      <div className={styles["container"]}>
-        <div className="row">
-          <div className="col-lg-12">
-            <h1 className="mb-5 font-bold">SOMOS MEPC</h1>
-          </div>
+    <section className={styles["hero"]}>
+      <div className={styles["hero-container"]}>
+        {/* <div className={styles["hero-description"]}> */}
+        {/* <h1>¿Quiénes somos?</h1>
+          <h2>
+            Somos una organización independiente de estudiantes y graduades, que
+            tenemos como fin promover el pensamiento crítico y la psicología
+            científica, formarnos entre los integrantes en temas afines y
+            reclamar por una formación actualizada, plural y científica.
+          </h2> */}
+        {/* <h1 style={{ textAlign: "right" }}>
+            Movimiento <br />
+            Estudiantil <br />
+            por la <br />
+            Psicología <br />
+            Científica
+          </h1>
+        </div> */}
+        <div className={styles["hero-image"]}>
+          <Image
+            src="/images/hero.svg"
+            width="400"
+            height="400"
+            alt="MEPC cover"
+          />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
