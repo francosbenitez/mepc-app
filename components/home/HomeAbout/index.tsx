@@ -5,10 +5,10 @@ import contents from "../../../lib/content.json";
 
 const HomeAbout = () => {
   return (
-    <section id={styles.about}>
-      <div className={styles.about__avatar}>
+    <section className={styles["about"]}>
+      <div className={styles["about-avatar"]}>
         <div>
-          <div className={styles.about__image}>
+          <div className={styles["about-image"]}>
             <Image
               width="250"
               height="250"
@@ -16,15 +16,15 @@ const HomeAbout = () => {
               alt="Avatar MEPC"
             />
           </div>
-          <div className={styles.about__social}>
+          <div className={styles["about-social"]}>
             <h2>MEPC</h2>
             <h3>Movimiento Estudiantil por la Psicología Científica</h3>
-            <ul className={styles.about__items}>
+            <ul className={styles["about-items"]}>
               {contents.social_networks.map((item) => (
                 <a
                   href={item.url}
                   key={item.url}
-                  className={styles["about__items-networks"]}
+                  className={styles["about-items-networks"]}
                 >
                   <Image
                     width="20"
@@ -38,16 +38,16 @@ const HomeAbout = () => {
           </div>
         </div>
       </div>
-      <div className={styles.about__video}>
+      <div className={styles["about-video"]}>
         <div>
-          <div className={styles["about__iframe-wrapper"]}>
+          <div className={styles["about-iframe-wrapper"]}>
             <iframe
               width="800"
               height="500"
               src="https://www.youtube.com/embed/ieSG5JVLOow"
             ></iframe>
           </div>
-          <div className={styles.about__description}>
+          <div className={styles["about-description"]}>
             <hr />
             <p>
               Somos el Movimiento Estudiantil por la Psicología Científica
