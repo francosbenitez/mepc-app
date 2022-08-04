@@ -44,3 +44,4 @@
 - Remove the "Recursos", "Grupos de estudio", and "Documentos" sections from the navbar.
   - In case it was decided to keep them, it's better to put them in the footer.
 - Add Tailwind.
+- In the begginning, the `roles` are going to be just `authenticated` users and `admin` user (me, who can accept or reject articles).
