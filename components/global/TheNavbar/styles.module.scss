@@ -59,7 +59,8 @@
 }
 
 .nav-list {
-  margin: auto;
+  // margin: auto;
+  width: 100%;
   text-align: right;
 
   @media (max-width: $breakpoint--md) {

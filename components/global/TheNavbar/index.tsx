@@ -19,16 +19,16 @@ const TheNavbar = () => {
             }`}
           >
             <li>
-              <Link href="/study-groups"> Grupos de estudio </Link>
+              <Link href="/documents"> QUIÉNES SOMOS </Link>
             </li>
             <li>
-              <Link href="/documents"> Documentos </Link>
+              <Link href="/articles"> ARTÍCULOS </Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="/resources"> Recursos </Link>
-            </li>
+            </li> */}
           </ul>
-          <button>Iniciar sesión</button>
+          <button>Publicá</button>
           <div
             className={`${styles["nav-btn"]} ${
               clicked ? styles["toggle"] : ""

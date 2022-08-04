@@ -6,7 +6,7 @@ import contents from "../../../lib/content.json";
 const HomeAbout = () => {
   return (
     <section className={styles["about"]}>
-      <div className={styles["about-avatar"]}>
+      {/* <div className={styles["about-avatar"]}>
         <div>
           <div className={styles["about-image"]}>
             <Image
@@ -37,29 +37,29 @@ const HomeAbout = () => {
             </ul>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className={styles["about-video"]}>
         <div>
+          <div className={styles["about-description"]}>
+            <p>
+              Un grupo de estudiantes y graduades autoconvocades de diferentes
+              puntos del país que compartimos un mismo ideal: el desarrollo de
+              una formación y una práctica profesional basadas en fundamentos
+              científicos. Nacimos en la Facultad de Psicología de la
+              Universidad de Buenos Aires (UBA), y ya sumamos casi 3000 personas
+              de diferentes casas de estudio que creemos que la ciencia es el
+              camino que debemos seguir en psicología para mejorar nuestra
+              formación.
+            </p>
+          </div>
+          {/* <hr /> */}
+          <br />
           <div className={styles["about-iframe-wrapper"]}>
             <iframe
               width="800"
               height="500"
               src="https://www.youtube.com/embed/ieSG5JVLOow"
             ></iframe>
-          </div>
-          <div className={styles["about-description"]}>
-            <hr />
-            <p>
-              Somos el Movimiento Estudiantil por la Psicología Científica
-              (MEPC), un grupo de estudiantes y graduades autoconvocades de
-              diferentes puntos del país que compartimos un mismo ideal: el
-              desarrollo de una formación y una práctica profesional basadas en
-              fundamentos científicos. Nacimos en la Facultad de Psicología de
-              la Universidad de Buenos Aires (UBA), y ya sumamos casi 3000
-              personas de diferentes casas de estudio que creemos que la ciencia
-              es el camino que debemos seguir en psicología para mejorar nuestra
-              formación.
-            </p>
           </div>
         </div>
       </div>

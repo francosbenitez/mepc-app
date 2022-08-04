@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import HomeHero from "../components/home/HomeHero";
 import HomeAbout from "../components/home/HomeAbout";
-import HomeCollaboration from "../components/home/HomeCollaboration";
+// import HomeCollaboration from "../components/home/HomeCollaboration";
 
 const Home: NextPage = () => {
   return (
@@ -14,7 +14,22 @@ const Home: NextPage = () => {
       </Head>
       <HomeHero />
       <HomeAbout />
-      <HomeCollaboration />
+      {/* <div className="redes text-center">
+        <h5>Seguinos en las redes:</h5>
+        <a href="" target="_blank" rel="noreferrer">
+          <i className="fab fa-2x fa-facebook-f"></i>
+        </a>
+        <a href="" target="_blank" rel="noreferrer">
+          <i className="fab fa-2x fa-instagram"></i>
+        </a>
+        <a href="" target="_blank" rel="noreferrer">
+          <i className="fab fa-2x fa-youtube"></i>
+        </a>
+        <a href="" target="_blank" rel="noreferrer">
+          <i className="fab fa-2x fa-linkedin-in"></i>
+        </a>
+      </div> */}
+      {/* <HomeCollaboration /> */}
     </>
   );
 };
