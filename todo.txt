@@ -40,6 +40,7 @@
 - Implement Styled Components as a main CSS-in-JS tool.
 - Instead of "Iniciar sesión", it could be "Publicá". 
   - And if the user is not logged in, show the pop-up asking them to be logged in.
+    - Also, if the user is not logged in, a *register* pop-up can be opened as well.
 - Remove the "Recursos", "Grupos de estudio", and "Documentos" sections from the navbar.
   - In case it was decided to keep them, it's better to put them in the footer.
 - Add Tailwind.
