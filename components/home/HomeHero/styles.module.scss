@@ -1,3 +1,42 @@
+.encabezado {
+  height: 380px;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+  padding-bottom: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container {
+  width: 1370px;
+  max-width: 1140px;
+  // width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .encabezado h1 {
+    font-size: 40px;
+    line-height: 1.2;
+  }
+}
+
+.encabezado h1 {
+  color: #fff;
+  background: #000;
+  padding: 4px 20px;
+  display: inline;
+  -webkit-box-decoration-break: clone;
+  font-size: 70px;
+  line-height: 1.2;
+}
+////
+
 .hero {
   background-color: $color__primary;
   padding-top: 5rem;

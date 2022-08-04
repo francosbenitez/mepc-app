@@ -40,7 +40,10 @@ const HomeAbout = () => {
       </div> */}
       <div className={styles["about-video"]}>
         <div>
-          <div className={styles["about-description"]}>
+          <div
+            className={styles["about-description"]}
+            style={{ paddingBottom: "5rem" }}
+          >
             <p>
               Un grupo de estudiantes y graduades autoconvocades, provenientes
               de diferentes puntos del país, que compartimos un mismo ideal: el
