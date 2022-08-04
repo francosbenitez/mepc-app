@@ -51,3 +51,7 @@
   - Instagram posts will be passed to this section.
     - The writers will have a `user`, or just a link to their social networks (Instagram, generally).
 - 'Sumate a nuestra comunidad' -> link to the MEPC's Discord
+- Publicá ->
+  - If the user is not registered -> Registrarse; else,
+  - Logueate
+    - After the user was logged in, he/she is redirected to one view where he/she is allowed to upload a ***Google Doc link*** with the article.
