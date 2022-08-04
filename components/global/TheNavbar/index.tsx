@@ -28,6 +28,7 @@ const TheNavbar = () => {
               <Link href="/resources"> Recursos </Link>
             </li>
           </ul>
+          <button>Iniciar sesión</button>
           <div
             className={`${styles["nav-btn"]} ${
               clicked ? styles["toggle"] : ""
