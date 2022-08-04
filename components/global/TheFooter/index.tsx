@@ -4,8 +4,8 @@ import Image from "next/image";
 
 const TheFooter = () => {
   return (
-    <footer className={styles.footer}>
-      <div className={styles.footer__content}>
+    <footer className={styles["footer"]}>
+      <div className={styles["footer-content"]}>
         <p>MEPC © 2021</p>
         <p>
           Desarrollado con ☕️ y
