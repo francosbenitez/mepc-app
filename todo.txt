@@ -50,3 +50,4 @@
   - It will also have their respective author (as an `USER` inside the models). 
   - Instagram posts will be passed to this section.
     - The writers will have a `user`, or just a link to their social networks (Instagram, generally).
+- 'Sumate a nuestra comunidad' -> link to the MEPC's Discord

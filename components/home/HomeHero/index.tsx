@@ -6,7 +6,7 @@ const HomeHero = () => {
   return (
     <section className={styles["hero"]}>
       <div className={styles["hero-container"]}>
-        <div className={styles["hero-description"]}>
+        {/* <div className={styles["hero-description"]}>
           <h1>¿Quiénes somos?</h1>
           <h2>
             Somos una organización independiente de estudiantes y graduades, que
@@ -14,12 +14,12 @@ const HomeHero = () => {
             científica, formarnos entre los integrantes en temas afines y
             reclamar por una formación actualizada, plural y científica.
           </h2>
-        </div>
+        </div> */}
         <div className={styles["hero-image"]}>
           <Image
             src="/images/hero.svg"
-            width="400"
-            height="400"
+            width="500"
+            height="500"
             alt="MEPC cover"
           />
         </div>

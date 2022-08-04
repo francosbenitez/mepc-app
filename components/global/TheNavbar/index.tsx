@@ -10,9 +10,10 @@ const TheNavbar = () => {
     <header className={styles["header"]}>
       <div className={styles["header-content"]}>
         <nav className={styles["nav"]}>
-          <Link href="/" className={styles["nav-logo"]}>
-            <Image width="40" height="40" src="/icons/logo.svg" alt="" />
-          </Link>
+          {/* <Link href="/" className={styles["nav-logo"]}> */}
+          {/* <Image width="40" height="40" src="/icons/logo.svg" alt="" /> */}
+          <p style={{ fontWeight: "bold" }}>MEPC</p>
+          {/* </Link> */}
           <ul
             className={`${styles["nav-list"]} ${
               clicked ? styles["nav-active"] : ""
