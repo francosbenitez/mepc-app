@@ -18,9 +18,9 @@ const TheNavbar = () => {
               clicked ? styles["nav-active"] : ""
             }`}
           >
-            <li>
+            {/* <li>
               <Link href="/documents"> QUIÉNES SOMOS </Link>
-            </li>
+            </li> */}
             <li>
               <Link href="/articles"> ARTÍCULOS </Link>
             </li>

@@ -45,3 +45,6 @@
   - In case it was decided to keep them, it's better to put them in the footer.
 - Add Tailwind.
 - In the begginning, the `roles` are going to be just `authenticated` users and `admin` user (me, who can accept or reject articles).
+- 'Artículos': 
+  - This section will have ALL THE ARTICLES `PUBLISHED`.
+  - It will also have their respective author (as an `USER` inside the models). 
