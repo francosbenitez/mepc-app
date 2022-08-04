@@ -31,71 +31,71 @@
     flex-basis: 40%;
     align-content: flex-start;
   }
+}
 
-  .about-image {
-    img {
-      width: 80%;
-      max-width: 344px;
-      height: auto;
-      border-radius: 50%;
-    }
+.about-image {
+  img {
+    width: 80%;
+    max-width: 344px;
+    height: auto;
+    border-radius: 50%;
+  }
+}
+
+.about-social {
+  margin-bottom: 2rem;
+
+  @media (min-width: $breakpoint--md) {
+    margin-bottom: 0;
   }
 
-  .about-social {
-    margin-bottom: 2rem;
-
-    @media (min-width: $breakpoint--md) {
-      margin-bottom: 0;
-    }
-
-    h2 {
-      color: $color__text;
-      font-family: "Montserrat";
-      margin: 10px 0 10px 0;
-    }
-
-    h3 {
-      color: $color__text;
-      font-family: "Montserrat";
-      font-weight: 400;
-      margin: 10px 0 10px 0;
-    }
+  h2 {
+    color: $color__text;
+    font-family: "Montserrat";
+    margin: 10px 0 10px 0;
   }
 
-  .about-items {
-    list-style: none;
-    display: inline-block;
-    text-rendering: auto;
-    line-height: 1;
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0;
+  h3 {
+    color: $color__text;
+    font-family: "Montserrat";
+    font-weight: 400;
+    margin: 10px 0 10px 0;
+  }
+}
 
-    .about-items-networks {
-      position: relative;
-      margin: 10px;
+.about-items {
+  list-style: none;
+  display: inline-block;
+  text-rendering: auto;
+  line-height: 1;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
 
-      &:hover {
-        border-bottom: none;
-        transform: scale(1.2);
-      }
+  i {
+    margin-right: 5px;
+    padding: 3px;
+    transition: all 0.7s ease-in-out;
 
-      svg {
-        fill: $color__primary;
-      }
+    &:hover {
+      transform: rotateY(360deg);
     }
+  }
+}
 
-    i {
-      margin-right: 5px;
-      padding: 3px;
-      transition: all 0.7s ease-in-out;
+.about-items .about-items-networks {
+  position: relative;
+  margin: 10px;
 
-      &:hover {
-        transform: rotateY(360deg);
-      }
-    }
+  &:hover {
+    border-bottom: none;
+    transform: scale(1.2);
+  }
+
+  svg {
+    fill: $color__primary;
   }
 }
 
