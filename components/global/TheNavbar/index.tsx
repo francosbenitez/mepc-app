@@ -12,7 +12,7 @@ const TheNavbar = () => {
         <nav className={styles["nav"]}>
           {/* <Link href="/" className={styles["nav-logo"]}> */}
           {/* <Image width="40" height="40" src="/icons/logo.svg" alt="" /> */}
-          <p style={{ fontWeight: "bold" }}>MEPC</p>
+          <p className="self-center font-bold">MEPC</p>
           {/* </Link> */}
           <ul
             className={`${styles["nav-list"]} ${
@@ -29,7 +29,9 @@ const TheNavbar = () => {
               <Link href="/resources"> Recursos </Link>
             </li> */}
           </ul>
-          <button>Publicá</button>
+          <button className="btn bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Publicá
+          </button>
           <div
             className={`${styles["nav-btn"]} ${
               clicked ? styles["toggle"] : ""
