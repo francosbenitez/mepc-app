@@ -1,53 +1,53 @@
-#hero {
+.hero {
   background-color: $color__primary;
   padding-top: 5rem;
   padding-bottom: 5rem;
+}
 
-  .hero__container {
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    max-width: 1152px;
+.hero-container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 1152px;
 
-    .hero__description {
-      flex-basis: 50%;
-
-      h1 {
-        font-size: 55px;
-        line-height: 4rem;
-        color: $color__white;
-        margin-bottom: 1rem;
-        @include hero-animation;
-      }
-
-      h2 {
-        font-size: 23px;
-        line-height: 2.5rem;
-        color: $color__white;
-        font-family: "Montserrat";
-        font-weight: 400;
-        @include hero-animation;
-      }
-
-      @media (min-width: $breakpoint--md) {
-        text-align: left;
-      }
-    }
-
-    .hero__image {
-      flex-basis: 50%;
-      width: 100%;
-      margin: auto;
-
-      img {
-        @include hero-animation;
-      }
-    }
-
-    @media (min-width: $breakpoint--md) {
-      flex-direction: row;
-    }
+  @media (min-width: $breakpoint--md) {
+    flex-direction: row;
   }
+}
+
+.hero-description {
+  flex-basis: 50%;
+
+  @media (min-width: $breakpoint--md) {
+    text-align: left;
+  }
+}
+
+.hero-description h1 {
+  font-size: 55px;
+  line-height: 4rem;
+  color: $color__white;
+  margin-bottom: 1rem;
+  @include hero-animation;
+}
+
+.hero-description h2 {
+  font-size: 23px;
+  line-height: 2.5rem;
+  color: $color__white;
+  font-family: "Montserrat";
+  font-weight: 400;
+  @include hero-animation;
+}
+
+.hero-image {
+  flex-basis: 50%;
+  width: 100%;
+  margin: auto;
+}
+
+.hero-image img {
+  @include hero-animation;
 }

@@ -4,9 +4,9 @@ import styles from "./styles.module.scss";
 
 const HomeHero = () => {
   return (
-    <section id={styles.hero}>
-      <div className={styles.hero__container}>
-        <div className={styles.hero__description}>
+    <section className={styles["hero"]}>
+      <div className={styles["hero-container"]}>
+        <div className={styles["hero-description"]}>
           <h1>¿Quiénes somos?</h1>
           <h2>
             Somos una organización independiente de estudiantes y graduades, que
@@ -15,7 +15,7 @@ const HomeHero = () => {
             reclamar por una formación actualizada, plural y científica.
           </h2>
         </div>
-        <div className={styles.hero__image}>
+        <div className={styles["hero-image"]}>
           <Image
             src="/images/hero.svg"
             width="400"
