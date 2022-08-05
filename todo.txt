@@ -55,3 +55,4 @@
   - If the user is not registered -> Registrarse; else,
   - Logueate
     - After the user was logged in, he/she is redirected to one view where he/she is allowed to upload a ***Google Doc link*** with the article.
+- Create a different layout for /admin y for the client view.
