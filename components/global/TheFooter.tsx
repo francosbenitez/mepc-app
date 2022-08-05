@@ -9,9 +9,9 @@ const TheFooter = () => {
       <div className="container relative text-center m-auto">
         <div className="relative text-center m-auto flex justify-end">
           <div className="flex">
-            <Email className="mx-3" />
-            <Instagram className="mx-3" />
-            <Facebook className="mx-3" />
+            <Email className="mx-3 fill-primary" />
+            <Instagram className="mx-3 fill-primary" />
+            <Facebook className="mx-3 fill-primary" />
           </div>
         </div>
       </div>
