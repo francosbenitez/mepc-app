@@ -6,12 +6,10 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>
-          Movimiento Estudiantil por la Psicología Científica (MEPC)
-        </title>
+        <title>Home - MEPC</title>
         <meta
           name="description"
-          content="Una organización independiente de estudiantes y graduades, que posee como fin promover el pensamiento crítico y la psicología científica."
+          content="Somos una organización independiente de estudiantes y graduades, que busca promover el pensamiento crítico y la psicología científica."
         />
       </Head>
       <main className="wrapper">
