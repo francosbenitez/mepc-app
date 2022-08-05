@@ -6,7 +6,7 @@ _Website of the Movimiento Estudiantil por la Psicología Científica (MEPC)_
 
 ## Code and Resources Used
 
-- **Main Technologies:** Vue, Nuxt, SASS
+- **Main Technologies:** TypeScript, React, Next, Tailwind
 
 ## Live Demo
 

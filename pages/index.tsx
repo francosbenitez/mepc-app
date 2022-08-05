@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import TheAbout from "../components/home/TheAbout";
 
 const Home: NextPage = () => {
   return (
@@ -13,6 +14,7 @@ const Home: NextPage = () => {
           content="Una organización independiente de estudiantes y graduades, que posee como fin promover el pensamiento crítico y la psicología científica."
         />
       </Head>
+      <TheAbout />
     </>
   );
 };
