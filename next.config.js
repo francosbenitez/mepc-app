@@ -13,14 +13,6 @@ const nextConfig = {
     return config;
   },
   swcMinify: true,
-  sassOptions: {
-    includePaths: [path.join(__dirname, "styles")],
-    prependData: `
-      @import "keyframes";
-      @import "mixins";
-      @import "variables";
-      `,
-  },
 };
 
 module.exports = nextConfig;
