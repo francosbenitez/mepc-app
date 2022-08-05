@@ -17,3 +17,9 @@ body {
   background-color: var(--body);
   font-family: "Montserrat Regular", Arial, Helvetica, sans-serif;
 }
+
+.wrapper {
+  min-height: 100vh;
+  position: relative;
+  width: 100%;
+}
