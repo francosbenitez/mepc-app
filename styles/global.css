@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Montserrat Regular";
+  src: url("/fonts/Montserrat-Regular.woff2") format("woff2"),
+    url("/fonts/Montserrat-Regular.woff") format("woff");
+}
+
 * {
   --primary: #004aad;
   --body: #f4f7f5;
@@ -9,5 +15,5 @@
 
 body {
   background-color: var(--body);
-  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-family: "Montserrat Regular", Arial, Helvetica, sans-serif;
 }
