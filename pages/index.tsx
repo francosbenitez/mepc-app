@@ -6,7 +6,7 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>
-          Home | Movimiento Estudiantil por la Psicología Científica (MEPC)
+          Movimiento Estudiantil por la Psicología Científica (MEPC)
         </title>
       </Head>
     </>
