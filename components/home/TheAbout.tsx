@@ -2,8 +2,8 @@ import React from "react";
 
 const TheAbout = () => {
   return (
-    <div className="container m-auto">
-      <div className="w-1/2 m-auto">
+    <div className="container m-auto px-8">
+      <div className="lg:w-1/2 m-auto">
         <div className="text-center py-16">
           <p className="mb-6 text-2xl">¿Quiénes somos?</p>
           <p>
