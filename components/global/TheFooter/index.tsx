@@ -13,13 +13,13 @@ const TheFooter = () => {
                 className="md:mr-10 md:text-left"
                 href="https://discord.gg/frontendcafe"
               >
-                Súmate a nuestra comunidad
+                Sumate a nuestra comunidad
               </a>
               <a
                 className="md:mr-10 md:text-left"
                 href="https://frontend.cafe/docs/faqs"
               >
-                Preguntas Frecuentes
+                Preguntas frecuentes
               </a>
               <a
                 className="md:mr-10 md:text-left"
@@ -30,7 +30,7 @@ const TheFooter = () => {
             </div>
             <div className="flex flex-col gap-3">
               <p className="font-medium text-center md:text-left">
-                Encuéntranos en
+                Encontranos en
               </p>
               <div className="flex justify-center gap-3 md:justify-start">
                 <a
@@ -45,10 +45,10 @@ const TheFooter = () => {
 
           <div className="flex flex-col items-center mt-16 md:flex-row">
             <div>
-              <p className="mb-2 font-light md:mr-4">© FrontendCafé 2022</p>
+              <p className="mb-2 font-light md:mr-4">© MEPC 2022</p>
             </div>
-            <div>
-              {/* <Link href="https://vercel.com/?utm_source=hifrontendcafe&utm_campaign=oss">
+            {/* <div> */}
+            {/* <Link href="https://vercel.com/?utm_source=hifrontendcafe&utm_campaign=oss">
                 <a target="_blank" rel="noopener noreferrer">
                   <Image
                     src={logo_vercel}
@@ -58,8 +58,8 @@ const TheFooter = () => {
                   />
                 </a>
               </Link> */}
-              Something
-            </div>
+            {/* Something */}
+            {/* </div> */}
           </div>
         </div>
       </div>
