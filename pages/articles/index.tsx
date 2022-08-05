@@ -11,6 +11,7 @@ const Articles = () => {
       <main className="wrapper">
         <div className="container mx-auto pt-20">
           <h1 className="text-center text-3xl">Nuestros artículos</h1>
+          {/* Add a filter here! */}
           <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             <div className="max-w-sm rounded overflow-hidden shadow-lg">
               <Image
