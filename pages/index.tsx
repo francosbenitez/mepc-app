@@ -14,7 +14,9 @@ const Home: NextPage = () => {
           content="Una organización independiente de estudiantes y graduades, que posee como fin promover el pensamiento crítico y la psicología científica."
         />
       </Head>
-      <TheAbout />
+      <main className="wrapper">
+        <TheAbout />
+      </main>
     </>
   );
 };
