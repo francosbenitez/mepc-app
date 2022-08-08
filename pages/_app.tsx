@@ -1,15 +1,21 @@
 import "../styles/global.css";
 import type { AppProps } from "next/app";
-import TheNavbar from "../components/global/TheNavbar";
-import TheFooter from "../components/global/TheFooter";
+import PageWithLayoutType from "../types/pageWithLayout";
+import { ReactElement } from "react";
 
-function MyApp({ Component, pageProps }: AppProps) {
+type AppLayoutProps = AppProps & {
+  Component: PageWithLayoutType;
+  pageProps: any;
+};
+
+function MyApp({ Component, pageProps }: AppLayoutProps) {
+  const Layout =
+    Component.layout || ((children: ReactElement) => <>{children}</>);
+
   return (
-    <>
-      <TheNavbar />
+    <Layout>
       <Component {...pageProps} />
-      <TheFooter />
-    </>
+    </Layout>
   );
 }
 

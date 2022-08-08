@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import TheAbout from "../components/home/TheAbout";
+import MainLayout from "../layouts/main";
 
 const Home: NextPage = () => {
   return (
@@ -23,5 +24,7 @@ const Home: NextPage = () => {
     </>
   );
 };
+
+Home.layout = MainLayout;
 
 export default Home;
