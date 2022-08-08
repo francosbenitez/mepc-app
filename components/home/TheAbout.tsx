@@ -8,12 +8,19 @@ const TheAbout = () => {
           <p className="mb-6 text-2xl font-mb">SOMOS MEPC</p>
           <p className="text-xl leading-relaxed">
             Un grupo de estudiantes y graduades autoconvocades, provenientes de
-            diferentes puntos del país, que compartimos un mismo ideal: el
-            desarrollo de una formación y una práctica profesional basadas en
-            fundamentos científicos. Nacimos en la Facultad de Psicología de la
-            Universidad de Buenos Aires (UBA), y ya sumamos alrededor de 3000
-            personas que creemos que la ciencia es el camino que debemos seguir
-            en psicología para mejorar nuestra formación.
+            diferentes puntos de Argentina, que compartimos un mismo ideal: el
+            desarrollo de una{" "}
+            <span className="font-mm">
+              formación y una práctica profesional basadas en fundamentos
+              científicos
+            </span>
+            . Nacimos en la{" "}
+            <span className="font-mm">
+              Facultad de Psicología de la Universidad de Buenos Aires (UBA)
+            </span>
+            , y ya sumamos alrededor de 3000 personas que creemos que la ciencia
+            es el camino que debemos seguir en psicología para mejorar nuestra
+            formación.
           </p>
         </div>
         <div>
