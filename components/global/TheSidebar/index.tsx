@@ -3,7 +3,7 @@ import Link from "next/link";
 import styles from "./styles.module.css";
 
 const Sidebar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
 
   const open = (isOpen: boolean) => {
     return setIsOpen(!isOpen);

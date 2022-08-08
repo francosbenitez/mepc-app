@@ -1,4 +1,4 @@
-import type { LayoutProps } from "../types/pageWithLayout";
+import type { LayoutProps } from "../types/layouts";
 import TheSidebar from "../components/global/TheSidebar";
 
 const AdminLayout: LayoutProps = ({ children }) => {

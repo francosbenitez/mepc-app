@@ -1,6 +1,6 @@
 import "../styles/global.css";
 import type { AppProps } from "next/app";
-import PageWithLayoutType from "../types/pageWithLayout";
+import PageWithLayoutType from "../types/layouts";
 import { ReactElement } from "react";
 
 type AppLayoutProps = AppProps & {

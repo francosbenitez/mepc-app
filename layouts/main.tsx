@@ -1,4 +1,4 @@
-import type { LayoutProps } from "../types/pageWithLayout";
+import type { LayoutProps } from "../types/layouts";
 import TheNavbar from "../components/global/TheNavbar";
 import TheFooter from "../components/global/TheFooter";
 
