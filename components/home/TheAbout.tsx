@@ -6,7 +6,7 @@ const TheAbout = () => {
       <div className="lg:w-1/2 m-auto">
         <div className="text-center py-16">
           <p className="mb-6 text-2xl font-mb">SOMOS MEPC</p>
-          <p>
+          <p className="text-xl leading-relaxed">
             Un grupo de estudiantes y graduades autoconvocades, provenientes de
             diferentes puntos del país, que compartimos un mismo ideal: el
             desarrollo de una formación y una práctica profesional basadas en
