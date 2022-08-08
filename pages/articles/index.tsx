@@ -3,6 +3,7 @@ import Image from "next/image";
 import Head from "next/head";
 import { GetServerSideProps } from "next";
 import ArticlesService from "../../services/ArticlesService";
+import MainLayout from "../../layouts/main";
 
 const Articles = ({ articles }: { articles: any }) => {
   console.log("articles", articles);
@@ -60,5 +61,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
     },
   };
 };
+
+Articles.layout = MainLayout;
 
 export default Articles;
