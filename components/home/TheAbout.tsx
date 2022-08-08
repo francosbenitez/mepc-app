@@ -5,7 +5,7 @@ const TheAbout = () => {
     <div className="container m-auto px-8">
       <div className="lg:w-1/2 m-auto">
         <div className="text-center py-16">
-          <p className="mb-6 text-2xl">SOMOS MEPC</p>
+          <p className="mb-6 text-2xl font-mb">SOMOS MEPC</p>
           <p>
             Un grupo de estudiantes y graduades autoconvocades, provenientes de
             diferentes puntos del país, que compartimos un mismo ideal: el

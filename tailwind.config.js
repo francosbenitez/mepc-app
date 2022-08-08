@@ -7,6 +7,11 @@ module.exports = {
 
   theme: {
     extend: {
+      fontFamily: {
+        mm: ["Montserrat Medium"],
+        ms: ["Montserrat SemiBold"],
+        mb: ["Montserrat Bold"],
+      },
       backgroundImage: {
         "arrow-left": "url('/icons/arrow-left.svg')",
       },
