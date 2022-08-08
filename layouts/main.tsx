@@ -6,10 +6,7 @@ const MainLayout: LayoutProps = ({ children }) => {
   return (
     <>
       <TheNavbar />
-      <div>
-        Main:
-        {children}
-      </div>
+      <>{children}</>
       <TheFooter />
     </>
   );

@@ -5,7 +5,7 @@ const AdminLayout: LayoutProps = ({ children }) => {
   return (
     <>
       <TheSidebar />
-      Admin: {children}
+      {children}
     </>
   );
 };
