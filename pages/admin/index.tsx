@@ -3,9 +3,11 @@ import AdminLayout from "../../layouts/admin";
 
 const Admin = () => {
   return (
-    <main className="wrapper">
-      <div>Admin</div>
-    </main>
+    <>
+      <main className="wrapper">
+        <div>Admin</div>
+      </main>
+    </>
   );
 };
 

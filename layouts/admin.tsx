@@ -1,7 +1,13 @@
 import type { LayoutProps } from "../types/pageWithLayout";
+import TheSidebar from "../components/global/TheSidebar";
 
 const AdminLayout: LayoutProps = ({ children }) => {
-  return <div>Admin: {children}</div>;
+  return (
+    <>
+      <TheSidebar />
+      Admin: {children}
+    </>
+  );
 };
 
 export default AdminLayout;
