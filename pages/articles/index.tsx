@@ -1,8 +1,11 @@
 import React from "react";
 import Image from "next/image";
 import Head from "next/head";
+import { GetServerSideProps } from "next";
+import ArticlesService from "../../services/ArticlesService";
 
-const Articles = () => {
+const Articles = ({ articles }: { articles: any }) => {
+  console.log("articles", articles);
   return (
     <>
       <Head>
@@ -47,6 +50,15 @@ const Articles = () => {
       </main>
     </>
   );
+};
+
+export const getServerSideProps: GetServerSideProps = async () => {
+  const articles = (await ArticlesService.index(1)).data;
+  return {
+    props: {
+      articles,
+    },
+  };
 };
 
 export default Articles;

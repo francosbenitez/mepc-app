@@ -3,7 +3,7 @@ import axios from "axios";
 // import { getToken } from "../utils/helper";
 // import { store } from "../store";
 
-const API_URL = "https://secret-hamlet-81810.herokuapp.com/api/";
+const API_URL = "https://quiet-shore-27983.herokuapp.com/api/";
 
 export default () => {
   // // const token: string | null = typeof window !== "undefined" ? getToken() : "";
@@ -24,18 +24,18 @@ export default () => {
     },
   });
 
-  API.interceptors.response.use(
-    (response) => {
-      return response;
-    },
-    (error) => {
-      if (error.response.status === 401) {
-        localStorage.removeItem("Token");
-        console.log("error.reponse", error.response);
-      }
-      return Promise.reject(error);
-    }
-  );
+  // API.interceptors.response.use(
+  //   (response) => {
+  //     return response;
+  //   },
+  //   (error) => {
+  //     if (error.response.status === 401) {
+  //       localStorage.removeItem("Token");
+  //       console.log("error.reponse", error.response);
+  //     }
+  //     return Promise.reject(error);
+  //   }
+  // );
 
   return API;
 };
