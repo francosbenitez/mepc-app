@@ -1,4 +1,5 @@
 import React from "react";
+import AdminLayout from "../../layouts/admin";
 
 const Admin = () => {
   return (
@@ -7,5 +8,7 @@ const Admin = () => {
     </main>
   );
 };
+
+Admin.layout = AdminLayout;
 
 export default Admin;
