@@ -10,8 +10,8 @@ const Login = () => {
         <title>Ingresar - MEPC</title>
       </Head>
       <div className="wrapper flex justify-center">
-        <div className="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
-          <div className="max-w-md w-full space-y-8">
+        <div className="min-h-full pt-32 px-16 bg-white shadow-lg">
+          <div className="w-96">
             <div className="text-center">
               <Image
                 width="50"
@@ -20,9 +20,7 @@ const Login = () => {
                 src="/icons/logo.svg"
                 alt=""
               />
-              <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
-                Ingresá a tu cuenta
-              </h2>
+              <h2 className="mt-6 text-center text-3xl">Ingresá a tu cuenta</h2>
             </div>
             <form className="mt-8 space-y-6" action="#" method="POST">
               <input type="hidden" name="remember" value="true" />
@@ -37,7 +35,7 @@ const Login = () => {
                     type="email"
                     autoComplete="email"
                     required
-                    className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                    className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-primary focus:border-primary focus:z-10 sm:text-sm"
                     placeholder="Correo electrónico"
                   />
                 </div>
@@ -51,20 +49,13 @@ const Login = () => {
                     type="password"
                     autoComplete="current-password"
                     required
-                    className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                    className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-primary focus:border-primary focus:z-10 sm:text-sm"
                     placeholder="Contraseña"
                   />
                 </div>
               </div>
-
               <div className="flex items-center justify-between">
                 <div className="flex items-center">
-                  {/* <input
-                    id="remember-me"
-                    name="remember-me"
-                    type="checkbox"
-                    className="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded"
-                  /> */}
                   <label
                     htmlFor="remember-me"
                     className="ml-2 block text-sm text-gray-900"
@@ -72,21 +63,19 @@ const Login = () => {
                     ¿No tenés una cuenta?
                     <a
                       href="#"
-                      className="font-medium text-indigo-600 hover:text-indigo-500"
+                      className="font-medium text-primary hover:text-primary"
                     >
                       {" "}
                       Registrate{" "}
                     </a>
                   </label>
                 </div>
-
                 <div className="text-sm"></div>
               </div>
-
               <div>
                 <button
                   type="submit"
-                  className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                  className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-primary hover:bg-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
                 >
                   Ingresar
                 </button>
