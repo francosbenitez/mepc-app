@@ -1,7 +1,7 @@
 import type { LayoutProps } from "../types/layouts";
 import TheSidebar from "../components/global/TheSidebar";
 
-const AdminLayout: LayoutProps = ({ children }) => {
+const DashboardLayout: LayoutProps = ({ children }) => {
   return (
     <>
       <TheSidebar />
@@ -10,4 +10,4 @@ const AdminLayout: LayoutProps = ({ children }) => {
   );
 };
 
-export default AdminLayout;
+export default DashboardLayout;

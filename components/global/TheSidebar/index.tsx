@@ -57,8 +57,8 @@ const Sidebar = () => {
           className={`${styles["side-menu"]} side-menu shadow-md`}
           style={{ left: isOpen ? "0" : "-265px" }}
         >
-          <Link href="/admin/users">Usuarios</Link>
-          <Link href="/admin/articles">Artículos</Link>
+          <Link href="/dashboard/users">Usuarios</Link>
+          <Link href="/dashboard/articles">Artículos</Link>
         </div>
       </header>
     </>
