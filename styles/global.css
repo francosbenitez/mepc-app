@@ -40,13 +40,13 @@
 
 * {
   --primary: #004aad;
-  /* --body: #f4f7f5; */
-  --body: #ffffff;
+  --body: #f4f7f5;
+  --white: #ffffff;
   --text: #313131;
 }
 
 body {
-  background-color: var(--body);
+  background-color: var(--white);
   color: var(--text);
   font-family: "Montserrat Regular", Arial, Helvetica, sans-serif;
 }

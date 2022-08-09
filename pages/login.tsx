@@ -9,7 +9,7 @@ const Login = () => {
       <Head>
         <title>Ingresar - MEPC</title>
       </Head>
-      <div className="wrapper flex justify-center">
+      <div className="wrapper flex justify-center bg-body">
         <div className="min-h-full pt-32 px-16 bg-white shadow-lg">
           <div className="w-96">
             <div className="text-center">
