@@ -4,6 +4,7 @@ import MainLayout from "../layouts/main";
 import { GetServerSideProps } from "next";
 import ArticlesService from "../services/ArticlesService";
 import TheCard from "../components/global/TheCard";
+import Link from "next/link";
 
 const Home = ({ articles }: { articles: any }) => {
   return (
@@ -26,6 +27,15 @@ const Home = ({ articles }: { articles: any }) => {
               {articles.data.map((item: Record<string, any>) => (
                 <TheCard article={item} key={item.id} />
               ))}
+            </div>
+            <div className="my-6 flex">
+              <span className="mx-auto">
+                <Link href="/articles">
+                  <a className="text-primary hover:underline">
+                    Ver todos los artículos
+                  </a>
+                </Link>
+              </span>
             </div>
           </div>
         </section>
