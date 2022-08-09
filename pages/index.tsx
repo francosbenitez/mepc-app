@@ -14,7 +14,7 @@ const Home = () => {
       </Head>
       <main className="wrapper">
         <TheAbout />
-        <section className="container m-auto px-8">
+        <section className="container m-auto">
           <div className="py-16">
             <p className="text-2xl font-mb">Artículos recientes</p>
           </div>

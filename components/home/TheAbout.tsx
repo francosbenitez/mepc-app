@@ -3,8 +3,8 @@ import React from "react";
 const TheAbout = () => {
   return (
     <section className="">
-      <div className="container m-auto px-8">
-        <div className="md:flex md:flex-row p-16">
+      <div className="container m-auto py-16">
+        <div className="md:flex md:flex-row">
           <div className="text-left py-16 flex md:flex-column md:basis-6/12">
             <div>
               <p className="mb-6 text-2xl font-mb">¿Quiénes somos?</p>
@@ -26,7 +26,7 @@ const TheAbout = () => {
               </p>
             </div>
           </div>
-          <div className="lg:w-1/2 m-auto basis-6/12">
+          <div className="lg:w-1/2 m-auto basis-6/12 md:pl-16">
             <div>
               <div className="iframe-wrapper">
                 <iframe
