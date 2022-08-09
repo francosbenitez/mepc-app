@@ -4,29 +4,17 @@ const TheAbout = () => {
   return (
     <section className="">
       <div className="container m-auto py-16">
-        <div className="md:flex md:flex-row">
-          <div className="text-left py-16 flex md:flex-column md:basis-6/12">
+        <div className="lg:w-1/2 m-auto text-center">
+          <div className="py-16">
             <div>
-              <p className="mb-6 text-2xl font-mb">¿Quiénes somos?</p>
+              <p className="mb-6 text-7xl font-me">SOMOS MEPC</p>
               <p className="text-xl leading-relaxed">
-                Somos un grupo de estudiantes y graduades autoconvocades,
-                provenientes de diferentes puntos de Argentina, que compartimos
-                un mismo ideal: el desarrollo de una{" "}
-                <span className="font-mm">
-                  formación y una práctica profesional basadas en fundamentos
-                  científicos
-                </span>
-                . Nacimos en la{" "}
-                <span className="font-mm">
-                  Facultad de Psicología de la Universidad de Buenos Aires (UBA)
-                </span>
-                , y ya sumamos alrededor de 3000 personas que creemos que la
-                ciencia es el camino que debemos seguir en psicología para
-                mejorar nuestra formación.
+                Una organización independiente de estudiantes y graduades, que
+                busca promover el pensamiento crítico y la psicología científica
               </p>
             </div>
           </div>
-          <div className="lg:w-1/2 m-auto basis-6/12 md:pl-16">
+          <div className="">
             <div>
               <div className="iframe-wrapper">
                 <iframe

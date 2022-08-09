@@ -11,6 +11,8 @@ module.exports = {
         mm: ["Montserrat Medium"],
         ms: ["Montserrat SemiBold"],
         mb: ["Montserrat Bold"],
+        me: ["Montserrat ExtraBold"],
+        mbl: ["Montserrat Black"],
       },
       backgroundImage: {
         "arrow-left": "url('/icons/arrow-left.svg')",

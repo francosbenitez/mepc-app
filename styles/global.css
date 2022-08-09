@@ -26,9 +26,22 @@
     url("/fonts/Montserrat-Bold.woff") format("woff");
 }
 
+@font-face {
+  font-family: "Montserrat ExtraBold";
+  src: url("/fonts/Montserrat-ExtraBold.woff2") format("woff2"),
+    url("/fonts/Montserrat-ExtraBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat Black";
+  src: url("/fonts/Montserrat-Black.woff2") format("woff2"),
+    url("/fonts/Montserrat-Black.woff") format("woff");
+}
+
 * {
   --primary: #004aad;
-  --body: #f4f7f5;
+  /* --body: #f4f7f5; */
+  --body: #ffffff;
 }
 
 body {

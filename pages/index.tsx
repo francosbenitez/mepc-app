@@ -19,7 +19,9 @@ const Home = ({ articles }: { articles: any }) => {
         <TheAbout />
         <section className="container m-auto">
           <div className="py-16">
-            <p className="text-2xl font-mb my-16">Artículos recientes</p>
+            <p className="text-2xl font-mb my-16 text-center">
+              Artículos recientes
+            </p>
             <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
               {articles.data.map((item: Record<string, any>) => (
                 <TheCard article={item} key={item.id} />
