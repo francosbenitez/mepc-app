@@ -9,10 +9,10 @@ const Login = () => {
       <Head>
         <title>Ingresar - MEPC</title>
       </Head>
-      <div className="wrapper">
+      <div className="wrapper flex justify-center">
         <div className="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
           <div className="max-w-md w-full space-y-8">
-            <div>
+            <div className="text-center">
               <Image
                 width="50"
                 height="50"
