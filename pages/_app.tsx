@@ -2,6 +2,7 @@ import "../styles/global.css";
 import type { AppProps } from "next/app";
 import LayoutsTypes from "../types/layouts";
 import { ReactElement } from "react";
+import { wrapper } from "../store";
 
 type AppLayoutProps = AppProps & {
   Component: LayoutsTypes;
@@ -19,4 +20,4 @@ function MyApp({ Component, pageProps }: AppLayoutProps) {
   );
 }
 
-export default MyApp;
+export default wrapper.withRedux(MyApp);
