@@ -1,12 +1,3 @@
-/*
- **Author: Santosh Kumar Dash
- **Author URL: http://santoshdash.epizy.com/
- **Github URL: https://github.com/quintuslabs/dashio-admin
- */
-
-// import React, { Component } from "react";
-// import "./StyleSheets/Navbar.css";
-//  import { Link } from "react-router-dom";
 import Link from "next/link";
 
 const TheSidebarNavbar = (props) => {

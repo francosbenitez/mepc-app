@@ -2,7 +2,6 @@ import type { LayoutProps } from "../types/layouts";
 import TheSidebar from "../components/global/TheSidebar";
 import { useState } from "react";
 import TheSidebarNavbar from "../components/global/TheSidebarNavbar";
-import TheSidebarFooter from "../components/global/TheSidebarFooter";
 
 const DashboardLayout: LayoutProps = ({ children }) => {
   const [toggleClass, setToggleClass] = useState("");
@@ -23,9 +22,6 @@ const DashboardLayout: LayoutProps = ({ children }) => {
         </div>
         <div id="content" className={toggleClass}>
           <div className="layout-Container">{children}</div>
-          <div className="container-fluid footer-container">
-            <TheSidebarFooter />
-          </div>
         </div>
       </div>
     </div>
