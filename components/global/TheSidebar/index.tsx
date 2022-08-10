@@ -4,8 +4,6 @@ import Link from "next/link";
 
 function Sidebar(props) {
   const [active, setActive] = useState("");
-  const [dropdownToggle, setDropDownToggle] = useState(false);
-
   const router = useRouter();
 
   useEffect(() => {
