@@ -107,36 +107,6 @@ function Sidebar(props) {
             </ul>
           </li>
 
-          <li className={active === "/ui-elements" ? "active" : null}>
-            <a href="/ui-elements">
-              <div className="menu-icon">
-                <i className="fa fa-book nav_icon" aria-hidden="true"></i>
-              </div>
-              <span className="menu-title">UI Elements </span>
-            </a>
-          </li>
-
-          <li className={active === "/forms" ? "active" : null}>
-            <a href="/forms">
-              <div className="menu-icon">
-                <i
-                  className="fa fa-check-square-o nav_icon"
-                  aria-hidden="true"
-                ></i>
-              </div>
-              <span className="menu-title">Forms</span>
-            </a>
-          </li>
-
-          <li className={active === "/tables" ? "active" : null}>
-            <a href="/tables">
-              <div className="menu-icon">
-                <i className="fa fa-table nav_icon" aria-hidden="true"></i>
-              </div>
-              <span className="menu-title">Tables</span>
-            </a>
-          </li>
-
           <li className={active === "/users" ? "active" : null}>
             <Link href="/users">
               <a>
@@ -149,15 +119,6 @@ function Sidebar(props) {
                 <span className="menu-title">Users</span>
               </a>
             </Link>
-          </li>
-
-          <li className={active === "/charts" ? "active" : null}>
-            <a href="/charts">
-              <div className="menu-icon">
-                <i className="fa fa-bar-chart nav_icon" aria-hidden="true"></i>
-              </div>
-              <span className="menu-title">Charts</span>
-            </a>
           </li>
         </ul>
       </nav>
