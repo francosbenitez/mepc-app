@@ -16,13 +16,6 @@ div#content.active {
   width: 100%;
 }
 
-.line {
-  width: 100%;
-  height: 1px;
-  border-bottom: 1px solid #ddd;
-  margin: 40px 0;
-}
-
 @media (max-width: 768px) {
   #content {
     margin-left: 0px;
