@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 function Sidebar(props) {
   const [active, setActive] = useState("");
@@ -136,16 +137,18 @@ function Sidebar(props) {
             </a>
           </li>
 
-          <li className={active === "/pages" ? "active" : null}>
-            <a href="/pages">
-              <div className="menu-icon">
-                <i
-                  className="fa fa-file-text-o nav_icon"
-                  aria-hidden="true"
-                ></i>
-              </div>
-              <span className="menu-title">Pages</span>
-            </a>
+          <li className={active === "/users" ? "active" : null}>
+            <Link href="/users">
+              <a>
+                <div className="menu-icon">
+                  <i
+                    className="fa fa-file-text-o nav_icon"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+                <span className="menu-title">Users</span>
+              </a>
+            </Link>
           </li>
 
           <li className={active === "/charts" ? "active" : null}>
