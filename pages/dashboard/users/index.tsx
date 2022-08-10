@@ -1,5 +1,5 @@
 import React from "react";
-import DashboardLayout from "../layouts/dashboard";
+import DashboardLayout from "../../../layouts/dashboard";
 import Head from "next/head";
 
 const Users = () => {

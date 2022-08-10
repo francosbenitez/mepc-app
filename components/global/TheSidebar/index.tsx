@@ -6,6 +6,8 @@ function Sidebar(props) {
   const [active, setActive] = useState("");
   const router = useRouter();
 
+  console.log("router.pathname", router.pathname);
+
   useEffect(() => {
     setActive(router.pathname);
   }, [router.pathname, active]);
@@ -26,8 +28,22 @@ function Sidebar(props) {
             </a>
           </li>
 
-          <li className={active === "/users" ? "active" : null}>
-            <Link href="/users">
+          <li className={active === "/dashboard/articles" ? "active" : null}>
+            <Link href="/dashboard/articles">
+              <a>
+                <div className="menu-icon">
+                  <i
+                    className="fa fa-file-text-o nav_icon"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+                <span className="menu-title">Articles</span>
+              </a>
+            </Link>
+          </li>
+
+          <li className={active === "/dashboard/users" ? "active" : null}>
+            <Link href="/dashboard/users">
               <a>
                 <div className="menu-icon">
                   <i
