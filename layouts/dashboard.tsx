@@ -2,6 +2,7 @@ import type { LayoutProps } from "../types/layouts";
 import { useState } from "react";
 import TheSidebar from "../components/dashboard/TheSidebar";
 import TheNavbar from "../components/dashboard/TheNavbar";
+import styles from "./dashboard.module.css";
 
 const DashboardLayout: LayoutProps = ({ children }) => {
   const [toggleClass, setToggleClass] = useState("");
@@ -16,8 +17,8 @@ const DashboardLayout: LayoutProps = ({ children }) => {
   return (
     <div>
       <TheNavbar onToggleClick={() => onToggle()} />
-      <div className="wrapper">
-        <div className="sidebar-container">
+      <div className={styles["wrapper"]}>
+        <div>
           <TheSidebar toggleClass={toggleClass} />
         </div>
         <div id="content" className={toggleClass}>
