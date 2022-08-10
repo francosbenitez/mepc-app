@@ -84,12 +84,6 @@ body {
 }
 
 /* Base layout */
-/*
-**Author: Santosh Kumar Dash
-**Author URL: http://santoshdash.epizy.com/
-**Github URL: https://github.com/quintuslabs/dashio-admin
-*/
-
 .wrapper {
   display: flex;
   flex-direction: row;
@@ -237,12 +231,6 @@ div#content.active {
 }
 
 /* Sidebar */
-/*
-**Author: Santosh Kumar Dash
-**Author URL: http://santoshdash.epizy.com/
-**Github URL: https://github.com/quintuslabs/dashio-admin
-*/
-
 #sidebar {
   min-width: 250px;
   max-width: 250px;
@@ -469,12 +457,6 @@ ul.sub-menu.children.dropdown-menu.show {
 }
 
 /* Navbar */
-/*
-**Author: Santosh Kumar Dash
-**Author URL: http://santoshdash.epizy.com/
-**Github URL: https://github.com/quintuslabs/dashio-admin
-*/
-
 .navbar {
   background: #fff;
   box-shadow: 0 0.125rem 0.625rem rgba(90, 97, 105, 0.12);

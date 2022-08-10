@@ -6,7 +6,7 @@ const TheSidebarNavbar = (props) => {
       <nav className="navbar navbar-expand-lg navbar-light">
         <div className="container-fluid">
           <div className="nav-title">
-            <Link href="/dashio-admin/dashboard">Dashio-Admin</Link>
+            <Link href="/dashboard">Dashio-Admin</Link>
           </div>
 
           <div onClick={() => props.onToggleClick()}>
