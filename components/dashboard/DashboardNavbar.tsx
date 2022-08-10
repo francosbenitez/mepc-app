@@ -4,7 +4,7 @@ const TheSidebarNavbar = (props) => {
   return (
     <div className="header-section" id="sticky">
       <nav className="navbar navbar-expand-lg navbar-light">
-        <div className="container-fluid">
+        <div className="flex flex-nowrap">
           <div className="nav-title">
             <Link href="/dashboard">
               <a className="z-20 text-primary">MEPC Dashboard</a>
