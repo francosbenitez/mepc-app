@@ -22,7 +22,7 @@ const DashboardLayout: LayoutProps = ({ children }) => {
           <TheSidebar toggleClass={toggleClass} />
         </div>
         <div id="content" className={toggleClass}>
-          <div className="layout-Container">{children}</div>
+          <div className={styles["container"]}>{children}</div>
         </div>
       </div>
     </div>

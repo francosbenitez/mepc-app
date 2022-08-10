@@ -3,3 +3,7 @@
   flex-direction: row;
   align-items: stretch;
 }
+
+.container {
+  min-height: 84vh;
+}

@@ -7,10 +7,6 @@
   margin-left: 250px;
 }
 
-.layout-Container {
-  min-height: 84vh;
-}
-
 div#content.active {
   margin-left: 0;
   width: 100%;
