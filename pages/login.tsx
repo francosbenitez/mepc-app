@@ -7,8 +7,10 @@ import { userLogin } from "../store/user/userActions";
 import type { AppDispatch } from "../store";
 import EyeLined from "../public/icons/eye-lined.svg";
 import EyeOffLined from "../public/icons/eye-off-lined.svg";
+import { useRouter } from "next/router";
 
 const Login = () => {
+  const router = useRouter();
   const [passwordShown, setPasswordShown] = useState(false);
   const togglePasswordVisiblity = () => {
     setPasswordShown(passwordShown ? false : true);
@@ -38,6 +40,7 @@ const Login = () => {
 
       // await dispatch(userLogin(formData)).unwrap();
       await dispatch(userLogin(data)).unwrap();
+      router.push("/dashboard");
       // showModal();
     } catch (error) {
       console.log("error", error);
