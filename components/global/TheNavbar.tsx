@@ -8,7 +8,9 @@ const TheNavbar = () => {
       <div className="container m-auto">
         <ul className="flex">
           <Link href="/">
-            <Logo className="w-12 h-12 flex justify-start self-center fill-primary cursor-pointer" />
+            <a>
+              <Logo className="w-12 h-12 flex justify-start self-center fill-primary cursor-pointer" />
+            </a>
           </Link>
           <div className="flex justify-end w-full">
             <li className="p-2 self-center">
