@@ -6,7 +6,7 @@ export const registerUser = createAsyncThunk(
   async (formData: any, { rejectWithValue }) => {
     try {
       const response = (await AuthService.register(formData)).data;
-      // localStorage.setItem("Token", response.token);
+      localStorage.setItem("Token", response.token);
       return response;
     } catch (error: any) {
       return rejectWithValue(error.response.data);
@@ -19,7 +19,7 @@ export const userLogin = createAsyncThunk(
   async (formData: any, { rejectWithValue }) => {
     try {
       const response = (await AuthService.login(formData)).data;
-      // localStorage.setItem("Token", response.token);
+      localStorage.setItem("Token", response.token);
       return response;
     } catch (error: any) {
       return rejectWithValue(error.response.data);
