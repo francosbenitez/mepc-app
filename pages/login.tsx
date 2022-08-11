@@ -1,9 +1,49 @@
-import React from "react";
+import React, { useState } from "react";
 import BlankLayout from "../layouts/blank";
 import Head from "next/head";
 import Image from "next/image";
+import { useDispatch, useSelector } from "react-redux";
+import { userLogin } from "../store/user/userActions";
+import type { AppDispatch } from "../store";
+import EyeLined from "../public/icons/eye-lined.svg";
+import EyeOffLined from "../public/icons/eye-off-lined.svg";
 
 const Login = () => {
+  const [passwordShown, setPasswordShown] = useState(false);
+  const togglePasswordVisiblity = () => {
+    setPasswordShown(passwordShown ? false : true);
+  };
+
+  // const { loading, error } = useSelector((state: any) => state.userReducer);
+  const dispatch = useDispatch<AppDispatch>();
+
+  const [username, setUsername] = useState<string>("");
+  const [email, setEmail] = useState<string>("");
+  const [password, setPassword] = useState<string>("");
+
+  const handleSubmit = async (event: React.FormEvent) => {
+    event.preventDefault();
+    try {
+      // const form = {
+      const data = {
+        username: username,
+        email: email,
+        password: password,
+      };
+
+      // let formData = new FormData();
+      // Object.entries(form).forEach(([key, value]) => {
+      //   formData.append(key, value);
+      // });
+
+      // await dispatch(userLogin(formData)).unwrap();
+      await dispatch(userLogin(data)).unwrap();
+      // showModal();
+    } catch (error) {
+      console.log("error", error);
+    }
+  };
+
   return (
     <>
       <Head>
@@ -22,36 +62,59 @@ const Login = () => {
               />
               <h2 className="mt-6 text-center text-3xl">Ingresá a tu cuenta</h2>
             </div>
-            <form className="mt-8 space-y-6" action="#" method="POST">
+            <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
               <input type="hidden" name="remember" value="true" />
               <div className="rounded-md shadow-sm -space-y-px">
                 <div>
-                  <label htmlFor="email-address" className="sr-only">
-                    Correo electrónico
+                  <label htmlFor="username" className="sr-only">
+                    Usuario
                   </label>
                   <input
-                    id="email-address"
-                    name="email"
-                    type="email"
-                    autoComplete="email"
+                    id="username"
+                    name="username"
+                    type="text"
+                    autoComplete="username"
                     required
                     className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-primary focus:border-primary focus:z-10 sm:text-sm"
-                    placeholder="Correo electrónico"
+                    placeholder="Usuario"
+                    value={username}
+                    onChange={(event) => setUsername(event.target.value)}
                   />
                 </div>
                 <div>
+                  <label htmlFor="email" className="sr-only">
+                    Email
+                  </label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="text"
+                    autoComplete="email"
+                    required
+                    className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-primary focus:border-primary focus:z-10 sm:text-sm"
+                    placeholder="Email"
+                    value={email}
+                    onChange={(event) => setEmail(event.target.value)}
+                  />
+                </div>
+                <div className="pass-wrapper">
                   <label htmlFor="password" className="sr-only">
                     Contraseña
                   </label>
                   <input
                     id="password"
                     name="password"
-                    type="password"
                     autoComplete="current-password"
                     required
-                    className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-primary focus:border-primary focus:z-10 sm:text-sm"
+                    className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-primary focus:border-primary sm:text-sm"
                     placeholder="Contraseña"
+                    value={password}
+                    type={passwordShown ? "text" : "password"}
+                    onChange={(event) => setPassword(event.target.value)}
                   />
+                  <i onClick={togglePasswordVisiblity}>
+                    {!passwordShown ? <EyeLined /> : <EyeOffLined />}
+                  </i>{" "}
                 </div>
               </div>
               <div className="flex items-center justify-between">

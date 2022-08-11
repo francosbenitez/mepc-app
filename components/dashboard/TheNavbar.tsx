@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const TheSidebarNavbar = (props) => {
+const TheNavbar = (props: any) => {
   return (
     <div className="header-section" id="sticky">
       <nav className="navbar navbar-expand-lg navbar-light">
@@ -33,4 +33,4 @@ const TheSidebarNavbar = (props) => {
   );
 };
 
-export default TheSidebarNavbar;
+export default TheNavbar;
