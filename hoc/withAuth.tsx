@@ -4,11 +4,11 @@ import { useState, useEffect } from "react";
 import AuthService from "@/services/AuthService";
 
 const withAuth = (Component: any) => {
-  const AuthenticatedComponent = () => {
+  const AuthenticatedComponent = (props: any) => {
     const router = useRouter();
-    const [data, setData] = useState();
+    const [success, setSuccess] = useState();
 
-    // const { isUserLoggedIn } = useSelector((state: any) => state.userReducer);
+    // const { isLoggedIn } = useSelector((state: any) => state.userReducer);
 
     useEffect(() => {
       const getUser = async () => {
@@ -22,13 +22,15 @@ const withAuth = (Component: any) => {
         if (!response.success) {
           router.push("/login");
         } else {
-          setData(response);
+          setSuccess(response.success);
         }
       };
       getUser();
     }, []);
 
-    return !!data ? <Component data={data} /> : null;
+    console.log("success", success);
+
+    return success ? <Component {...props} /> : null;
   };
 
   return AuthenticatedComponent;
