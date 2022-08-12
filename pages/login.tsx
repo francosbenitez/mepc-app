@@ -11,6 +11,18 @@ import { useRouter } from "next/router";
 
 const Login = () => {
   const router = useRouter();
+
+  const { userInfo, userToken } = useSelector(
+    (state: any) => state.userReducer
+  );
+
+  const check =
+    userToken != null ? userToken : userInfo != null ? userInfo.token : null;
+
+  if (check) {
+    router.push("/dashboard");
+  }
+
   const [passwordShown, setPasswordShown] = useState(false);
   const togglePasswordVisiblity = () => {
     setPasswordShown(passwordShown ? false : true);
