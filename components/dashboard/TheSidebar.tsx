@@ -6,8 +6,6 @@ const TheSidebar = (props: any) => {
   const [active, setActive] = useState("");
   const router = useRouter();
 
-  console.log("router.pathname", router.pathname);
-
   useEffect(() => {
     setActive(router.pathname);
   }, [router.pathname, active]);

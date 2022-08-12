@@ -124,8 +124,8 @@ a[data-toggle="collapse"] {
 a,
 a:hover,
 a:focus {
-  color: white;
-  text-decoration: none;
+  /* color: white; */
+  /* text-decoration: none; */
   transition: all 0.3s;
 }
 

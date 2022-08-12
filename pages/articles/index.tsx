@@ -6,7 +6,6 @@ import MainLayout from "../../layouts/main";
 import TheCard from "../../components/global/TheCard";
 
 const Articles = ({ articles }: { articles: any }) => {
-  console.log("articles", articles);
   return (
     <>
       <Head>
