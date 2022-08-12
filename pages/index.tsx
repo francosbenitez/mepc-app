@@ -1,9 +1,9 @@
 import Head from "next/head";
-import TheAbout from "../components/home/TheAbout";
-import MainLayout from "../layouts/main";
+import TheAbout from "components/home/TheAbout";
+import MainLayout from "layouts/main";
 import { GetServerSideProps } from "next";
-import ArticlesService from "../services/ArticlesService";
-import TheCard from "../components/global/TheCard";
+import ArticlesService from "services/ArticlesService";
+import TheCard from "components/global/TheCard";
 import Link from "next/link";
 
 const Home = ({ articles }: { articles: any }) => {
