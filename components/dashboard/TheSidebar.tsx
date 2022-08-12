@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import { useSelector } from "react-redux";
 
 const TheSidebar = (props: any) => {
   const [active, setActive] = useState("");
   const router = useRouter();
+
+  const { role } = useSelector((state: any) => state.userReducer);
 
   useEffect(() => {
     setActive(router.pathname);
@@ -44,19 +47,23 @@ const TheSidebar = (props: any) => {
             </Link>
           </li>
 
-          <li className={`${active === "/dashboard/users" ? "active" : null}`}>
-            <Link href="/dashboard/users">
-              <a>
-                <div className="menu-icon">
-                  <i
-                    className="fa fa-file-text-o nav_icon"
-                    aria-hidden="true"
-                  ></i>
-                </div>
-                <span className="menu-title">Users</span>
-              </a>
-            </Link>
-          </li>
+          {role === "Admin" && (
+            <li
+              className={`${active === "/dashboard/users" ? "active" : null}`}
+            >
+              <Link href="/dashboard/users">
+                <a>
+                  <div className="menu-icon">
+                    <i
+                      className="fa fa-file-text-o nav_icon"
+                      aria-hidden="true"
+                    ></i>
+                  </div>
+                  <span className="menu-title">Users</span>
+                </a>
+              </Link>
+            </li>
+          )}
         </ul>
       </nav>
     </div>
