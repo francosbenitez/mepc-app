@@ -32,7 +32,7 @@ const TheNavbar = (props: any) => {
       {mounted && (
         <div className="header-section" id="sticky">
           <nav className="navbar navbar-expand-lg navbar-light">
-            <div className="flex flex-nowrap w-full">
+            <div className="flex flex-nowrap w-full items-center">
               <div className="nav-title">
                 <Link href="/dashboard">
                   <a className="z-20 text-primary">MEPC Dashboard</a>

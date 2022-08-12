@@ -9,7 +9,7 @@ const Articles = () => {
         <title>Articles - MEPC</title>
       </Head>
       <main className="wrapper">
-        <div>Articles</div>
+        <div className="pt-20 text-center text-2xl">Subí un artículo</div>
       </main>
     </>
   );

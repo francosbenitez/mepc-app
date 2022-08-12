@@ -9,7 +9,9 @@ const Dashboard = () => {
         <title>Dashboard - MEPC</title>
       </Head>
       <main className="wrapper">
-        <div>Dashboard</div>
+        <div className="pt-20 text-center text-2xl">
+          ¡Bienvenide al MEPC Dashboard!
+        </div>
       </main>
     </>
   );
