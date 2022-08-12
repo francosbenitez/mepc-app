@@ -20,7 +20,7 @@ export default () => {
     baseURL: `${API_URL}`,
     headers: {
       Accept: "application/json",
-      Authorization: token ? `Token ${token}` : "",
+      Authorization: token ? `Bearer ${token}` : "",
     },
   });
 

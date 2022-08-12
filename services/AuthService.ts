@@ -11,4 +11,7 @@ export default {
   logout() {
     return Api().post("/logout");
   },
+  verifyToken() {
+    return Api().post("/verify-token");
+  },
 };

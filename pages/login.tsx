@@ -12,14 +12,12 @@ import { useRouter } from "next/router";
 const Login = () => {
   const router = useRouter();
 
-  const { userInfo, userToken } = useSelector(
-    (state: any) => state.userReducer
-  );
+  const { isUserLoggedIn } = useSelector((state: any) => state.userReducer);
 
-  const check =
-    userToken != null ? userToken : userInfo != null ? userInfo.token : null;
+  // const check =
+  //   userToken != null ? userToken : userInfo != null ? userInfo.token : null;
 
-  if (check) {
+  if (isUserLoggedIn) {
     router.push("/dashboard");
   }
 
