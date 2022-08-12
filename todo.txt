@@ -58,3 +58,4 @@
 - Create a different layout for /admin y for the client view.
 - If you are an ADMIN, you can see other things that an AUTHENTICATED user can't. 
   - However, both of them will see a DASHBOARD to PUBLISH (admin) and UPLOAD (authenticated) articles!
+- Redirect to 404.tsx if the 'required_role' !== 'current_role' of the page.
