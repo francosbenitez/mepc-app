@@ -14,4 +14,7 @@ export default {
   verifyToken() {
     return Api().post("/verify-token");
   },
+  users() {
+    return Api().get("/users");
+  },
 };
