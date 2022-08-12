@@ -9,7 +9,7 @@ const Users = () => {
         <title>Users - MEPC</title>
       </Head>
       <main className="wrapper">
-        <div>Users</div>
+        <div className="pt-20 text-center text-2xl">Usuarios</div>
       </main>
     </>
   );
