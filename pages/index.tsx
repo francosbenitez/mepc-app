@@ -16,7 +16,7 @@ const Home = ({ articles }: { articles: any }) => {
           content="Somos una organización independiente de estudiantes y graduades, que busca promover el pensamiento crítico y la psicología científica."
         />
       </Head>
-      <main className="min-h-screen w-11/12 mx-auto">
+      <main className="container min-h-screen w-11/12 mx-auto">
         <TheAbout />
         <section className="container m-auto">
           <div className="py-16">

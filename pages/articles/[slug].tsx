@@ -10,7 +10,7 @@ const Article = ({ article }: { article: any }) => {
       <Head>
         <title>{`${article.title} | Psievidencia`}</title>
       </Head>
-      <main className="py-16 min-h-screen w-11/12 mx-auto">
+      <main className="container py-16 min-h-screen w-11/12 mx-auto">
         <p className="text-5xl text-center py-4">{article.title}</p>
         <p className="text-2xl text-center py-4">{article.content}</p>
         <p>
