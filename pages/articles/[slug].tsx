@@ -17,13 +17,17 @@ const Article = ({ article }: { article: any }) => {
           <span className="underline">Autores</span>: {article.author.username}
         </p>
         <div className="text-center pt-8">
-          <p className="text-2xl">Comments</p>
+          <p className="text-2xl mb-6">Comments</p>
           {/* I leave space here for _posting_ comments */}
+          <div className="text-left border border-black h-20 rounded flex mb-6">
+            <input className="w-full"></input>
+            <button className="bg-primary text-white px-6">Publicar</button>
+          </div>
           {article.comment.length > 0 ? (
             <>
               {article.comment.map((item: any) => (
                 <div
-                  className="text-left border border-black h-20 rounded flex"
+                  className="text-left border border-black h-20 rounded flex mb-6"
                   key={item.id}
                 >
                   <p>{item.name}</p>
