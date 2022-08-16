@@ -19,7 +19,7 @@ const TheSidebar = (props: any) => {
       id="sticky-sidebar"
     >
       <nav id="sidebar" className={props.toggleClass}>
-        <ul className="list-unstyled components">
+        <ul className="list-unstyled components flex flex-col">
           <li className={`${active === "/dashboard" ? "active" : null}`}>
             <Link href="/dashboard">
               <a>
@@ -64,6 +64,25 @@ const TheSidebar = (props: any) => {
               </Link>
             </li>
           )}
+
+          <li
+            className={`${active === "/" ? "active" : null}`}
+            style={{ marginTop: "auto" }}
+          >
+            <Link href="/">
+              <a>
+                <div className="menu-icon">
+                  <i
+                    className="fa fa-file-text-o nav_icon"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+                <span className="menu-title">
+                  ← Volver a la vista principal
+                </span>
+              </a>
+            </Link>
+          </li>
         </ul>
       </nav>
     </div>
