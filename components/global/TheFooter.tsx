@@ -6,7 +6,7 @@ import Facebook from "../../public/icons/facebook.svg";
 const TheFooter = () => {
   return (
     <footer className="bottom-0 w-full mx-auto p-5 sm:px-0 md:py-8 footer">
-      <div className="container text-center md:flex m-auto w-11/12 mx-auto">
+      <div className="container text-center md:flex m-auto w-11/12 mx-auto py-10">
         <div className="block md:flex md:flex-column md:w-1/2 font-mm">
           MEPC © 2022
         </div>
