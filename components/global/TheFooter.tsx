@@ -2,6 +2,9 @@ import React from "react";
 import Email from "../../public/icons/email.svg";
 import Instagram from "../../public/icons/instagram.svg";
 import Facebook from "../../public/icons/facebook.svg";
+import Twitter from "../../public/icons/twitter.svg";
+import WhatsApp from "../../public/icons/whatsapp.svg";
+import YouTube from "../../public/icons/youtube.svg";
 
 const TheFooter = () => {
   return (
@@ -15,6 +18,9 @@ const TheFooter = () => {
             <Email className="mx-3 fill-primary" />
             <Instagram className="mx-3 fill-primary" />
             <Facebook className="mx-3 fill-primary" />
+            <Twitter className="mx-3 fill-primary" />
+            <WhatsApp className="mx-3 fill-primary" />
+            <YouTube className="mx-3 fill-primary" />
           </div>
         </div>
       </div>
