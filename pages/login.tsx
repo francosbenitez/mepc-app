@@ -62,9 +62,20 @@ const Login = () => {
       <Head>
         <title>Ingresar - MEPC</title>
       </Head>
-      <div className="flex justify-center bg-body min-h-screen w-full">
-        <div className="min-h-full pt-32 px-16 bg-white shadow-lg">
-          <div className="w-96">
+      <div className="flex bg-body min-h-screen w-full bg-white">
+        <div style={{ width: "100%", height: "100vh", position: "relative" }}>
+          <Image
+            className="h-screen"
+            src="/images/login.png"
+            width="100"
+            height="100"
+            layout="fill"
+            objectFit="cover"
+            alt=""
+          />
+        </div>
+        <div className="min-h-full my-auto px-16 w-full">
+          <div className="w-96 mx-auto">
             <div className="text-center">
               <Image
                 width="50"
