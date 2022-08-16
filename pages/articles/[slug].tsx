@@ -16,6 +16,21 @@ const Article = ({ article }: { article: any }) => {
         <p>
           <span className="underline">Autores</span>: {article.author.username}
         </p>
+        <div className="text-center pt-8">
+          <p className="text-2xl">Comments</p>
+          {article.comment.length > 0 ? (
+            <>
+              {article.comment.map((item: any) => (
+                <div className="text-left border border-black" key={item.id}>
+                  <p>{item.name}</p>
+                  <p>{item.text}</p>
+                </div>
+              ))}
+            </>
+          ) : (
+            <p>No hay comentarios</p>
+          )}
+        </div>
       </main>
     </>
   );

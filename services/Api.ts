@@ -3,7 +3,8 @@ import axios from "axios";
 // import { getToken } from "../utils/helper";
 import { store } from "../store";
 
-const API_URL = "https://quiet-shore-27983.herokuapp.com/api/";
+const API_URL =
+  process.env.API_URL || "https://quiet-shore-27983.herokuapp.com/api/";
 
 export default () => {
   // const token: string | null = typeof window !== "undefined" ? getToken() : "";
