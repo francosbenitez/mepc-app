@@ -18,12 +18,16 @@ const Article = ({ article }: { article: any }) => {
         </p>
         <div className="text-center pt-8">
           <p className="text-2xl">Comments</p>
+          {/* I leave space here for _posting_ comments */}
           {article.comment.length > 0 ? (
             <>
               {article.comment.map((item: any) => (
-                <div className="text-left border border-black" key={item.id}>
+                <div
+                  className="text-left border border-black h-20 rounded flex"
+                  key={item.id}
+                >
                   <p>{item.name}</p>
-                  <p>{item.text}</p>
+                  <p className="self-center">{item.text}</p>
                 </div>
               ))}
             </>
