@@ -11,7 +11,7 @@ const Articles = ({ articles }: { articles: any }) => {
       <Head>
         <title>Artículos - MEPC</title>
       </Head>
-      <main className="wrapper">
+      <main className="min-h-screen w-11/12 mx-auto">
         <div className="container mx-auto pt-20">
           <h1 className="text-center text-3xl font-mb">Nuestros artículos</h1>
           {/* Add a filter here! */}

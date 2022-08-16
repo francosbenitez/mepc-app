@@ -54,11 +54,11 @@ body {
   font-family: "Montserrat Regular", Arial, Helvetica, sans-serif;
 }
 
-.wrapper {
+/* .wrapper {
   min-height: 100vh;
   position: relative;
   width: 100%;
-}
+} */
 
 /* Navbar */
 .navbar {
