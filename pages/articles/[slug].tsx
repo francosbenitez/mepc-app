@@ -5,10 +5,13 @@ import ArticlesService from "../../services/ArticlesService";
 import MainLayout from "../../layouts/main";
 import { useSelector } from "react-redux";
 import { useState } from "react";
+import { useRouter } from "next/router";
 
 const Article = ({ article }: { article: any }) => {
   const { isLoggedIn } = useSelector((state: any) => state.userReducer);
   const [comment, setComment] = useState("");
+
+  const router = useRouter();
 
   const handleCommentSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
@@ -18,8 +21,9 @@ const Article = ({ article }: { article: any }) => {
         text: comment,
       };
 
-      const response = (await ArticlesService.comment(article.id, data)).data;
-      console.log("response", response);
+      await ArticlesService.comment(article.id, data);
+      router.push(`/articles/${article.slug}`);
+      setComment("");
     } catch (err: any) {
       console.log("err.response.data", err.response.data);
     }
@@ -45,36 +49,39 @@ const Article = ({ article }: { article: any }) => {
         </p>
         <div className="text-center pt-8">
           <p className="text-2xl mb-6">Comments</p>
-          {/* I leave space here for _posting_ comments */}
           <form
             onSubmit={handleCommentSubmit}
             className="text-left border border-black h-20 rounded flex mb-6"
           >
-            <input className="w-full" onChange={handleCommentChange} />
+            {!isLoggedIn ? (
+              <p className="w-full my-auto">
+                Tienes que loguearte para comentar
+              </p>
+            ) : (
+              <input
+                className="w-full"
+                onChange={handleCommentChange}
+                value={comment}
+              />
+            )}
             <button className="bg-primary text-white px-6" type="submit">
               Publicar
             </button>
           </form>
-          {isLoggedIn ? (
+          {article.comment.length > 0 ? (
             <>
-              {article.comment.length > 0 ? (
-                <>
-                  {article.comment.map((item: any) => (
-                    <div
-                      className="text-left border border-black h-20 rounded flex mb-6"
-                      key={item.id}
-                    >
-                      <p>{item.user.username}</p>
-                      <p className="self-center">{item.text}</p>
-                    </div>
-                  ))}
-                </>
-              ) : (
-                <p>No hay comentarios</p>
-              )}
+              {article.comment.map((item: any) => (
+                <div
+                  className="text-left border border-black h-20 rounded flex mb-6"
+                  key={item.id}
+                >
+                  <p>{item.user.username}</p>
+                  <p className="self-center">{item.text}</p>
+                </div>
+              ))}
             </>
           ) : (
-            <>Tienes que loguearte para comentar</>
+            <p>No hay comentarios</p>
           )}
         </div>
       </main>
