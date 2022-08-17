@@ -5,7 +5,10 @@ export default {
   index(pageNumber: number) {
     return Api().get(`articles?page=${pageNumber}`);
   },
-  detail(id: string | string[] | undefined) {
-    return Api().get(`articles/${id}`);
+  detail(articleId: string | string[] | undefined) {
+    return Api().get(`articles/${articleId}`);
+  },
+  comment(articleId: string | string[] | undefined, body: any) {
+    return Api().post(`/articles/${articleId}/comments`, body);
   },
 };

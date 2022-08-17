@@ -2,11 +2,11 @@
 import Api from "./Api";
 
 export default {
-  register(form: any) {
-    return Api().post("/register", form);
+  register(body: any) {
+    return Api().post("/register", body);
   },
-  login(form: any) {
-    return Api().post("/login", form);
+  login(body: any) {
+    return Api().post("/login", body);
   },
   logout() {
     return Api().post("/logout");
