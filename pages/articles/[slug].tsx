@@ -14,7 +14,7 @@ const Article = ({ article }: { article: any }) => {
         <p className="text-5xl text-center py-4">{article.title}</p>
         <p className="text-2xl text-center py-4">{article.content}</p>
         <p>
-          <span className="underline">Autores</span>: {article.author.username}
+          <span className="underline">Autores</span>: {article.user.username}
         </p>
         <div className="text-center pt-8">
           <p className="text-2xl mb-6">Comments</p>
@@ -30,7 +30,7 @@ const Article = ({ article }: { article: any }) => {
                   className="text-left border border-black h-20 rounded flex mb-6"
                   key={item.id}
                 >
-                  <p>{item.name}</p>
+                  <p>{item.user.username}</p>
                   <p className="self-center">{item.text}</p>
                 </div>
               ))}
