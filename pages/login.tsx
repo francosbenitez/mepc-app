@@ -75,15 +75,17 @@ const Login = () => {
           />
         </div>
         <div className="min-h-full my-auto px-16 w-full">
+          <div className=" absolute top-0 right-0 mr-6 mt-6">
+            <Image
+              width="50"
+              height="50"
+              className="mx-auto h-12 w-auto"
+              src="/icons/logo.svg"
+              alt=""
+            />
+          </div>
           <div className="w-96 mx-auto">
             <div className="text-center">
-              <Image
-                width="50"
-                height="50"
-                className="mx-auto h-12 w-auto"
-                src="/icons/logo.svg"
-                alt=""
-              />
               <h2 className="mt-6 text-center text-3xl">Ingresá a tu cuenta</h2>
             </div>
             <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
