@@ -63,7 +63,8 @@ const Login = () => {
         <title>Ingresar - MEPC</title>
       </Head>
       <div className="flex bg-body min-h-screen w-full bg-white">
-        <div style={{ width: "100%", height: "100vh", position: "relative" }}>
+        <div className="w-full h-screen relative hidden sm:block">
+          {/* <div style={{ width: "100%", height: "100vh", position: "relative" }}> */}
           <Image
             className="h-screen"
             src="/images/login.png"
@@ -75,7 +76,7 @@ const Login = () => {
           />
         </div>
         <div className="min-h-full my-auto px-16 w-full">
-          <div className=" absolute top-0 right-0 mr-6 mt-6">
+          <div className="absolute top-0 right-0 mr-6 mt-6">
             <Image
               width="50"
               height="50"
@@ -84,7 +85,7 @@ const Login = () => {
               alt=""
             />
           </div>
-          <div className="w-96 mx-auto">
+          <div className="sm:w-96 mx-auto">
             <div className="text-center">
               <h2 className="mt-6 text-center text-3xl">Ingresá a tu cuenta</h2>
             </div>
