@@ -48,10 +48,10 @@ const Article = ({ article }: { article: any }) => {
           <span className="underline">Autores</span>: {article.user.username}
         </p>
         <div className="text-center pt-8">
-          <p className="text-2xl mb-6">Comments</p>
+          <p className="text-2xl mb-6">Comentarios</p>
           <form
             onSubmit={handleCommentSubmit}
-            className="text-left border border-black h-20 rounded flex mb-6"
+            className="text-left border-2 border-primary h-20 rounded flex mb-6"
           >
             {!isLoggedIn ? (
               <p className="w-full my-auto">
@@ -72,11 +72,11 @@ const Article = ({ article }: { article: any }) => {
             <>
               {article.comment.map((item: any) => (
                 <div
-                  className="text-left border border-black h-20 rounded flex mb-6"
+                  className="text-left shadow-md border-2 h-20 rounded flex mb-6"
                   key={item.id}
                 >
-                  <p>{item.user.username}</p>
-                  <p className="self-center">{item.text}</p>
+                  <p className="pl-3 pt-3 font-mb">{item.user.username}</p>
+                  <p className="self-center pl-3 pt-3">{item.text}</p>
                 </div>
               ))}
             </>
