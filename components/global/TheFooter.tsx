@@ -29,7 +29,7 @@ const TheFooter = () => {
         <div className="block md:flex md:flex-column md:w-1/2 md:justify-end">
           <div className="flex justify-center mt-3 md:mt-0">
             {icons.map((Icon: any) => {
-              return <Icon key={Icon} className="mx-3 fill-primary" />;
+              return <Icon key={Icon} className="mx-1 fill-primary" />;
             })}
           </div>
         </div>
