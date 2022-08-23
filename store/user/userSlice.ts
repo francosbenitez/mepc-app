@@ -59,6 +59,7 @@ const userSlice = createSlice({
         state.success = true;
         state.userInfo = payload;
         state.userToken = payload.userToken;
+        state.isLoggedIn = true;
       }),
       builder.addCase(registerUser.rejected, (state, { payload }: any) => {
         state.loading = false;

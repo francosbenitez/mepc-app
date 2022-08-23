@@ -3,14 +3,14 @@ import BlankLayout from "../layouts/blank";
 import Head from "next/head";
 import Image from "next/image";
 import { useDispatch, useSelector } from "react-redux";
-import { userLogin } from "../store/user/userActions";
+import { registerUser } from "../store/user/userActions";
 import type { AppDispatch } from "../store";
 import EyeLined from "../public/icons/eye-lined.svg";
 import EyeOffLined from "../public/icons/eye-off-lined.svg";
 import { useRouter } from "next/router";
 import Link from "next/link";
 
-const Login = () => {
+const Register = () => {
   const router = useRouter();
 
   const { isLoggedIn } = useSelector((state: any) => state.userReducer);
@@ -39,7 +39,7 @@ const Login = () => {
         password: password,
       };
 
-      await dispatch(userLogin(data)).unwrap();
+      await dispatch(registerUser(data)).unwrap();
 
       router.push("/dashboard");
     } catch (error) {
@@ -50,7 +50,7 @@ const Login = () => {
   return (
     <>
       <Head>
-        <title>Ingresar - MEPC</title>
+        <title>Registrarse - MEPC</title>
       </Head>
       <div className="flex bg-body min-h-screen w-full bg-white">
         <div className="w-full h-screen relative hidden sm:block">
@@ -76,7 +76,7 @@ const Login = () => {
           </div>
           <div className="sm:w-96 mx-auto">
             <div className="text-center">
-              <h2 className="mt-6 text-center text-3xl">Ingresá a tu cuenta</h2>
+              <h2 className="mt-6 text-center text-3xl">Registrate</h2>
             </div>
             <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
               <input type="hidden" name="remember" value="true" />
@@ -139,11 +139,11 @@ const Login = () => {
                     htmlFor="remember-me"
                     className="ml-2 block text-sm text-gray-900"
                   >
-                    ¿No tenés una cuenta?
-                    <Link href="/register">
+                    ¿Ya tenés una cuenta?
+                    <Link href="/login">
                       <a className="font-medium text-primary hover:text-primary">
                         {" "}
-                        Registrate{" "}
+                        Ingresar{" "}
                       </a>
                     </Link>
                   </label>
@@ -155,7 +155,7 @@ const Login = () => {
                   type="submit"
                   className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-primary hover:bg-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
                 >
-                  Ingresar
+                  Registrarse
                 </button>
               </div>
             </form>
@@ -166,6 +166,6 @@ const Login = () => {
   );
 };
 
-Login.layout = BlankLayout;
+Register.layout = BlankLayout;
 
-export default Login;
+export default Register;
