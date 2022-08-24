@@ -3,6 +3,9 @@ import type { AppProps } from "next/app";
 import LayoutsTypes from "../types/layouts";
 import { ReactElement } from "react";
 import { wrapper } from "../store";
+import { useState, useEffect } from "react";
+import { useRouter } from "next/router";
+import LoadingBar from "@/components/global/LoadingBar";
 
 type AppLayoutProps = AppProps & {
   Component: LayoutsTypes;
@@ -10,13 +13,29 @@ type AppLayoutProps = AppProps & {
 };
 
 function MyApp({ Component, pageProps }: AppLayoutProps) {
+  const [loading, setLoading] = useState<boolean>(false);
+  const router = useRouter();
+
+  useEffect(() => {
+    router.events.on("routeChangeStart", () => {
+      setLoading(true);
+    });
+
+    router.events.on("routeChangeComplete", () => {
+      setLoading(false);
+    });
+  }, [router.events]);
+
   const Layout =
     Component.layout || ((children: ReactElement) => <>{children}</>);
 
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <>
+      {loading ? <LoadingBar /> : ""}
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </>
   );
 }
 
