@@ -28,7 +28,7 @@ const withAuth = (Component: any) => {
       getUser();
     }, []);
 
-    console.log("success", success);
+    // console.log("success", success);
 
     return success ? <Component {...props} /> : null;
   };
