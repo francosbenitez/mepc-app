@@ -11,4 +11,7 @@ export default {
   comment(articleId: string | string[] | undefined, body: any) {
     return Api().post(`/articles/${articleId}/comments`, body);
   },
+  create(body: any) {
+    return Api().post("/articles", body);
+  },
 };
