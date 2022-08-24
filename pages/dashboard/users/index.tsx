@@ -36,11 +36,11 @@ const Users = () => {
             {users.map((user: Record<string, any>) => (
               <div className="relative pb-5" key={user.id}>
                 <div>
-                  <div className="absolute flex h-12 w-12 items-center justify-center rounded-md bg-sky-500 text-white">
+                  <div className="absolute flex h-12 w-12 items-center justify-center rounded-md text-white">
                     <Image
                       width="100"
                       height="100"
-                      src="/images/ocean.jpeg"
+                      src="/images/user.png"
                       alt=""
                     />
                   </div>
