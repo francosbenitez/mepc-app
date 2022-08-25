@@ -51,47 +51,67 @@ const Articles = () => {
     }
   };
 
+  const handlePublish = async (articleId: string) => {
+    try {
+      await ArticlesService.publish(articleId);
+    } catch (errors: any) {
+      console.log("errors", errors.response.data);
+    }
+  };
+
   return (
     <>
       <Head>
         <title>Articles - MEPC</title>
       </Head>
       <main className="wrapper">
-        <div className="pt-20 text-center text-2xl">Todos los artículos</div>
+        {role === "Admin" && (
+          <>
+            <div className="pt-20 text-center text-2xl">
+              Todos los artículos
+            </div>
 
-        <div className="p-8">
-          {articles.data != null && articles.data.length > 0 ? (
-            <table className="w-full">
-              <thead>
-                <tr className="bg-white">
-                  <th className="p-1 border border-text">#</th>
-                  <th className="p-1 border border-text">Title</th>
-                  <th className="p-1 border border-text">Published</th>
-                  <th className="p-1 border border-text">Actions</th>
-                </tr>
-              </thead>
+            <div className="p-8">
+              {articles.data != null && articles.data.length > 0 ? (
+                <table className="w-full">
+                  <thead>
+                    <tr className="bg-white">
+                      <th className="p-1 border border-text">#</th>
+                      <th className="p-1 border border-text">Title</th>
+                      <th className="p-1 border border-text">Published</th>
+                      <th className="p-1 border border-text">Actions</th>
+                    </tr>
+                  </thead>
 
-              <tbody className="text-center">
-                {articles.data.map((item: Record<string, any>) => (
-                  <tr className="bg-white" key={item.id}>
-                    <td className="p-1 border border-text">{item.id}</td>
-                    <td className="p-1 border border-text">{item.title}</td>
-                    <td className="p-1 border border-text">
-                      {item.published ? "False" : "True"}
-                    </td>
-                    <td className="p-1 border border-text">
-                      <a className="btn bg-red-500 rounded mx-auto p-1 text-white">
-                        Borrar
-                      </a>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          ) : (
-            <>Loading...</>
-          )}
-        </div>
+                  <tbody className="text-center">
+                    {articles.data.map((item: Record<string, any>) => (
+                      <tr className="bg-white" key={item.id}>
+                        <td className="p-1 border border-text">{item.id}</td>
+                        <td className="p-1 border border-text">{item.title}</td>
+                        <td className="p-1 border border-text">
+                          {item.published ? "✓" : "X"}
+                        </td>
+                        <td className="p-1 border border-text">
+                          <a className="btn bg-red-500 rounded mx-auto p-1 text-white">
+                            Borrar
+                          </a>
+                          <a
+                            className="btn bg-green-500 rounded mx-auto p-1 text-white"
+                            onClick={() => handlePublish(item.id)}
+                          >
+                            Publicar
+                          </a>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              ) : (
+                <>Loading...</>
+              )}
+            </div>
+          </>
+        )}
 
         <div className="pt-20 text-center text-2xl">Subí un artículo</div>
         <div className="p-8">

@@ -17,4 +17,7 @@ export default {
   create(body: any) {
     return Api().post("/articles", body);
   },
+  publish(articleId: string | string[] | undefined) {
+    return Api().put(`articles/${articleId}/publish`);
+  },
 };
