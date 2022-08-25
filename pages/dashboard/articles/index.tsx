@@ -5,21 +5,30 @@ import dynamic from "next/dynamic";
 import "react-quill/dist/quill.snow.css";
 import { useSelector } from "react-redux";
 import ArticlesService from "@/services/ArticlesService";
-import { GetServerSideProps } from "next";
 
 const ReactQuill = dynamic(() => import("react-quill"), {
   ssr: false,
 });
 
-const Articles = ({ articles }: { articles: any }) => {
+const Articles = () => {
+  const { userInfo, role } = useSelector((state: any) => state.userReducer);
+
+  const [articles, setArticles] = useState<any>([]);
   const [content, setContent] = useState("");
   const [title, setTitle] = useState("");
 
   useEffect(() => {
-    console.log("content", content);
-  }, [content]);
-
-  const { userInfo } = useSelector((state: any) => state.userReducer);
+    const fetchArticles = async () => {
+      if (role === "Admin") {
+        const data = (await ArticlesService.indexAll(1)).data;
+        setArticles(data);
+      } else {
+        const data = (await ArticlesService.index(1)).data;
+        setArticles(data);
+      }
+    };
+    fetchArticles();
+  }, []);
 
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
@@ -51,33 +60,37 @@ const Articles = ({ articles }: { articles: any }) => {
         <div className="pt-20 text-center text-2xl">Todos los artículos</div>
 
         <div className="p-8">
-          <table className="w-full">
-            <thead>
-              <tr className="bg-white">
-                <th className="p-1 border border-text">#</th>
-                <th className="p-1 border border-text">Title</th>
-                <th className="p-1 border border-text">Published</th>
-                <th className="p-1 border border-text">Actions</th>
-              </tr>
-            </thead>
-
-            <tbody className="text-center">
-              {articles.data.map((item: Record<string, any>) => (
-                <tr className="bg-white" key={item.id}>
-                  <td className="p-1 border border-text">{item.id}</td>
-                  <td className="p-1 border border-text">{item.title}</td>
-                  <td className="p-1 border border-text">
-                    {item.published ? "False" : "True"}
-                  </td>
-                  <td className="p-1 border border-text">
-                    <a className="btn bg-red-500 rounded mx-auto p-1 text-white">
-                      Borrar
-                    </a>
-                  </td>
+          {articles.data != null && articles.data.length > 0 ? (
+            <table className="w-full">
+              <thead>
+                <tr className="bg-white">
+                  <th className="p-1 border border-text">#</th>
+                  <th className="p-1 border border-text">Title</th>
+                  <th className="p-1 border border-text">Published</th>
+                  <th className="p-1 border border-text">Actions</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+
+              <tbody className="text-center">
+                {articles.data.map((item: Record<string, any>) => (
+                  <tr className="bg-white" key={item.id}>
+                    <td className="p-1 border border-text">{item.id}</td>
+                    <td className="p-1 border border-text">{item.title}</td>
+                    <td className="p-1 border border-text">
+                      {item.published ? "False" : "True"}
+                    </td>
+                    <td className="p-1 border border-text">
+                      <a className="btn bg-red-500 rounded mx-auto p-1 text-white">
+                        Borrar
+                      </a>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          ) : (
+            <>Loading...</>
+          )}
         </div>
 
         <div className="pt-20 text-center text-2xl">Subí un artículo</div>
@@ -109,15 +122,6 @@ const Articles = ({ articles }: { articles: any }) => {
       </main>
     </>
   );
-};
-
-export const getServerSideProps: GetServerSideProps = async () => {
-  const articles = (await ArticlesService.index(1)).data;
-  return {
-    props: {
-      articles,
-    },
-  };
 };
 
 Articles.layout = DashboardLayout;

@@ -5,6 +5,9 @@ export default {
   index(pageNumber: number) {
     return Api().get(`articles?page=${pageNumber}`);
   },
+  indexAll(pageNumber: number) {
+    return Api().get(`admin/articles?page=${pageNumber}`);
+  },
   detail(articleId: string | string[] | undefined) {
     return Api().get(`articles/${articleId}`);
   },
