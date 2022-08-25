@@ -16,7 +16,10 @@ const TheCard = ({ article }: { article: Record<string, any> }) => {
   /> */}
         <div className="px-6 py-4">
           <div className="font-bold text-xl mb-2">{article.title}</div>
-          <p className="text-gray-700 text-base">{article.content}</p>
+          <div
+            className="text-gray-700 text-base"
+            dangerouslySetInnerHTML={{ __html: article.content }}
+          />
         </div>
         {article.tags.length > 0 && (
           <>

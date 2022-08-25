@@ -43,7 +43,10 @@ const Article = ({ article }: { article: any }) => {
       </Head>
       <main className="container py-16 min-h-screen w-11/12 mx-auto">
         <p className="text-5xl text-center py-4">{article.title}</p>
-        <p className="text-2xl text-center py-4">{article.content}</p>
+        <div
+          className="py-4"
+          dangerouslySetInnerHTML={{ __html: article.content }}
+        />
         <p>
           <span className="underline">Autores</span>: {article.user.username}
         </p>
