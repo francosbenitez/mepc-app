@@ -17,9 +17,11 @@ const TheNavbar = () => {
               <Link href="/articles">Artículos</Link>
             </li>
             <li className="p-2 self-center">
-              <button className="rounded btn bg-primary text-white p-2 border-white">
-                <Link href="/login">Publicá</Link>
-              </button>
+              <Link href="/login">
+                <button className="rounded btn bg-primary text-white p-2 border-white">
+                  Publicá
+                </button>
+              </Link>
             </li>
           </div>
         </ul>

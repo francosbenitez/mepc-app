@@ -13,9 +13,11 @@ const TheAbout = () => {
                 Una organización independiente de estudiantes y graduades, que
                 busca promover el pensamiento crítico y la psicología científica
               </p>
-              <button className="rounded btn bg-primary text-white p-2 border-white my-3">
-                <Link href="/login">Publicá</Link>
-              </button>
+              <Link href="/login">
+                <button className="rounded btn bg-primary text-white p-2 border-white my-3">
+                  Publicá
+                </button>
+              </Link>
             </div>
           </div>
           <div>
