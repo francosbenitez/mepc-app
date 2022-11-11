@@ -10,4 +10,4 @@ _Website of the Movimiento Estudiantil por la Psicología Científica (MEPC)_
 
 ## Live Demo
 
-- <a href="https://mepc.app" target="_blank">Link</a>
+- Branch <a href="https://mepc.app" target="_blank">main</a>
